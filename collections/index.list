@@ -1,6 +1,6 @@
 {.section collection}
     <h1>{title}</h1>
-    {.repeated section items}
+    {.repeated section collections}
         <ul>
             <li>{title}</li>
         </ul>
