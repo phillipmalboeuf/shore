@@ -1,9 +1,6 @@
-{.section collection}
-    <h1>{title}</h1>
-{.end}
 
-	{.repeated section items}
-        <ul>
-            <li>{title}</li>
-        </ul>
-    {.end}
+{.repeated section items}
+    <ul>
+        <li>{title}</li>
+    </ul>
+{.end}
