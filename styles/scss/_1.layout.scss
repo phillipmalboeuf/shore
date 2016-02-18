@@ -33,9 +33,6 @@ header {
 // #MAIN
 
 .main {
-	@extend .padded;
-	@extend .padded--thick;
-
 	max-width: 1600px;
 }
 
