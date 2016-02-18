@@ -1,12 +1,10 @@
 
-{.section website}
-<article class="box">
-	<h1 class="h1--huge text_center">{title}</h1>
-</article>
-{.end}
 
 {.section collection}
-    <h1>{title}</h1>
+	<article class="box">
+		<h1 class="h1--huge text_center">{title}</h1>
+	</article>
+    
     {.repeated section collections}
         <h2>{title}</h2>
         {.repeated section items}
