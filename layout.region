@@ -9,7 +9,7 @@
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
 
-    <main id="main" class="main" role="main" data-content-field="main-content">
+    <main id="main" class="maint" role="main" data-content-field="main-content">
      {squarespace.main-content}
     </main>
 
@@ -17,9 +17,6 @@
     <squarespace:script src="app.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
     {squarespace-footers}
-
-
-    <script src="//localhost:9000/livereload.js" async></script>
     
   </body>
 </html> 

@@ -67,21 +67,15 @@ module.exports = function(grunt) {
 
     watch: {
       options: {
-        livereload: 9000
+        livereload: false
       },
       handlebars: {
         files: ['scripts/hbs/**/*.hbs'],
         tasks: ['handlebars']
       },
       sass: {
-        options: {
-          livereload: false
-        },
         files: ['styles/scss/**/*.scss'],
         tasks: ['sass']
-      },
-      css: {
-        files: ['styles/styles.css']
       },
       coffee: {
         files: ['scripts/coffee/**/*.coffee'],
