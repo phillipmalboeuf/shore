@@ -21,10 +21,10 @@
 
 	.box__inside {
 		@extend .padded;
-
 		width: 100%;
 
 		.box--half & {
+			@extend .padded--thick;
 			width: 50%;
 		}
 	}
