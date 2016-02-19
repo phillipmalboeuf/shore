@@ -4,6 +4,35 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON("package.json"),
 
 
+    gitadd: {
+      task: {
+        files: {
+          src: ['template.conf', 'layout.region', 'pages/**/*.*', 'collections/**/*.*', 'styles/**/*.*', 'scripts/**/*.*', 'blocks/**/*.*', 'assets/**/*.*']
+        }
+      }
+    },
+
+    gitcommit: {
+      task: {
+        options: {
+            message: 'Development'
+        },
+        files: {
+          src: ['template.conf', 'layout.region', 'pages/**/*.*', 'collections/**/*.*', 'styles/**/*.*', 'scripts/**/*.*', 'blocks/**/*.*', 'assets/**/*.*']
+        }
+      }
+    },
+
+    gitpush: {
+      task: {
+        options: {
+            branch: 'master',
+            remote: 'origin'
+        }
+      }
+    },
+
+
     handlebars: {
       compile: {
         options: {
@@ -69,17 +98,21 @@ module.exports = function(grunt) {
       options: {
         livereload: false
       },
+      layout: {
+        files: ['template.conf', 'layout.region', 'pages/**/*.*', 'collections/**/*.*', 'blocks/**/*.*', 'assets/**/*.*'],
+        tasks: ['gitadd', 'gitcommit', 'gitpush']
+      },
       handlebars: {
         files: ['scripts/hbs/**/*.hbs'],
-        tasks: ['handlebars']
+        tasks: ['handlebars', 'gitadd', 'gitcommit', 'gitpush']
       },
       sass: {
         files: ['styles/scss/**/*.scss'],
-        tasks: ['sass']
+        tasks: ['sass', 'gitadd', 'gitcommit', 'gitpush']
       },
       coffee: {
         files: ['scripts/coffee/**/*.coffee'],
-        tasks: ['coffee']
+        tasks: ['coffee', 'gitadd', 'gitcommit', 'gitpush']
       }
     }
 
@@ -87,6 +120,7 @@ module.exports = function(grunt) {
   });
 
 
+  grunt.loadNpmTasks('grunt-git');
   grunt.loadNpmTasks('grunt-contrib-handlebars');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-watch');
