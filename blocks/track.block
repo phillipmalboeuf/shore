@@ -2,6 +2,7 @@
 
 	<article class="box box--half" data-item-id="{id}">
 		<div class="box__inside">
+			<h6>Chapter {displayIndex}</h6>
 			<h2 data-content-field="title">{title}</h2>
 		</div>
 	</article>
