@@ -13,8 +13,19 @@
 	background-image: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
 	background-size: cover;
 	background-position: center;
+
+	&.box--right {
+		@extend .grid--right;
+	}
 }
 
 	.box__inside {
+		@extend .padded;
+
 		width: 100%;
+
+		&.box--right,
+		&.box--left {
+			width: 50%;
+		}
 	}
