@@ -5,11 +5,11 @@
 			<div class="small_bottom">
 				<h4>Chapter {displayIndex}</h4>
 				<h2 data-content-field="title">{title}</h2>
-				{% if customContent.is_coming_soon %}
+				{.customContent.is_coming_soon?}
 				<a href="#" target="_blank" class="button button--half" disabled>Coming Soon</a>
-				{% else %}
+				{.or}
 				<a href="{customContent.youtube_link}" target="_blank" class="button button--half">Watch the Video</a>
-				{% endif %}
+				{.end}
 			</div>
 
 			<hr class="hr--half">
