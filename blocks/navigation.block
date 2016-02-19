@@ -1,7 +1,7 @@
 <nav>
   {.repeated section items}
     {.section collection}
-      <a href="{fullUrl}" class="nav__link">{navigationTitle}</a>
+      <a href="{fullUrl}" class="nav__link" data-id="{id}">{navigationTitle}</a>
     {.end}
 
     {.section externalLink}
