@@ -2,10 +2,17 @@
 // #BOXES
 
 .box {
+	@extend .grid;
+	@extend .grid--middle;
+
 	position: relative;
 	min-height: 100vh;
 
-	background-image: url("https://placehold.it/1230x900/4e2f4c/d2ceab/&text=∅");
+	background-image: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
 	background-size: cover;
-	background-position: center; 
+	background-position: center;
 }
+
+	.box__inside {
+		
+	}

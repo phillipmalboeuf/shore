@@ -2,6 +2,7 @@
 
 html {
 	font: #{$base_size}/#{$line_height} $body_font;
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -22,7 +23,9 @@ body {
 // #HEADINGS
 h1, h2, h3, h4, h5, h6 {
 	font-family: $headings_font;
-	font-weight: normal;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: $letter_spacing;
 
 	color: inherit;
 	
@@ -37,9 +40,8 @@ h1, h2, h3, h4, h5, h6 {
 	h1 {
 		font-size: $huge_size;
 
-		&.h1--normal {
-			font-size: $base_size;
-			font-family: $body_font;
+		&.h1--logotype {
+			word-spacing: $big_size;
 		}
 	}
 
