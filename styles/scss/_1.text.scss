@@ -58,8 +58,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	h4 {
+		font-size: $base_size;
 		letter-spacing: $letter_spacing*0.5;
-		font-size: $medium_size;
 	}
 	
 	h5, h6 {
