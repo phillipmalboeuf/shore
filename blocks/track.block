@@ -1,6 +1,6 @@
 
 
-	<article class="box box--right" data-item-id="{id}">
+	<article class="box box--half" data-item-id="{id}">
 		<div class="box__inside">
 			<h2 data-content-field="title">{title}</h2>
 		</div>

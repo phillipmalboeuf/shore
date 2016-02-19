@@ -14,7 +14,7 @@
 	background-size: cover;
 	background-position: center;
 
-	&.box--right {
+	&.box--half:nth-child(2n+1) {
 		@extend .grid--right;
 	}
 }
@@ -24,8 +24,7 @@
 
 		width: 100%;
 
-		.box--right &,
-		.box--left & {
+		.box--half & {
 			width: 50%;
 		}
 	}
