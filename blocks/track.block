@@ -4,5 +4,6 @@
 		<div class="box__inside">
 			<h4>Chapter {displayIndex}</h4>
 			<h2 data-content-field="title">{title}</h2>
+			<a href="{customContent.youtube_link}" target="_blank" class="button">Watch the video</a>
 		</div>
 	</article>
