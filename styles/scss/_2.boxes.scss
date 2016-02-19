@@ -23,18 +23,14 @@
 		}
 	}
 }
-	.box__top {
-		
+	.box__top,
+	.box__bottom {
+		width: 100%;
 	}
 
 	.box__inside {
-		width: 100%;
 
 		.box--half & {
 			width: 50%;
 		}
-	}
-
-	.box__bottom {
-
 	}
