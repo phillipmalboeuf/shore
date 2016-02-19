@@ -12,12 +12,12 @@ button,
 	text-align: center;
 	text-decoration: none;
 	letter-spacing: $letter_spacing/2;
-	
+
 	color: $gold;
 	background: transparent;
 	
 	position: relative;
-	padding: $vertical_rythm/2 $vertical_rythm;
+	padding: $vertical_rythm/1.5 $vertical_rythm;
 	border: 1px solid;
 
 	@include transition(background $fast, color $fast, border-color $fast, opacity $fast);
@@ -30,6 +30,17 @@ button,
 
 	&:active {
 		top: 1px;
+	}
+
+	&.button--half,
+	&.button--full {
+		min-width: 50%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&.button--full {
+		width: 100%;
 	}
 }
 
