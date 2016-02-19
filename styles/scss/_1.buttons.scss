@@ -23,12 +23,11 @@ button,
 
 	&:hover,
 	&:focus {
-		color: $black;
-		background: $highlight;
+		color: $highlight;
 	}
 
 	&:active {
-		background: fade-out($highlight, 0.5);
+		top: 1px;
 	}
 }
 
