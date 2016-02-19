@@ -1,7 +1,7 @@
 
 
-	<article class="box">
-		<div class="box__inside box__inside--right">
+	<article class="box box--right">
+		<div class="box__inside">
 			<h2>{title}</h2>
 		</div>
 	</article>
