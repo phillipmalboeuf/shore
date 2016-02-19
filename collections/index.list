@@ -30,13 +30,13 @@
 {.section collection}    
     {.repeated section collections}
     	<section data-collection-id="{id}">
-        {.equal?:typeName:'tracks'}
+        {.equal?:typeName:tracks}
         {.repeated section items}
             {@|apply track.block}
         {.end}
         {.end}
 
-        {.equal?:typeName:'page'}
+        {.equal?:typeName:page}
         {.repeated section items}
             {@|apply page.block}
         {.end}
