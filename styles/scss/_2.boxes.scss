@@ -38,6 +38,14 @@ body {
 
 		.box--middle & {
 			width: 50%;
+
+			@media #{$medium} {
+				width: 75%;
+			}
+
+			@media #{$small} {
+				width: 100%;
+			}
 		}
 	}
 
