@@ -1,1 +1,2 @@
-page.item
+
+	{@|apply page.block}
