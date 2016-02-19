@@ -1,6 +1,6 @@
 
 
-	<article class="box box--half" data-item-id="{id}">
+	<article class="box box--middle" data-item-id="{id}">
 		<div class="box__inside">
 			<div class="small_bottom">
 				<h4>Chapter {displayIndex}</h4>
