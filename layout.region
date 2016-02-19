@@ -8,6 +8,10 @@
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
+    <header class="header">
+      <squarespace:navigation navigationId="top_nav" template="navigation" />
+    </header>
+
 
     <main id="main" class="main" role="main" data-content-field="main-content">
      {squarespace.main-content}
