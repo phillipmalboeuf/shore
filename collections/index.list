@@ -37,9 +37,7 @@
         {.end}
 
         {.equal? typeName "page"}
-        {.repeated section items}
             {@|apply page.block}
-        {.end}
         {.end}
         </section>
     {.end}
