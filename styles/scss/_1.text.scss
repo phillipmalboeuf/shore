@@ -138,11 +138,10 @@ hr {
 	width: 100%;
 	margin: $vertical_rythm*2 auto;
 
-	// &.hr--half {
-	// 	display: inline-block;
-	// 	width: 50%;
-	// 	padding: 0 50%;
-	// }
+	&.hr--half {
+		display: inline-block;
+		width: 50%;
+	}
 }
 
 
