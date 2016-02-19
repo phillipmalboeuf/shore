@@ -11,8 +11,10 @@
 
 {.section collection}    
     {.repeated section collections}
+    	<section data-collection-id="{id}">
         {.repeated section items}
             {@|apply track.block}
         {.end}
+        </section>
     {.end}
 {.end}
