@@ -33,15 +33,12 @@ button,
 		top: 1px;
 	}
 
-	&.button--half,
-	&.button--full {
+	&.button--half {
 		min-width: 50%;
-		padding-left: 0;
-		padding-right: 0;
 	}
 
 	&.button--full {
-		width: 100%;
+		min-width: 100%;
 	}
 }
 
