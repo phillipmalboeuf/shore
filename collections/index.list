@@ -3,7 +3,7 @@
 
 	<article class="box">
 		<div class="box__inside">
-			<h1 class="h1--logotype">{website.siteTitle}</h1>
+			<h1 class="h1--logotype" data-content-field="site-title">{website.siteTitle}</h1>
 			<h2 class="h2--logo">{collection.title}</h2>
 		</div>
 	</article>
