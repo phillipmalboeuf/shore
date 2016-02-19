@@ -3,14 +3,15 @@
 
 button,
 .button {
+	@extend .h4;
 	cursor: pointer;
 	
 	font-family: $headings_font;
 	font-size: $base_size;
 	line-height: 1;
-	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
+
 	color: $gold;
 	background: transparent;
 	
