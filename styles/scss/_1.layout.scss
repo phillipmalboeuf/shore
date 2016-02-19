@@ -14,9 +14,9 @@ html {
 
 body {
 	position: relative;
-
+	width: 100%;
+	overflow-x: hidden;
 	min-height: 100vh;
-	background-color: $black;
 
 	@include transition(background-color $fast);
 }

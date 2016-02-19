@@ -7,10 +7,7 @@ html {
 
 body {
 	color: $primary;
-	background: $white;
-
-	width: 100%;
-	overflow-x: hidden;
+	background-color: $black;
 }
 
 ::selection {
@@ -23,7 +20,7 @@ body {
 // #HEADINGS
 h1, h2, h3, h4, h5, h6 {
 	font-family: $headings_font;
-	font-weight: 300;
+	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: $letter_spacing;
 
