@@ -1,64 +1,13 @@
 
-// #BOXES
+// #NAV
 
-body {
-	counter-reset: boxes;
-}
-
-.box {
-	@extend .padded;
+nav {
 	@extend .grid;
-	@extend .grid--vertically_spaced;
-
-	position: relative;
-	min-height: 100vh;
-
-	margin-bottom: $gutter;
-
-	background-image: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
-	background-size: cover;
-	background-position: center;
-
-	&.box--middle {
-		@extend .padded--thick;
-		@extend .grid--middle;
-
-		&:nth-child(2n+1) {
-			@extend .grid--right;
-		}
-	}
+	@extend .grid--spaced;
 }
-	.box__top,
-	.box__bottom {
-		width: 100%;
+	
+	.nav__link {
+		font-family: $headings_font;
+		text-transform: uppercase;
+		letter-spacing: $letter_spacing;
 	}
-
-	.box__inside {
-		width: 100%;
-
-		.box--middle & {
-			width: 50%;
-
-			@media #{$medium} {
-				width: 75%;
-			}
-
-			@media #{$small} {
-				width: 100%;
-			}
-		}
-	}
-
-		.box__count:after {
-			counter-increment: boxes;
-			content: counter(boxes);
-		}
-
-	.box__bottom {
-
-	}
-
-		.box__bottom__text {
-			text-align: center;
-			max-width: 22rem;
-		}
