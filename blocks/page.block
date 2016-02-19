@@ -1,6 +1,6 @@
 
 
-	<article data-item-id="{id}">
+	<article class="padded--thick" data-item-id="{id}">
 		<h1>{title}</h1>
 		<hr>
 	</article>
