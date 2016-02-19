@@ -2,10 +2,28 @@
 
 
 	<article class="box">
+        <div class="box__top"></div>
+
 		<div class="box__inside">
 			<h1 class="h1--logotype" data-content-field="site-title">{website.siteTitle}</h1>
 			<h2 class="h2--logo">{collection.title}</h2>
 		</div>
+
+        <div class="box__bottom">
+            <div class="grid grid--spaced">
+                <div class="col">
+                    <a href="#" target="_blank" class="button button--with_icon"><small>Buy now on</small> iTunes</a>
+                </div>
+
+                <div class="col">
+                    <h4>{website.siteTagLine}</h4>
+                </div>
+
+                <div class="col">
+                    <a href="#" target="_blank" class="button button--with_icon"><small>Listen on</small> iTunes</a>
+                </div>
+            </div>
+        </div>
 	</article>
 
 
