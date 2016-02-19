@@ -2,6 +2,7 @@
 // #BOXES
 
 .box {
+	@extend .padded;
 	@extend .grid;
 	@extend .grid--middle;
 
@@ -14,17 +15,19 @@
 	background-size: cover;
 	background-position: center;
 
-	&.box--half:nth-child(2n+1) {
-		@extend .grid--right;
+	&.box--half {
+		@extend .padded--thick;
+
+		&:nth-child(2n+1) {
+			@extend .grid--right;
+		}
 	}
 }
 
 	.box__inside {
-		@extend .padded;
 		width: 100%;
 
 		.box--half & {
-			@extend .padded--thick;
 			width: 50%;
 		}
 	}
