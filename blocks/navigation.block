@@ -1,7 +1,5 @@
 <nav>
   {.repeated section items}
-  {.section active}
-
     {.section collection}
       <a href="{fullUrl}" class="nav__link">{navigationTitle}</a>
     {.end}
@@ -9,6 +7,5 @@
     {.section externalLink}
       <a href="{url}" class="nav__link"{.section newWindow} target="_blank"{.end}>{title}</a>
     {.end}
-  {.end}
   {.end}
 </nav>
