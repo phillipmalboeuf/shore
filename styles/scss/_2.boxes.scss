@@ -24,8 +24,8 @@
 
 		width: 100%;
 
-		&.box--right,
-		&.box--left {
+		.box--right &,
+		.box--left & {
 			width: 50%;
 		}
 	}
