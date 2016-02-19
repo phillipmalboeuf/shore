@@ -4,7 +4,7 @@
 .box {
 	@extend .padded;
 	@extend .grid;
-	@extend .grid--middle;
+	@extend .grid--vertically_spaced;
 
 	position: relative;
 	min-height: 100vh;
@@ -23,6 +23,9 @@
 		}
 	}
 }
+	.box__top {
+		
+	}
 
 	.box__inside {
 		width: 100%;
@@ -30,4 +33,8 @@
 		.box--half & {
 			width: 50%;
 		}
+	}
+
+	.box__bottom {
+
 	}
