@@ -15,8 +15,9 @@
 	background-size: cover;
 	background-position: center;
 
-	&.box--half {
+	&.box--middle {
 		@extend .padded--thick;
+		@extend .grid--middle;
 
 		&:nth-child(2n+1) {
 			@extend .grid--right;
@@ -31,7 +32,7 @@
 	.box__inside {
 		width: 100%;
 
-		.box--half & {
+		.box--middle & {
 			width: 50%;
 		}
 	}
