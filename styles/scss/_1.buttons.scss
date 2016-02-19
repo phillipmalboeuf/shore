@@ -8,7 +8,6 @@ button,
 	
 	font-family: $headings_font;
 	font-size: $base_size;
-	line-height: 1;
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
@@ -18,7 +17,7 @@ button,
 	background: transparent;
 	
 	position: relative;
-	padding: $vertical_rythm/1.25 $vertical_rythm;
+	padding: $vertical_rythm/1.5 $vertical_rythm;
 	border: 1px solid;
 
 	@include transition(background $fast, color $fast, border-color $fast, opacity $fast);
