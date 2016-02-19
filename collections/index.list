@@ -15,7 +15,7 @@
                     <a href="#" target="_blank" class="button button--with_icon"><small>Buy now on</small> iTunes</a>
                 </div>
 
-                <div class="col">
+                <div class="col box__bottom__text">
                     <h4>{website.siteTagLine}</h4>
                 </div>
 
