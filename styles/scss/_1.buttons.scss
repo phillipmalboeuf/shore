@@ -30,31 +30,6 @@ button,
 	&:active {
 		background: fade-out($highlight, 0.5);
 	}
-
-
-	&.button--icon {
-		color: $primary;
-		background: transparent;
-
-		padding: $vertical_rythm;
-
-		&:hover,
-		&:focus {
-			color: $highlight;
-		}
-
-		&:active {
-			color: fade-out($highlight, 0.5);
-		}
-
-		i {
-			font-size: $big_size;
-
-			@media #{$small} {
-				font-size: $big_size*0.75;
-			}
-		}
-	}
 }
 
 
