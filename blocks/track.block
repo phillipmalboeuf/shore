@@ -2,10 +2,12 @@
 
 	<article class="box box--half" data-item-id="{id}">
 		<div class="box__inside">
-			<h4>Chapter {displayIndex}</h4>
-			<h2 data-content-field="title">{title}</h2>
-			<a href="{customContent.youtube_link}" target="_blank" class="button button--half">Watch the Video</a>
-			<br>
+			<div class="small_bottom">
+				<h4>Chapter {displayIndex}</h4>
+				<h2 data-content-field="title">{title}</h2>
+				<a href="{customContent.youtube_link}" target="_blank" class="button button--half">Watch the Video</a>
+			</div>
+			
 			<hr class="hr--half">
 			<a href="{customContent.itunes_link}" target="_blank" class="button button--half">Buy on iTunes</a>
 		</div>
