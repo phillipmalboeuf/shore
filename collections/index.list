@@ -11,11 +11,8 @@
 
 {.section collection}    
     {.repeated section collections}
-        <h2>{title}</h2>
         {.repeated section items}
-            <ul>
-                <li>{title}</li>
-            </ul>
+            {@|apply track.block}
         {.end}
     {.end}
 {.end}

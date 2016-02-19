@@ -8,11 +8,13 @@
 	position: relative;
 	min-height: 100vh;
 
+	margin-bottom: $gutter*2;
+
 	background-image: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
 	background-size: cover;
 	background-position: center;
 }
 
 	.box__inside {
-		
+		width: 100%;
 	}

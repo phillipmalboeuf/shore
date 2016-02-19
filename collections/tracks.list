@@ -1,6 +1,4 @@
 
 {.repeated section items}
-    <ul>
-        <li>{title}</li>
-    </ul>
+    {@|apply track.block}
 {.end}
