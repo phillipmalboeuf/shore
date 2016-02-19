@@ -141,7 +141,7 @@ hr {
 	&.hr--half {
 		display: inline-block;
 		width: 20%;
-		padding: 0 15%;
+		margin: $vertical_rythm*2 15%;
 	}
 }
 
