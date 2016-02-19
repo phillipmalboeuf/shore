@@ -7,8 +7,9 @@
 				<h2 data-content-field="title">{title}</h2>
 				<a href="{customContent.youtube_link}" target="_blank" class="button button--half">Watch the Video</a>
 			</div>
-			
+
 			<hr class="hr--half">
+			
 			<a href="{customContent.itunes_link}" target="_blank" class="button button--half">Buy on iTunes</a>
 		</div>
 	</article>
