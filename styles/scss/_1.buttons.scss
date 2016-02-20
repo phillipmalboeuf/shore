@@ -41,6 +41,11 @@ button,
 		font-weight: bold;
 		letter-spacing: 0;
 
+		svg {
+			float: left;
+			margin-right: $vertical_rythm/4;
+		}
+
 		small,
 		strong {
 			display: inline-block;
