@@ -13,3 +13,7 @@
 		padding-left: $gutter/2;
 		padding-right: $gutter/2;
 	}
+
+	.sqs-layout:not(.sqs-editing)>.sqs-row:first-child>[class*=sqs-col]:first-child>.sqs-block:last-child {
+		padding-bottom: $gutter/2;
+	}
