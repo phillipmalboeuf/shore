@@ -216,8 +216,13 @@ em,
 	font-weight: normal;
 }
 
-.capitalize {
+.capitalize { 
 	text-transform: capitalize;
+}
+
+.uppercase { 
+	text-transform: uppercase;
+	letter-spacing: $letter_spacing/2;
 }
 
 .alternate_first_line {
