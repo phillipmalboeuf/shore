@@ -41,6 +41,11 @@ button,
 		font-weight: bold;
 		letter-spacing: 0;
 
+		small,
+		strong {
+			display: inline-block;
+		}
+
 		strong {
 			font-size: $bigger_size;
 			text-transform: none;
