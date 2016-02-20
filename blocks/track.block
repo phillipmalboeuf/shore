@@ -3,7 +3,7 @@
 	<article class="box box--middle" data-item-id="{id}">
 		<div class="box__inside">
 			<div class="small_bottom">
-				<h4>Chapter <span class="box__count"></span></h4>
+				<h4>{description}</h4>
 				<h2 data-content-field="title">{title}</h2>
 				{.section customContent.is_coming_soon}
 				<a href="#" target="_blank" class="button button--half" disabled>Coming Soon</a>
