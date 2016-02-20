@@ -56,6 +56,11 @@
 		margin-left: -$gutter;
 		margin-bottom: -$gutter;
 	}
+
+	&.grid--reverse {
+		flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
+	}
 }
 	
 	.col {
