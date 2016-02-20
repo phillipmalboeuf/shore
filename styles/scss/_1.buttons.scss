@@ -41,12 +41,11 @@ button,
 		@extend .grid;
 		@extend .grid--middle;
 		font-weight: bold;
-		text-transform: none;
 		text-align: left;
-		line-height: 1;
+		line-height: 0.9;
 		letter-spacing: 0;
 
-		padding: $vertical_rythm/1.75 $vertical_rythm*1.25 $vertical_rythm/2;
+		padding: $base_size/2.5 $base_size $base_size/2;
 		border-radius: $vertical_rythm/4;
 
 		svg {
@@ -60,6 +59,7 @@ button,
 
 		strong {
 			font-size: $big_size;
+			text-transform: none;
 		}
 	}
 
