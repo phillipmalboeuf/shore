@@ -10,6 +10,6 @@
 }
 
 	[class*=sqs-col] .sqs-block {
-		padding-left: -$gutter/2;
-		padding-right: -$gutter/2;
+		padding-left: $gutter/2;
+		padding-right: $gutter/2;
 	}
