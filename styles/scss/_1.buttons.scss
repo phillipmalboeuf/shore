@@ -32,6 +32,10 @@ button,
 		top: 1px;
 	}
 
+	&.button--small {
+		font-size: $small_size;
+	}
+
 	&.button--half {
 		min-width: 50%;
 	}
