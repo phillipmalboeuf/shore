@@ -188,9 +188,11 @@ sub {
 
 // #MISC
 
-i.material-icons {
-	font-size: 1em;
-	vertical-align: middle;
+[class^="icon-"], [class*=" icon-"] {
+    height: $base_size;
+    width: $base_size;
+    display: inline-block;
+    fill: currentColor;
 }
 
 iframe {
