@@ -31,9 +31,11 @@
     {.repeated section collections}
     	<section data-collection-id="{id}">
         {.equal? typeName "tracks"}
-        {.repeated section items}
-            {@|apply track.block}
-        {.end}
+            <div class="grid grid--reverse">
+            {.repeated section items}
+                {@|apply track.block}
+            {.end}
+            </div>
         {.end}
 
         {.equal? typeName "page"}
