@@ -1,4 +1,6 @@
 
+<div class="grid grid--reverse">
 {.repeated section items}
     {@|apply track.block}
 {.end}
+</div>
