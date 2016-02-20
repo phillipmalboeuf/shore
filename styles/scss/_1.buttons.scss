@@ -46,7 +46,8 @@ button,
 		line-height: 1;
 		letter-spacing: 0;
 
-		border-radius: $vertical_rythm;
+		padding: $vertical_rythm/1.75 $vertical_rythm*1.25 $vertical_rythm/2;
+		border-radius: $vertical_rythm/4;
 
 		svg {
 			margin-right: $vertical_rythm/4;
