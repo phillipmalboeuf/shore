@@ -1,1 +1,6 @@
-_0.sqsfixes.scss
+
+// #FIXES
+.sqs-layout > .sqs-row {
+	margin-right: -$gutter/2;
+	margin-left: -$gutter/2;
+}
