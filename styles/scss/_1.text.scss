@@ -193,6 +193,11 @@ sub {
     width: $base_size;
     display: inline-block;
     fill: currentColor;
+
+    &.icon--big {
+    	height: $bigger_size;
+    	width: $bigger_size;
+    }
 }
 
 iframe {
