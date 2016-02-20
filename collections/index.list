@@ -12,7 +12,7 @@
         <div class="box__bottom">
             <div class="grid grid--spaced">
                 <div class="col">
-                    <a href="#" target="_blank" class="button button--with_icon"><svg class="icon-apple icon--big"><use xlink:href="/assets/icons.svg#icon-apple"></use></svg> <span><small>Buy now on</small> <strong>iTunes</strong></span></a>
+                    <a href="#" target="_blank" class="button button--with_icon"><svg class="icon-apple icon--big"><use xlink:href="/assets/icons.svg#icon-apple"></use></svg> <span><small>Buy now on</small><br><strong>iTunes</strong></span></a>
                 </div>
 
                 <div class="col box__bottom__text">
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="col">
-                    <a href="#" target="_blank" class="button button--with_icon"><svg class="icon-spotify icon--big"><use xlink:href="/assets/icons.svg#icon-spotify"></use></svg> <span><small>Listen on</small> <strong>Spotify</strong></span></a>
+                    <a href="#" target="_blank" class="button button--with_icon"><svg class="icon-spotify icon--big"><use xlink:href="/assets/icons.svg#icon-spotify"></use></svg> <span><small>Listen on</small><br><strong>Spotify</strong></span></a>
                 </div>
             </div>
         </div>
