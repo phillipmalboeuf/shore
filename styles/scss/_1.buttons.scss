@@ -41,7 +41,11 @@ button,
 		@extend .grid;
 		@extend .grid--middle;
 		font-weight: bold;
+		text-transform: none;
+		line-height: 1;
 		letter-spacing: 0;
+
+		border-radius: $vertical_rythm;
 
 		svg {
 			margin-right: $vertical_rythm/4;
@@ -49,12 +53,11 @@ button,
 
 		small,
 		strong {
-			
+
 		}
 
 		strong {
 			font-size: $big_size;
-			text-transform: none;
 		}
 	}
 
