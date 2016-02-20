@@ -48,6 +48,7 @@ header {
 
 footer {
 	@extend .padded;
+	@extend .padded--thick;
 }
 
 
