@@ -37,6 +37,14 @@ button,
 		padding: $vertical_rythm/1.75 $vertical_rythm*1.25 $vertical_rythm/2;
 	}
 
+	&.button--with_icon {
+		letter-spacing: 0;
+
+		strong {
+			text-transform: none;
+		}
+	}
+
 	&.button--half {
 		min-width: 50%;
 	}
