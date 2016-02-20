@@ -24,7 +24,7 @@ body {
 		@extend .padded--thick;
 		@extend .grid--middle;
 
-		&:nth-child(2n+1) {
+		&:nth-child(2n) {
 			@extend .grid--right;
 		}
 	}
