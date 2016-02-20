@@ -5,8 +5,8 @@
 			<div class="col col--9of12">
 				<small><squarespace:block-field id="footer-copyrights" label="Footer Copyrights" /></small>
 			</div>
-			<div class="col col--3of12">
-				<a href="#credits" class="button">Credits</a>
+			<div class="col col--3of12 text_right">
+				<a href="#credits" class="button button--small">Credits</a>
 			</div>
 		</div>
 	</footer>

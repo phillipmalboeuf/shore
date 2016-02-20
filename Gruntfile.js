@@ -99,7 +99,7 @@ module.exports = function(grunt) {
         livereload: false
       },
       layout: {
-        files: ['template.conf', 'layout.region', 'pages/**/*.*', 'collections/**/*.*', 'blocks/**/*.*', 'assets/**/*.*'],
+        files: ['template.conf', '**/*.region', 'pages/**/*.*', 'collections/**/*.*', 'blocks/**/*.*', 'assets/**/*.*'],
         tasks: ['gitadd', 'gitcommit', 'gitpush']
       },
       handlebars: {
