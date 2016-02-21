@@ -26,9 +26,9 @@ nav {
 
 		&:hover,
 		&:focus {
-			border: 1px solid;
 			
 			&:after {
+				border-top: 1px solid;
 				width: 100%;
 			}
 		}
