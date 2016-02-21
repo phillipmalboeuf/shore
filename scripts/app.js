@@ -7,7 +7,7 @@
       if (scroll_to.length > 0) {
         e.preventDefault();
         return scroll_to.velocity("scroll", {
-          duration: 3000,
+          duration: 2000,
           easing: "ease-in-out"
         });
       }
