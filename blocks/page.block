@@ -1,6 +1,6 @@
 
 
-	<article class="padded padded--thick" data-collection-id="{id}" id="{fullUrl}">
+	<article class="padded padded--thick" id="{fullUrl}">
 		<h2 class="h2--bigger">{title}</h2>
 		<hr>
 		{mainContent}
