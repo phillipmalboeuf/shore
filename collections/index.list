@@ -18,7 +18,7 @@
                 <div class="col box__bottom__text">
                     <h4>{website.siteTagLine}</h4>
 
-                    <a href="/tracks"><svg class="icon-down icon--big"><use xlink:href="/assets/icons.svg#icon-down"></use></svg></a>
+                    <a href="/tracks"><svg class="icon-down"><use xlink:href="/assets/icons.svg#icon-down"></use></svg></a>
                 </div>
 
                 <div class="col">
