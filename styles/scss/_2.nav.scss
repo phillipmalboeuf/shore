@@ -10,4 +10,8 @@ nav {
 		font-family: $headings_font;
 		text-transform: uppercase;
 		letter-spacing: $letter_spacing/2;
+
+		.homepage &[href="/tracks"] {
+			@extend .invisible;
+		}
 	}
