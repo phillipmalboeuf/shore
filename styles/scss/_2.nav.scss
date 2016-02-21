@@ -21,7 +21,7 @@ nav {
 			display: inline-block;
 			width: 0;
 
-			@include transition(width $slow);
+			@include transition(width $fast);
 		}
 
 		&:hover,
