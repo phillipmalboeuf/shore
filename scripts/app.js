@@ -8,7 +8,7 @@
         e.preventDefault();
         return scroll_to.velocity("scroll", {
           duration: 2000,
-          easing: "ease-out"
+          easing: "easeOutQuart"
         });
       }
     });
