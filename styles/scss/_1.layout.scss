@@ -99,6 +99,7 @@ footer {
 .medium_top { margin-top: $vertical_rythm*2; }
 
 .hide { display: none; }
+.invisible { visibility: hidden; pointer-events: none; }
 .inline_block { display: inline-block; }
 .right { float: right; }
 .text_center { text-align: center; }
