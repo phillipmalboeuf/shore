@@ -1,9 +1,5 @@
 <nav>
   {.repeated section items}
-  	{title}
-  	{navigationTitle}
-  	{linkTitle}
-
   	
     {.section collection}
       <a href="{fullUrl}" class="nav__link js-nav__link" data-id="{id}">{navigationTitle}</a>
