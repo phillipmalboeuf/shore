@@ -7,8 +7,8 @@
       if (scroll_to.length > 0) {
         e.preventDefault();
         return scroll_to.velocity("scroll", {
-          duration: 1500,
-          easing: "spring"
+          duration: 3000,
+          easing: "easeOutBack"
         });
       }
     });
