@@ -20,6 +20,7 @@ nav {
 		&:after {
 			content: "";
 			display: inline-block;
+			border-top: 1px solid;
 			width: 0;
 
 			@include transition(width $fast);
@@ -29,7 +30,6 @@ nav {
 		&:focus {
 			
 			&:after {
-				border-top: 1px solid;
 				width: 100%;
 			}
 		}
