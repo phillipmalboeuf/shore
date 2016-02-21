@@ -2,11 +2,11 @@
   {.repeated section items}
   	
     {.section collection}
-      <a href="{fullUrl}" class="nav__link" data-scroll-to="{url|url-encode}">{navigationTitle}</a>
+      <a href="{fullUrl}" class="nav__link" data-scroll-to="{fullUrl|slugify}">{navigationTitle}</a>
     {.end}
 
     {.section externalLink}
-      <a href="{url}" class="nav__link"{.section newWindow} target="_blank"{.end} data-scroll-to="{url|url-encode}">{title}</a>
+      <a href="{url}" class="nav__link"{.section newWindow} target="_blank"{.end} data-scroll-to="{url|slugify}">{title}</a>
     {.end}
   {.end}
 
