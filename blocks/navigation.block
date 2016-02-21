@@ -10,17 +10,19 @@
   {.end}
 
   {.repeated section website.socialAccounts}
+  	<span class="nav__link">
   	{.equal? serviceName "youtube"}
-		<a href="{profileUrl}" class="nav__link" target="_blank"><svg class="icon-youtube"><use xlink:href="/assets/icons.svg#icon-youtube"></use></svg></a>
+		<a href="{profileUrl}" target="_blank"><svg class="icon-youtube"><use xlink:href="/assets/icons.svg#icon-youtube"></use></svg></a>
 	{.end}
 	{.equal? serviceName "facebook"}
-		<a href="{profileUrl}" class="nav__link" target="_blank"><svg class="icon-facebook"><use xlink:href="/assets/icons.svg#icon-facebook"></use></svg></a>
+		<a href="{profileUrl}" target="_blank"><svg class="icon-facebook"><use xlink:href="/assets/icons.svg#icon-facebook"></use></svg></a>
 	{.end}
 	{.equal? serviceName "instagram"}
-		<a href="{profileUrl}" class="nav__link" target="_blank"><svg class="icon-instagram"><use xlink:href="/assets/icons.svg#icon-instagram"></use></svg></a>
+		<a href="{profileUrl}" target="_blank"><svg class="icon-instagram"><use xlink:href="/assets/icons.svg#icon-instagram"></use></svg></a>
 	{.end}
 	{.equal? serviceName "twitter"}
-		<a href="{profileUrl}" class="nav__link" target="_blank"><svg class="icon-twitter"><use xlink:href="/assets/icons.svg#icon-twitter"></use></svg></a>
+		<a href="{profileUrl}" target="_blank"><svg class="icon-twitter"><use xlink:href="/assets/icons.svg#icon-twitter"></use></svg></a>
 	{.end}
+	</span>
   {.end}
 </nav>
