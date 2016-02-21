@@ -1,10 +1,10 @@
 (function() {
   $(function() {
     console.log("I like this digital age.");
-    return $(".js-scroll_to").click(function(e) {
+    return $("[data-scroll-to]").click(function(e) {
       e.preventDefault();
-      console.log(e.currentTarget.getAttribute("href"));
-      return console.log($("#" + e.currentTarget.getAttribute("href")));
+      console.log(e.currentTarget.getAttribute("data-scroll-to"));
+      return console.log($("#" + e.currentTarget.getAttribute("data-scroll-to")));
     });
   });
 
