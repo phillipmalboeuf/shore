@@ -31,13 +31,11 @@
 
 {.section collection}    
     {.repeated section collections}
-    	<section data-collection-id="{id}">
+    	<section data-collection-id="{id}" id="{fullUrl|slugify}">
         {.equal? typeName "tracks"}
-            <div class="grid grid--reverse" id="{fullUrl}">
             {.repeated section items}
                 {@|apply track.block}
             {.end}
-            </div>
         {.end}
 
         {.equal? typeName "page"}
