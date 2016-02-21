@@ -7,5 +7,5 @@ $ ->
 	$(".js-scroll_to").click (e)->
 		e.preventDefault()
 
-		console.log e.currentTarget.href
-		console.log $("#"+e.currentTarget.href)
+		console.log e.currentTarget.getAttribute("href")
+		console.log $("#"+e.currentTarget.getAttribute("href"))
