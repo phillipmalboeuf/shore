@@ -1,7 +1,11 @@
 <nav>
   {.repeated section items}
+  	{.equal? linkTitle "_spacer_"}
+
+  	{.or}
     {.section collection}
-      <a href="{fullUrl}" class="nav__link js-nav__link {.equal? linkTitle "_spacer_"}invisible{.end}" data-id="{id}">{navigationTitle}</a>
+      <a href="{fullUrl}" class="nav__link js-nav__link" data-id="{id}">{navigationTitle}</a>
+    {.end}
     {.end}
 
     {.section externalLink}
