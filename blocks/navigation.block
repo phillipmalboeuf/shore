@@ -1,6 +1,6 @@
 <nav>
   {.repeated section items}
-  	{.equal? linkTitle "_spacer_"}
+  	{.equal? title "_spacer_"}
 
   	{.or}
     {.section collection}
