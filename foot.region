@@ -13,7 +13,8 @@
 	</footer>
     
 
-
+	
+	<squarespace:script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <squarespace:script src="app.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
     {squarespace-footers}
