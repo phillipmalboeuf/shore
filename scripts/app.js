@@ -1,7 +1,7 @@
 (function() {
   $(function() {
     console.log("I like this digital age.");
-    return $(document).click(".js-scroll_to", function(e) {
+    return $(".js-scroll_to").click(function(e) {
       e.preventDefault();
       return console.log(e.currentTarget);
     });
