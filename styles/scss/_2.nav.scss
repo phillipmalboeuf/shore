@@ -8,10 +8,29 @@ nav {
 	
 	.nav__link {
 		font-family: $headings_font;
+		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: $letter_spacing/2;
 
 		.homepage &[href="/tracks"] {
 			@extend .invisible;
+		}
+
+		&:after {
+			content: "";
+
+			display: inline-block;
+			border: 1px solid;
+			width: 0;
+
+			@include transition(width $slow);
+		}
+
+		&:hover,
+		&:focus {
+			
+			&:after {
+				width: 100%;
+			}
 		}
 	}
