@@ -1,10 +1,6 @@
 
 // #BOXES
 
-body {
-	counter-reset: boxes;
-}
-
 .box {
 	@extend .padded;
 	@extend .grid;
@@ -49,11 +45,7 @@ body {
 			}
 		}
 	}
-
-		.box__count:after {
-			counter-increment: boxes;
-			content: counter(boxes);
-		}
+	
 
 	.box__bottom {
 
