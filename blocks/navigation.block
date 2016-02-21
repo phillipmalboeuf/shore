@@ -8,4 +8,19 @@
       <a href="{url}" class="nav__link js-nav__link"{.section newWindow} target="_blank"{.end}>{title}</a>
     {.end}
   {.end}
+
+  {.repeated section website.socialAccounts}
+  	{.equal? serviceName "youtube"}
+		<a href="{profileUrl}" class="nav__link" target="_blank"><svg class="icon-youtube icon--big"><use xlink:href="/assets/icons.svg#icon-youtube"></use></svg></a>
+	{.end}
+	{.equal? serviceName "facebook"}
+		<a href="{profileUrl}" class="nav__link" target="_blank"><svg class="icon-facebook icon--big"><use xlink:href="/assets/icons.svg#icon-facebook"></use></svg></a>
+	{.end}
+	{.equal? serviceName "instagram"}
+		<a href="{profileUrl}" class="nav__link" target="_blank"><svg class="icon-instagram icon--big"><use xlink:href="/assets/icons.svg#icon-instagram"></use></svg></a>
+	{.end}
+	{.equal? serviceName "twitter"}
+		<a href="{profileUrl}" class="nav__link" target="_blank"><svg class="icon-twitter icon--big"><use xlink:href="/assets/icons.svg#icon-twitter"></use></svg></a>
+	{.end}
+  {.end}
 </nav>
