@@ -10,7 +10,7 @@
     {.end}
   {.end}
 
-	<span class="nav__link">
+	<span>
 	{.repeated section website.socialAccounts}
 		{.equal? serviceName "youtube"}
 			<a href="{profileUrl}" target="_blank"><svg class="icon-youtube"><use xlink:href="/assets/icons.svg#icon-youtube"></use></svg></a>
