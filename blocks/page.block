@@ -1,6 +1,6 @@
 
 
-	<article class="padded padded--thick" id="{fullUrl}">
+	<article class="padded padded--thick">
 		<h2 class="h2--bigger">{title}</h2>
 		<hr>
 		{mainContent}
