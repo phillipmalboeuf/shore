@@ -10,6 +10,7 @@ nav {
 		font-family: $headings_font;
 		text-align: center;
 		text-transform: uppercase;
+		line-height: 1;
 		letter-spacing: $letter_spacing/2;
 
 		.homepage &[href="/tracks"] {
