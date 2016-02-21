@@ -9,4 +9,4 @@ $ ->
 
 		if scroll_to.length > 0
 			e.preventDefault()
-			scroll_to.velocity("scroll", { duration: 3000, easing: "easeOutBack" })
+			scroll_to.velocity("scroll", { duration: 3000, easing: "ease-in-out" })
