@@ -5,11 +5,10 @@
       var scroll_to;
       scroll_to = $("#" + e.currentTarget.getAttribute("data-scroll-to"));
       if (scroll_to.length > 0) {
-        console.log(scroll_to.css("visibility"));
-        if (scroll_to.hasClass("biography")) {
-
+        e.preventDefault();
+        if (scroll_to.css("visibility") === "hidden") {
+          return scroll_to.addClass("overlay--show");
         } else {
-          e.preventDefault();
           return scroll_to.velocity("scroll", {
             duration: 2000,
             easing: "easeOutQuart"

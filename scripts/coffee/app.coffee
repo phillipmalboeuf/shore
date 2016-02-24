@@ -8,9 +8,10 @@ $ ->
 		scroll_to = $("#"+e.currentTarget.getAttribute("data-scroll-to"))
 
 		if scroll_to.length > 0
-			console.log scroll_to.css("visibility")
-			if scroll_to.hasClass("biography")
+			e.preventDefault()
 
-			else
-				e.preventDefault()
+			if scroll_to.css("visibility") == "hidden"
+				scroll_to.addClass "overlay--show"
+
+			else				
 				scroll_to.velocity("scroll", { duration: 2000, easing: "easeOutQuart" })
