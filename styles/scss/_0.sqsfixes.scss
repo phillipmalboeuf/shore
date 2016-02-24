@@ -17,3 +17,7 @@
 	.sqs-layout:not(.sqs-editing)>.sqs-row:first-child>[class*=sqs-col]:first-child>.sqs-block:last-child {
 		padding-bottom: $gutter/2;
 	}
+
+body:not(.button-style-default).button-style-solid .sqs-editable-button {
+	@extend .button;
+}
