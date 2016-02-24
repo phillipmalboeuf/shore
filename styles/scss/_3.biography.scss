@@ -13,6 +13,10 @@
 
 	background: fade-out($black, 0.15);
 
+	h2 {
+		margin-bottom: $vertical_rythm*2;
+	}
+
 	article > hr {
 		display: none;
 	}
