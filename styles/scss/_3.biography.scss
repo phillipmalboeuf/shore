@@ -14,10 +14,15 @@
 	background: fade-out($black, 0.15);
 
 	h2 {
-		margin-bottom: $vertical_rythm*2;
+		@extend .medium_bottom;
 	}
 
 	article > hr {
 		display: none;
+	}
+
+	p {
+		font-size: $base_size*1.2;
+		line-height: 1.222;
 	}
 }
