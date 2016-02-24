@@ -6,6 +6,7 @@
       scroll_to = $("#" + e.currentTarget.getAttribute("data-scroll-to"));
       if (scroll_to.length > 0) {
         e.preventDefault();
+        e.stopImmediatePropagation();
         if (scroll_to.css("visibility") === "hidden") {
           return scroll_to.addClass("overlay--show");
         } else {

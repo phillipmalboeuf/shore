@@ -9,6 +9,7 @@ $ ->
 
 		if scroll_to.length > 0
 			e.preventDefault()
+			e.stopImmediatePropagation()
 
 			if scroll_to.css("visibility") == "hidden"
 				scroll_to.addClass "overlay--show"
