@@ -148,6 +148,14 @@ hr {
 		margin: $vertical_rythm*2 10% $vertical_rythm*2 15%;
 		vertical-align: middle;
 	}
+
+	.sqs-block-content & {
+		display: inline-block;
+		width: 15%;
+		
+		background-color: $primary;
+		margin-top: 0;
+	}
 }
 
 
