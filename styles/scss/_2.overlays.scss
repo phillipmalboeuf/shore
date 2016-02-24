@@ -11,5 +11,16 @@
 	width: 100%;
 	overflow-y: auto;
 
+	opacity: 0;
+	visibility: hidden;
 	background: fade-out($black, 0.15);
+
+	@include transition(opacity $fast, visibility 0s linear $fast);
 }
+
+	.overlay--show {
+		opacity: 1;
+		visibility: visible;
+		
+		@include transition(opacity $fast, visibility 0s);
+	}
