@@ -5,7 +5,24 @@
 .sqs-block-tourdates {
 
 	.tour-item {
+		font-size: $small_size;
+		font-weight: bold;
+
+
 		padding: $vertical_rythm/2 0;
 		border-color: $gold--dark;
+	}
+
+	.tour-timeframe {
+		width: 100%;
+	}
+
+		.tour-date,
+		.tour-weekday {
+			width: auto;
+		}
+
+	.tour-venue {
+		width: calc(74% - 171px);
 	}
 }
