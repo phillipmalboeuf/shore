@@ -3,6 +3,9 @@
 // #OVERLAYS
 
 .overlay {
+	@extend .grid;
+	@extend .grid--vertically_spaced;
+	
 	position: fixed;
 	z-index: 20;
 	top: 0;
@@ -21,6 +24,6 @@
 	.overlay--show {
 		opacity: 1;
 		visibility: visible;
-		
+
 		@include transition(opacity $fast, visibility 0s);
 	}
