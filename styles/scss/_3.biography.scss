@@ -3,15 +3,7 @@
 // #BIOGRAPHY
 
 .biography {
-	position: fixed;
-	z-index: 20;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	overflow-y: auto;
-
-	background: fade-out($black, 0.15);
+	@extend .overlay;
 
 	h2 {
 		@extend .medium_bottom;
@@ -25,4 +17,6 @@
 		font-size: $base_size*1.2;
 		line-height: 1.222;
 	}
+
+
 }
