@@ -10,13 +10,11 @@
 	}
 
 	article > hr {
-		display: none;
+		border: none;
 	}
 
 	p {
 		font-size: $base_size*1.2;
 		line-height: 1.222;
 	}
-
-
 }
