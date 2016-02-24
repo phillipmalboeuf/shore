@@ -11,7 +11,7 @@ $ ->
 			e.preventDefault()
 			e.stopImmediatePropagation()
 
-			if scroll_to.css("visibility") == "hidden"
+			if scroll_to.hasClass("overlay")
 				scroll_to.addClass "overlay--show"
 
 			else				

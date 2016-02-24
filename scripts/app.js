@@ -7,7 +7,7 @@
       if (scroll_to.length > 0) {
         e.preventDefault();
         e.stopImmediatePropagation();
-        if (scroll_to.css("visibility") === "hidden") {
+        if (scroll_to.hasClass("overlay")) {
           return scroll_to.addClass("overlay--show");
         } else {
           return scroll_to.velocity("scroll", {
