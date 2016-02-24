@@ -79,7 +79,7 @@ footer {
 	}
 
 	&.padded--thick {
-		padding: $gutter*1.25 $gutter*2;
+		padding: $gutter $gutter*2;
 
 		@media #{$medium} {
 			padding: $gutter;
