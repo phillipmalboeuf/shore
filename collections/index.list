@@ -31,7 +31,7 @@
 
 {.section collection}    
     {.repeated section collections}
-    	<section data-collection-id="{id}" class="{fullUrl|slugify}" id="{fullUrl|slugify}">
+    	<section data-collection-id="{id}" class="{fullUrl}" id="{fullUrl|slugify}">
         {.equal? typeName "tracks"}
             <div class="grid grid--reverse">
             {.repeated section items}
