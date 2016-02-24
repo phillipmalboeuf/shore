@@ -4,7 +4,7 @@
 
 .overlay {
 	@extend .grid;
-	@extend .grid--vertically_spaced;
+	@extend .grid--middle;
 	
 	position: fixed;
 	z-index: 20;
