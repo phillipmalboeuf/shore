@@ -32,7 +32,7 @@
 {.section collection}    
     {.repeated section collections}
         {.equal? fullUrl "/biography/"}
-        <section data-collection-id="{id}" class="{fullUrl|slugify} overlay overlay--show" id="{fullUrl|slugify}">
+        <section data-collection-id="{id}" class="{fullUrl|slugify} overlay" id="{fullUrl|slugify}">
         {.or}
     	<section data-collection-id="{id}" class="{fullUrl|slugify}" id="{fullUrl|slugify}">
         {.end}
