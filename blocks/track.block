@@ -6,7 +6,6 @@
 
 		{.or}
 		<div class="box__back">
-			{oembed.html}
 			<iframe scrolling="no" allowfullscreen="" src="" frameborder="0" width="100%" height="100%" data-video-src="{oembed.url}"></iframe>
 		</div>
 		{.end}
