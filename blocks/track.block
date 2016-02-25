@@ -1,9 +1,12 @@
 
 
 	<article class="box box--middle" data-item-id="{id}" style="background-image: url({assetUrl});">
+
+		{.section customContent.is_coming_soon}
 		<div class="box__back">
 			{oembed.html}
 		</div>
+		{.end}
 
 		<div class="box__inside">
 			<div class="small_bottom">
