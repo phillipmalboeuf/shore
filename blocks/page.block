@@ -2,7 +2,7 @@
 
 	<article class="padded padded--thick">
 		{.equal? fullUrl "/biography/"}
-		<button class="js-hide_overlay"><svg class="icon-cancel icon--big"><use xlink:href="/assets/icons.svg#icon-cancel"></use></svg></button>
+		<button class="button--icon js-hide_overlay"><svg class="icon-cancel icon--big"><use xlink:href="/assets/icons.svg#icon-cancel"></use></svg></button>
 		{.end}
 
 		<h2 class="h2--bigger">{title}</h2>
