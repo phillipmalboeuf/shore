@@ -17,8 +17,11 @@
         }
       }
     });
-    return $("[data-hide-overlay]").click(function(e) {
+    $("[data-hide-overlay]").click(function(e) {
       return $("#" + e.currentTarget.getAttribute("data-hide-overlay")).removeClass("overlay--show");
+    });
+    return $("[data-video-src]").each(function() {
+      return console.log(this);
     });
   });
 
