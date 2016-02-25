@@ -21,7 +21,7 @@
       return $("#" + e.currentTarget.getAttribute("data-hide-overlay")).removeClass("overlay--show");
     });
     return $("[data-video-src]").each(function() {
-      return $(this).attr("src", "//www.youtube.com/embed/" + $(this).attr("data-video-src").split("//youtu.be/")[1] + "?wmode=opaque&enablejsapi=1&showinfo=0&autoplay=1&loop=1&controls=0");
+      return $(this).attr("src", "//www.youtube.com/embed/" + $(this).attr("data-video-src").split("//youtu.be/")[1] + "?wmode=opaque&enablejsapi=1&showinfo=0&autoplay=1&loop=1&controls=0&modestbranding=1");
     });
   });
 
