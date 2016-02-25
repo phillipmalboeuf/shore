@@ -24,6 +24,7 @@ $ ->
 
 
 	$("[data-video-src]").each ->
-		$(this).attr "src", "//www.youtube.com/embed/"+$(this).attr("data-video-src").split("//youtu.be/")[1]+"?wmode=opaque&enablejsapi=1&showinfo=0&autoplay=1&loop=1&controls=0&modestbranding=1"
+		video_id = $(this).attr("data-video-src").split("//youtu.be/")[1]
+		$(this).attr "src", "//www.youtube.com/embed/"+video_id+"?wmode=opaque&enablejsapi=1&showinfo=0&autoplay=1&loop=1&controls=0&modestbranding=1&playlist="+video_id
 
 
