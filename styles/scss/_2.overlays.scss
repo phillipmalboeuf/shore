@@ -29,7 +29,5 @@
 	}
 
 	.overlay__button {
-		position: absolute;
-		top: $gutter;
-		right: $gutter;
+		padding: $gutter;
 	}
