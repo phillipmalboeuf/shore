@@ -27,3 +27,9 @@
 
 		@include transition(opacity $fast, visibility 0s);
 	}
+
+	.overlay__button {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
