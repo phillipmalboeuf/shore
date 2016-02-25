@@ -32,6 +32,12 @@ button,
 		top: 1px;
 	}
 
+	&.button--icon {
+		background: transparent;
+		border: none;
+		padding: $vertical_rythm;
+	}
+
 	&.button--small {
 		font-size: $small_size;
 		padding: $vertical_rythm/1.75 $vertical_rythm*1.25 $vertical_rythm/2;
