@@ -1,6 +1,10 @@
 
 
 	<article class="padded padded--thick">
+		{.equal? fullUrl "/biography/"}
+		<button class="js-hide_overlay"><svg class="icon-close icon--big"><use xlink:href="/assets/icons.svg#icon-close"></use></svg></button>
+		{.end}
+
 		<h2 class="h2--bigger">{title}</h2>
 		<hr>
 		{mainContent}
