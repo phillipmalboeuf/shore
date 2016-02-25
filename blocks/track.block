@@ -2,7 +2,7 @@
 
 	<article class="box box--middle" data-item-id="{id}">
 		<div class="box__back">
-			{oembed.html|safe}
+			{oembed.html}
 		</div>
 
 		<div class="box__inside">
