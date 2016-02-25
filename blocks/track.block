@@ -1,6 +1,6 @@
 
 
-	<article class="box box--middle" data-item-id="{id}">
+	<article class="box box--middle" data-item-id="{id}" style="background-image: url({assetUrl});">
 		<div class="box__back">
 			{oembed.html}
 		</div>
