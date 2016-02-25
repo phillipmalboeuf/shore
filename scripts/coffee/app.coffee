@@ -24,6 +24,6 @@ $ ->
 
 
 	$("[data-video-src]").each ->
-		console.log this
+		$(this).attr "src", $(this).attr("data-video-src").split("//youtu.be/")[1]
 
 

@@ -21,7 +21,7 @@
       return $("#" + e.currentTarget.getAttribute("data-hide-overlay")).removeClass("overlay--show");
     });
     return $("[data-video-src]").each(function() {
-      return console.log(this);
+      return $(this).attr("src", $(this).attr("data-video-src").split("//youtu.be/")[1]);
     });
   });
 
