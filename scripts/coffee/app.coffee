@@ -16,3 +16,9 @@ $ ->
 
 			else				
 				scroll_to.velocity("scroll", { duration: 2000, easing: "easeOutQuart" })
+
+
+
+	$("[data-hide-overlay]").click (e)->
+		$("#"+e.currentTarget.getAttribute("data-hide-overlay")).removeClass "overlay--show"
+

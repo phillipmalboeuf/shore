@@ -1,7 +1,7 @@
 (function() {
   $(function() {
     console.log("I like this digital age.");
-    return $("[data-scroll-to]").click(function(e) {
+    $("[data-scroll-to]").click(function(e) {
       var scroll_to;
       scroll_to = $("#" + e.currentTarget.getAttribute("data-scroll-to"));
       if (scroll_to.length > 0) {
@@ -16,6 +16,9 @@
           });
         }
       }
+    });
+    return $("[data-hide-overlay]").click(function(e) {
+      return $("#" + e.currentTarget.getAttribute("data-hide-overlay")).removeClass("overlay--show");
     });
   });
 
