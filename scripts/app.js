@@ -22,8 +22,8 @@
     });
     return $("[data-video-src]").each(function() {
       var video_id;
-      video_id = $(this).attr("data-video-src").split("//youtu.be/")[1];
-      return $(this).attr("src", "//www.youtube.com/embed/" + video_id + "?wmode=opaque&enablejsapi=1&showinfo=0&autoplay=1&loop=1&controls=0&modestbranding=1&playlist=" + video_id);
+      video_id = $(this).attr("data-video-src").split("//vimeo.com/")[1];
+      return $(this).attr("src", "https://player.vimeo.com/video/" + video_id + "?api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0");
     });
   });
 
