@@ -26,10 +26,12 @@
       header_video = $("#header_video");
       if (header_video.length > 0) {
         header_video.attr("src", "https://player.vimeo.com/video/" + window.header_video_id + "?" + video_options);
+        header_video.removeClass("fade_out");
       }
     }
     return $("[data-video-src]").each(function() {
-      return $(this).attr("src", "https://player.vimeo.com/video/" + $(this).attr("data-video-src").split("//vimeo.com/")[1] + "?" + video_options);
+      $(this).attr("src", "https://player.vimeo.com/video/" + $(this).attr("data-video-src").split("//vimeo.com/")[1] + "?" + video_options);
+      return $(this).removeClass("fade_out");
     });
   });
 
