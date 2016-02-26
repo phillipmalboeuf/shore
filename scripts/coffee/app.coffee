@@ -22,7 +22,7 @@ $ ->
 		$("#"+e.currentTarget.getAttribute("data-hide-overlay")).removeClass "overlay--show"
 
 
-	video_options = "api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0"
+	video_options = "api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0"
 
 	if window.header_video_id?
 		header_video = $("#header_video")
