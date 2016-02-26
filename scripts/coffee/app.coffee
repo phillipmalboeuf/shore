@@ -41,10 +41,7 @@ window.setup_video = (frame, video_id, player_id)->
 	setTimeout ->
 		player = $f(frame)
 		player.addEvent "ready", ->
-			console.log "ready"
-
 			player.addEvent "play", ->
-				console.log "play"
 				$(frame).removeClass "fade_out"
 
 	, 200

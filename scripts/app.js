@@ -33,9 +33,7 @@
       var player;
       player = $f(frame);
       return player.addEvent("ready", function() {
-        console.log("ready");
         return player.addEvent("play", function() {
-          console.log("play");
           return $(frame).removeClass("fade_out");
         });
       });
