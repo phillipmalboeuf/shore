@@ -27,7 +27,7 @@ $ ->
 	if window.header_video_id?
 		video_header = $("#video_header")
 		if video_header.length > 0
-			window.setup_video(video_header, window.header_video_id, "video_header")
+			window.setup_video(video_header[0], window.header_video_id, "video_header")
 			
 
 	# $("[data-video-src]").each ->
@@ -38,12 +38,10 @@ $ ->
 window.setup_video = (frame, video_id, player_id)->
 	$(frame).attr "src", "https://player.vimeo.com/video/"+video_id+"?api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&player_id="+player_id
 
-	setTimeout ->
-		player = $f(frame)
-		player.addEvent "ready", ->
-			player.addEvent "play", ->
-				$(frame).removeClass "fade_out"
+	player = $f(frame)
+	player.addEvent "ready", ->
+		player.addEvent "play", ->
+			$(frame).removeClass "fade_out"
 
-	, 100
 
 
