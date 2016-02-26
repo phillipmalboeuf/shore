@@ -28,7 +28,7 @@
         header_video.attr("src", "https://player.vimeo.com/video/" + window.header_video_id + "?" + video_options);
         setTimeout(function() {
           return header_video.removeClass("fade_out");
-        }, 5000);
+        }, 6000);
       }
     }
     return $("[data-video-src]").each(function() {
