@@ -27,23 +27,24 @@ $ ->
 	if window.header_video_id?
 		video_header = $("#video_header")
 		if video_header.length > 0
-			window.setup_video(video_header, window.header_video_id)
+			window.setup_video(video_header, window.header_video_id, video_header)
 			
 
-	$("[data-video-src]").each ->
-		window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1])
+	# $("[data-video-src]").each ->
+	# 	window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1])
 
 
 
-window.setup_video = (frame, id)->
-	$(frame).attr "src", "https://player.vimeo.com/video/"+id+"?"+"api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0"
+window.setup_video = (frame, video_id, player_id)->
+	$(frame).attr "src", "https://player.vimeo.com/video/"+video_id+"?api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&player_id="+player_id
 
 
 	player = $f(frame)
 	player.addEvent "ready", ->
 		console.log player
-		
+
 		player.addEvent "play", ->
+			console.log frame
 			$(frame).removeClass "fade_out"
 
 
