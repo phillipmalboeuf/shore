@@ -7,7 +7,7 @@
 			{.section customContent.is_coming_soon}
 
 			{.or}
-			<iframe scrolling="no" allowfullscreen="" src="" frameborder="0" width="100%" height="100%" data-video-src="{oembed.url}" class="fades_out fade_out"></iframe>
+			<iframe scrolling="no" allowfullscreen="" src="" frameborder="0" width="100%" height="100%" data-video-src="{oembed.url}" id="video_{id}" class="fades_out fade_out"></iframe>
 			{.end}
 		</div>
 		
