@@ -31,7 +31,6 @@ $ ->
 			
 
 	$("[data-video-src]").each ->
-		console.log this.id
 		window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1], this.id)
 
 

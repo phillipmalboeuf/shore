@@ -23,7 +23,6 @@
     });
     video_options = window.header_video_id != null ? (video_header = $("#video_header"), video_header.length > 0 ? window.setup_video(video_header[0], window.header_video_id, "video_header") : void 0) : void 0;
     return $("[data-video-src]").each(function() {
-      console.log(this.id);
       return window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1], this.id);
     });
   });
