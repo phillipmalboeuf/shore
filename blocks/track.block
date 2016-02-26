@@ -2,8 +2,7 @@
 
 	<article class="box box--middle" data-item-id="{id}">
 
-		<!-- <div class="box__back" style="background-image: url({assetUrl});"> -->
-		<div class="box__back">
+		<div class="box__back" style="background-image: url({assetUrl});">
 			{.section customContent.is_coming_soon}
 
 			{.or}
