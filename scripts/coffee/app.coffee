@@ -25,9 +25,9 @@ $ ->
 	video_options = "api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0"
 
 	if window.header_video_id?
-		header_video = $("#header_video")
+		header_video = $("#video_header")
 		if header_video.length > 0
-			header_video.attr "src", "https://player.vimeo.com/video/"+window.header_video_id+"?"+video_options
+			header_video.attr "src", "https://player.vimeo.com/video/"+window.header_video_id+"?player_id=video_header&"+video_options
 			header_video.removeClass "fade_out"
 
 
