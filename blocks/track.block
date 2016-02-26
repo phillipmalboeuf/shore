@@ -1,14 +1,16 @@
 
 
-	<article class="box box--middle" data-item-id="{id}" style="background-image: url({assetUrl});">
+	<article class="box box--middle" data-item-id="{id}">
 
-		{.section customContent.is_coming_soon}
-
-		{.or}
+		<!-- <div class="box__back" style="background-image: url({assetUrl});"> -->
 		<div class="box__back">
-			<iframe scrolling="no" allowfullscreen="" src="" frameborder="0" width="100%" height="100%" data-video-src="{oembed.url}"></iframe>
+			{.section customContent.is_coming_soon}
+
+			{.or}
+			<iframe scrolling="no" allowfullscreen="" src="" frameborder="0" width="100%" height="100%" data-video-src="{oembed.url}" class="fades_out fade_out"></iframe>
+			{.end}
 		</div>
-		{.end}
+		
 
 		<div class="box__inside">
 			<div class="small_bottom">
