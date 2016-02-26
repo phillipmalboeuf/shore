@@ -37,10 +37,12 @@ $ ->
 
 window.setup_video = (frame, id)->
 	$(frame).attr "src", "https://player.vimeo.com/video/"+id+"?"+"api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0"
-	console.log frame
+
 
 	player = $f(frame)
 	player.addEvent "ready", ->
+		console.log player
+		
 		player.addEvent "play", ->
 			$(frame).removeClass "fade_out"
 

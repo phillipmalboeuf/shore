@@ -30,9 +30,9 @@
   window.setup_video = function(frame, id) {
     var player;
     $(frame).attr("src", "https://player.vimeo.com/video/" + id + "?" + "api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0");
-    console.log(frame);
     player = $f(frame);
     return player.addEvent("ready", function() {
+      console.log(player);
       return player.addEvent("play", function() {
         return $(frame).removeClass("fade_out");
       });
