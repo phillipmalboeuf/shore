@@ -21,7 +21,7 @@
     $("[data-hide-overlay]").click(function(e) {
       return $("#" + e.currentTarget.getAttribute("data-hide-overlay")).removeClass("overlay--show");
     });
-    return video_options = window.header_video_id != null ? (video_header = $("#video_header"), video_header.length > 0 ? window.setup_video(video_header, window.header_video_id, video_header) : void 0) : void 0;
+    return video_options = window.header_video_id != null ? (video_header = $("#video_header"), video_header.length > 0 ? window.setup_video(video_header, window.header_video_id, "video_header") : void 0) : void 0;
   });
 
   window.setup_video = function(frame, video_id, player_id) {

@@ -27,7 +27,7 @@ $ ->
 	if window.header_video_id?
 		video_header = $("#video_header")
 		if video_header.length > 0
-			window.setup_video(video_header, window.header_video_id, video_header)
+			window.setup_video(video_header, window.header_video_id, "video_header")
 			
 
 	# $("[data-video-src]").each ->
