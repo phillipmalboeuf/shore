@@ -28,10 +28,13 @@ $ ->
 		header_video = $("#header_video")
 		if header_video.length > 0
 			header_video.attr "src", "https://player.vimeo.com/video/"+window.header_video_id+"?"+video_options
-			header_video.removeClass "fade_out"
+
+			setTimeout ->
+				header_video.removeClass "fade_out"
+			, 2000
 
 
 	$("[data-video-src]").each ->
 		$(this).attr "src", "https://player.vimeo.com/video/"+$(this).attr("data-video-src").split("//vimeo.com/")[1]+"?"+video_options
-		$(this).removeClass "fade_out"
+		# $(this).removeClass "fade_out"
 
