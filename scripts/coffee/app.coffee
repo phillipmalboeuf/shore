@@ -23,11 +23,11 @@ $ ->
 
 
 	video_options = "api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0"
-	
+
 	if window.header_video_id?
 		header_video = $("#header_video")
 		if header_video.length > 0
-			$(this).attr "src", "https://player.vimeo.com/video/"+$(this).attr("data-video-src").split("//vimeo.com/")[1]+"?"+video_options
+			header_video.attr "src", "https://player.vimeo.com/video/"+window.header_video_id+"?"+video_options
 
 
 	$("[data-video-src]").each ->
