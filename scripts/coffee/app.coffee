@@ -31,7 +31,7 @@ $ ->
 
 			setTimeout ->
 				header_video.removeClass "fade_out"
-			, 2000
+			, 5000
 
 
 	$("[data-video-src]").each ->
