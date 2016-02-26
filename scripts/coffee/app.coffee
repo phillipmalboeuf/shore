@@ -30,8 +30,9 @@ $ ->
 			window.setup_video(video_header[0], window.header_video_id, "video_header")
 			
 
-	# $("[data-video-src]").each ->
-	# 	window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1])
+	$("[data-video-src]").each ->
+		console.log this.id
+		window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1], this.id)
 
 
 
