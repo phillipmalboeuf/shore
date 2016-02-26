@@ -22,16 +22,20 @@ $ ->
 		$("#"+e.currentTarget.getAttribute("data-hide-overlay")).removeClass "overlay--show"
 
 
-	video_options = "api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0"
+	video_options = 
 
 	if window.header_video_id?
 		header_video = $("#video_header")
 		if header_video.length > 0
-			header_video.attr "src", "https://player.vimeo.com/video/"+window.header_video_id+"?player_id=video_header&"+video_options
-			header_video.removeClass "fade_out"
-
+			window.setup_video(header_video, window.header_video_id)
+			
 
 	$("[data-video-src]").each ->
-		$(this).attr "src", "https://player.vimeo.com/video/"+$(this).attr("data-video-src").split("//vimeo.com/")[1]+"?"+video_options
-		# $(this).removeClass "fade_out"
+		window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1])
+
+
+
+window.setup_video = (frame, id)->
+	$(frame).attr "src", "https://player.vimeo.com/video/"+id+"?"+"api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0"
+
 

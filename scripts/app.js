@@ -21,17 +21,14 @@
     $("[data-hide-overlay]").click(function(e) {
       return $("#" + e.currentTarget.getAttribute("data-hide-overlay")).removeClass("overlay--show");
     });
-    video_options = "api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0";
-    if (window.header_video_id != null) {
-      header_video = $("#video_header");
-      if (header_video.length > 0) {
-        header_video.attr("src", "https://player.vimeo.com/video/" + window.header_video_id + "?player_id=video_header&" + video_options);
-        header_video.removeClass("fade_out");
-      }
-    }
+    video_options = window.header_video_id != null ? (header_video = $("#video_header"), header_video.length > 0 ? window.setup_video(header_video, window.header_video_id) : void 0) : void 0;
     return $("[data-video-src]").each(function() {
-      return $(this).attr("src", "https://player.vimeo.com/video/" + $(this).attr("data-video-src").split("//vimeo.com/")[1] + "?" + video_options);
+      return window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1]);
     });
   });
+
+  window.setup_video = function(frame, id) {
+    return $(frame).attr("src", "https://player.vimeo.com/video/" + id + "?" + "api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0");
+  };
 
 }).call(this);
