@@ -63,16 +63,16 @@ textarea,
 	font-weight: bold;
 	line-height: 1;
 
-	background: $white;
+	background: transparent;
 	padding: $vertical_rythm;
-	border: 1px solid transparent;
+	border: 1px solid;
 	border-radius: 0;
 
 
 	@include transition(background $fast, color $fast, border-color $fast, opacity $fast);
 
 	&:active {
-		background: fade-out($white, 0.5);
+		top: 1px;
 	}
 
 	&:disabled {
