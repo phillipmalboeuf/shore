@@ -33,5 +33,9 @@ body:not(.button-style-default).button-style-solid .sqs-editable-button {
 		display: none;
 	}
 
-
+	.newsletter-block .newsletter-form-body {
+		@extend form;
+	}
 	
+
+
