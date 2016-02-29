@@ -36,6 +36,10 @@ body:not(.button-style-default).button-style-solid .sqs-editable-button {
 	.newsletter-block .newsletter-form-body {
 		@extend form;
 	}
+
+		.newsletter-block .newsletter-form-fields-wrapper {
+			margin: 0;
+		}
 	
 
 
