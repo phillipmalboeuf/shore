@@ -40,6 +40,19 @@ body:not(.button-style-default).button-style-solid .sqs-editable-button {
 		.newsletter-block .newsletter-form-fields-wrapper {
 			margin: 0;
 		}
+
+			.newsletter-block .newsletter-form-wrapper--alignLeft .newsletter-form-field-wrapper {
+				padding: 0;
+			}
+
+				.newsletter-block .newsletter-form-field-element {
+					@extend .input;
+				}
+
+			.newsletter-block .newsletter-form-wrapper--alignLeft .newsletter-form-button-wrapper {
+				margin: 0;
+				padding: 0;
+			}
 	
 
 
