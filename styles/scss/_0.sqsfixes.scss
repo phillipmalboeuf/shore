@@ -21,3 +21,17 @@
 body:not(.button-style-default).button-style-solid .sqs-editable-button {
 	@extend .button;
 }
+
+.newsletter-block .newsletter-form-wrapper {
+	color: inherit;
+	font-size: inherit;
+
+	padding: 0;
+	background: transparent;
+}
+	.newsletter-block .newsletter-form-header {
+		display: none;
+	}
+
+
+	
