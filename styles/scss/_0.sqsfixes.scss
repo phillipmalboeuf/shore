@@ -23,7 +23,7 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 	@extend .button;
 }
 
-.newsletter-block .newsletter-form-wrapper {
+.newsletter-style-dark .newsletter-block .newsletter-form-wrapper {
 	color: $primary;
 	font-size: inherit;
 
