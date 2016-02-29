@@ -19,7 +19,8 @@
 	}
 
 body:not(.button-style-default).button-style-solid .sqs-editable-button,
-body:not(.button-style-default).button-corner-style-square .sqs-editable-button-shape {
+body:not(.button-style-default).button-corner-style-square .sqs-editable-button-shape,
+.newsletter-block .newsletter-form-button {
 	@extend .button;
 }
 
