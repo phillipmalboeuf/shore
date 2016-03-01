@@ -13,8 +13,9 @@ $ ->
 			if not header.hasClass "header--hide"
 				header.addClass "header--hide"
 
-		else if header.hasClass "header--hide"
-			header.removeClass "header--hide"			
+		else 
+			if header.hasClass "header--hide"
+				header.removeClass "header--hide"			
 
 
 		previous_offset = window.pageYOffset
