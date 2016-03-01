@@ -17,7 +17,7 @@
 	transition: $transition;
 }
 
-@mixin transformer($duration: $fast) {
+@mixin transformer($duration: $slow) {
 	transition: transform $duration;
 	-ms-transition: -ms-transform $duration;
 	-webkit-transition: -webkit-transform $duration;
