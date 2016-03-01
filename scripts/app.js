@@ -131,7 +131,7 @@
       if (options == null) {
         options = {};
       }
-      return this.render();
+      return Header.__super__.initialize.call(this);
     };
 
     Header.prototype.render = function() {
@@ -150,7 +150,7 @@
         }
         return previous_offset = window.pageYOffset;
       });
-      return this;
+      return Header.__super__.render.call(this);
     };
 
     return Header;

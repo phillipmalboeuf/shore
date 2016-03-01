@@ -10,7 +10,7 @@ class Daniela.Views.Header extends Daniela.View
 	initialize: (options={})->
 
 
-		this.render()
+		super()
 
 
 
@@ -31,4 +31,4 @@ class Daniela.Views.Header extends Daniela.View
 			previous_offset = window.pageYOffset
 
 
-		this
+		super()

@@ -10,11 +10,11 @@ class Daniela.Views.Track extends Daniela.View
 	initialize: (options={})->
 
 
-		this.render()
+		super()
 
 
 
 	render: ->
 
 
-		this
+		super()
