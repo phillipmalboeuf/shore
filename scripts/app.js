@@ -6,6 +6,11 @@
     previous_offset = 0;
     $(window).scroll(function(e) {
       console.log(window.pageYOffset);
+      if (window.pageYOffset > previous_offset && !header.hasClass("header--hide")) {
+        header.addClass("header--hide");
+      } else if (header.hasClass("header--hide")) {
+        header.removeClass("header--hide");
+      }
       return previous_offset = window.pageYOffset;
     });
     $("[data-scroll-to]").click(function(e) {
