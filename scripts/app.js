@@ -76,6 +76,22 @@
     };
 
     Header.prototype.render = function() {
+      var header, previous_offset;
+      header = this.$el;
+      previous_offset = 0;
+      $(window).scroll(function(e) {
+        console.log(window.pageYOffset);
+        if (window.pageYOffset > previous_offset) {
+          if (!header.hasClass("header--hide")) {
+            header.addClass("header--hide");
+          }
+        } else {
+          if (header.hasClass("header--hide")) {
+            header.removeClass("header--hide");
+          }
+        }
+        return previous_offset = window.pageYOffset;
+      });
       return this;
     };
 
@@ -86,6 +102,31 @@
 }).call(this);
 
 (function() {
-  track.coffee;
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Daniela.Views.Track = (function(superClass) {
+    extend(Track, superClass);
+
+    function Track() {
+      return Track.__super__.constructor.apply(this, arguments);
+    }
+
+    Track.prototype.events = {};
+
+    Track.prototype.initialize = function(options) {
+      if (options == null) {
+        options = {};
+      }
+      return this.render();
+    };
+
+    Track.prototype.render = function() {
+      return this;
+    };
+
+    return Track;
+
+  })(Backbone.View);
 
 }).call(this);
