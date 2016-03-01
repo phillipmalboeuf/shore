@@ -138,7 +138,6 @@
       header = this.$el;
       previous_offset = 0;
       $(window).scroll(function(e) {
-        console.log(window.pageYOffset);
         if (window.pageYOffset > previous_offset) {
           if (!header.hasClass("header--hide")) {
             header.addClass("header--hide");

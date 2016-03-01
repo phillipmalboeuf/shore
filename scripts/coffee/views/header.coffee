@@ -19,7 +19,6 @@ class Daniela.Views.Header extends Daniela.View
 
 		previous_offset = 0
 		$(window).scroll (e)->
-			console.log window.pageYOffset
 			if window.pageYOffset > previous_offset
 				if not header.hasClass "header--hide"
 					header.addClass "header--hide"
