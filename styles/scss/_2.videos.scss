@@ -2,7 +2,9 @@
 
 // #VIDEOS
 
-$video_ratio: 50%;
+$video_width: 1440;
+$video_height: 795;
+$video_ratio: $video_height/$video_width;
 
 .video_container {
 	position: relative;
