@@ -36,11 +36,16 @@
   });
 
   $(function() {
-    var video_header, video_options;
+    var video_header;
     $("[data-hide-overlay]").click(function(e) {
       return $("#" + e.currentTarget.getAttribute("data-hide-overlay")).removeClass("overlay--show");
     });
-    video_options = window.header_video_id != null ? (video_header = $("#video_header"), video_header.length > 0 ? window.setup_video(video_header[0], window.header_video_id, "video_header") : void 0) : void 0;
+    if (window.header_video_id != null) {
+      video_header = $("#video_header");
+      if (video_header.length > 0) {
+        window.setup_video(video_header[0], window.header_video_id, "video_header");
+      }
+    }
     return $("[data-video-src]").each(function() {
       return window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1], this.id);
     });
@@ -150,7 +155,7 @@
 
     return Header;
 
-  })(Backbone.View);
+  })(Daniela.View);
 
 }).call(this);
 

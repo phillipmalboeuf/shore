@@ -51,8 +51,6 @@ $ ->
 		$("#"+e.currentTarget.getAttribute("data-hide-overlay")).removeClass "overlay--show"
 
 
-	video_options = 
-
 	if window.header_video_id?
 		video_header = $("#video_header")
 		if video_header.length > 0

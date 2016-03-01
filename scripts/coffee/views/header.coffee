@@ -1,4 +1,4 @@
-class Daniela.Views.Header extends Backbone.View
+class Daniela.Views.Header extends Daniela.View
 
 
 	events: {
@@ -16,7 +16,7 @@ class Daniela.Views.Header extends Backbone.View
 
 	render: ->
 		header = this.$el
-		
+
 		previous_offset = 0
 		$(window).scroll (e)->
 			console.log window.pageYOffset
