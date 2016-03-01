@@ -80,6 +80,11 @@ textarea,
 		pointer-events: none;
 	}
 
+	&:focus {
+		background: transparent;
+		border-color: $highlight;
+	}
+
 
 	.input_box & {
 		padding: $vertical_rythm*2.5 $vertical_rythm $vertical_rythm*1.5;
