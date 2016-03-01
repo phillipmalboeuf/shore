@@ -10,8 +10,10 @@
         if (!header.hasClass("header--hide")) {
           header.addClass("header--hide");
         }
-      } else if (header.hasClass("header--hide")) {
-        header.removeClass("header--hide");
+      } else {
+        if (header.hasClass("header--hide")) {
+          header.removeClass("header--hide");
+        }
       }
       return previous_offset = window.pageYOffset;
     });
