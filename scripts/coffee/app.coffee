@@ -1,39 +1,50 @@
 
 
+window.Daniela =
+	Collections:{}
+	Models:{}
+	Views:{}
+	Routers:{}
+
+
+	settings:{}
+
+
+
+	init: (settings)->
+		_.extend @settings, settings if settings?
+
+
+		console.log "I like this digital age."
+
+
+
+		@header_views = []
+		$(".js-header").each (index, el)=>
+			@header_views.push new Daniela.Views.Header({el: $(el)})
+
+		
+	
+
+
+		
+		
+
+Daniela = window.Daniela
+_ = window._
+Backbone = window.Backbone
+jQuery = window.jQuery
+
+
+
+
 $ ->
-	console.log "I like this digital age."
-
-
-	header = $(".js-header")
-	previous_offset = 0
-
-	$(window).scroll (e)->
-		console.log window.pageYOffset
-		if window.pageYOffset > previous_offset
-			if not header.hasClass "header--hide"
-				header.addClass "header--hide"
-
-		else 
-			if header.hasClass "header--hide"
-				header.removeClass "header--hide"			
-
-
-		previous_offset = window.pageYOffset
+	Daniela.init(window.saturdays_settings)
 
 
 
-	$("[data-scroll-to]").click (e)->
-		scroll_to = $("#"+e.currentTarget.getAttribute("data-scroll-to"))
 
-		if scroll_to.length > 0
-			e.preventDefault()
-			e.stopImmediatePropagation()
-
-			if scroll_to.hasClass("overlay")
-				scroll_to.addClass "overlay--show"
-
-			else				
-				scroll_to.velocity("scroll", { duration: 2000, easing: "easeOutQuart" })
+$ ->
 
 
 	$("[data-hide-overlay]").click (e)->

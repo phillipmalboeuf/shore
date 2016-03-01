@@ -1,38 +1,42 @@
 (function() {
+  var Backbone, Daniela, _, jQuery;
+
+  window.Daniela = {
+    Collections: {},
+    Models: {},
+    Views: {},
+    Routers: {},
+    settings: {},
+    init: function(settings) {
+      if (settings != null) {
+        _.extend(this.settings, settings);
+      }
+      console.log("I like this digital age.");
+      this.header_views = [];
+      return $(".js-header").each((function(_this) {
+        return function(index, el) {
+          return _this.header_views.push(new Daniela.Views.Header({
+            el: $(el)
+          }));
+        };
+      })(this));
+    }
+  };
+
+  Daniela = window.Daniela;
+
+  _ = window._;
+
+  Backbone = window.Backbone;
+
+  jQuery = window.jQuery;
+
   $(function() {
-    var header, previous_offset, video_header, video_options;
-    console.log("I like this digital age.");
-    header = $(".js-header");
-    previous_offset = 0;
-    $(window).scroll(function(e) {
-      console.log(window.pageYOffset);
-      if (window.pageYOffset > previous_offset) {
-        if (!header.hasClass("header--hide")) {
-          header.addClass("header--hide");
-        }
-      } else {
-        if (header.hasClass("header--hide")) {
-          header.removeClass("header--hide");
-        }
-      }
-      return previous_offset = window.pageYOffset;
-    });
-    $("[data-scroll-to]").click(function(e) {
-      var scroll_to;
-      scroll_to = $("#" + e.currentTarget.getAttribute("data-scroll-to"));
-      if (scroll_to.length > 0) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        if (scroll_to.hasClass("overlay")) {
-          return scroll_to.addClass("overlay--show");
-        } else {
-          return scroll_to.velocity("scroll", {
-            duration: 2000,
-            easing: "easeOutQuart"
-          });
-        }
-      }
-    });
+    return Daniela.init(window.saturdays_settings);
+  });
+
+  $(function() {
+    var video_header, video_options;
     $("[data-hide-overlay]").click(function(e) {
       return $("#" + e.currentTarget.getAttribute("data-hide-overlay")).removeClass("overlay--show");
     });
@@ -176,6 +180,6 @@
 
     return Track;
 
-  })(Backbone.View);
+  })(Daniela.View);
 
 }).call(this);

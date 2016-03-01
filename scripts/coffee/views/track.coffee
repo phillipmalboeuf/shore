@@ -1,4 +1,4 @@
-class Daniela.Views.Track extends Backbone.View
+class Daniela.Views.Track extends Daniela.View
 
 
 	events: {
