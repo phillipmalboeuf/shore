@@ -9,7 +9,7 @@ $ ->
 
 	$(window).scroll (e)->
 		console.log window.pageYOffset
-		if window.pageYOffset > previous_offset+500 and not header.hasClass "header--hide"
+		if window.pageYOffset > (previous_offset + 50) and not header.hasClass "header--hide"
 			header.addClass "header--hide"
 
 		else if header.hasClass "header--hide"
