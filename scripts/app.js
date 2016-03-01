@@ -56,7 +56,51 @@
 }).call(this);
 
 (function() {
-  _view.coffee;
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Daniela.View = (function(superClass) {
+    extend(View, superClass);
+
+    function View() {
+      return View.__super__.constructor.apply(this, arguments);
+    }
+
+    View.prototype.events = {};
+
+    View.prototype.initialize = function(options) {
+      if (options == null) {
+        options = {};
+      }
+      this.events["click [data-scroll-to]"] = "scroll_to";
+      return this.render();
+    };
+
+    View.prototype.render = function() {
+      this.delegateEvents();
+      return this;
+    };
+
+    View.prototype.scroll_to = function(e) {
+      var scroll_to;
+      scroll_to = $("#" + e.currentTarget.getAttribute("data-scroll-to"));
+      if (scroll_to.length > 0) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        if (scroll_to.hasClass("overlay")) {
+          return scroll_to.addClass("overlay--show");
+        } else {
+          return scroll_to.velocity("scroll", {
+            duration: 2000,
+            easing: "easeOutQuart"
+          });
+        }
+      }
+    };
+
+    return View;
+
+  })(Backbone.View);
 
 }).call(this);
 
