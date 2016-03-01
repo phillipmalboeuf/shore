@@ -4,6 +4,15 @@ $ ->
 	console.log "I like this digital age."
 
 
+	header = $(".js-header")
+	previous_offset = 0
+
+	$(window).scroll (e)->
+		console.log window.pageYOffset
+
+		previous_offset = window.pageYOffset
+
+
 	$("[data-scroll-to]").click (e)->
 		scroll_to = $("#"+e.currentTarget.getAttribute("data-scroll-to"))
 

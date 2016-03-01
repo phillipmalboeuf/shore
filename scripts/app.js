@@ -1,7 +1,13 @@
 (function() {
   $(function() {
-    var video_header, video_options;
+    var header, previous_offset, video_header, video_options;
     console.log("I like this digital age.");
+    header = $(".js-header");
+    previous_offset = 0;
+    $(window).scroll(function(e) {
+      console.log(window.pageYOffset);
+      return previous_offset = window.pageYOffset;
+    });
     $("[data-scroll-to]").click(function(e) {
       var scroll_to;
       scroll_to = $("#" + e.currentTarget.getAttribute("data-scroll-to"));
