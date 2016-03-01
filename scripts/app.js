@@ -176,11 +176,11 @@
       if (options == null) {
         options = {};
       }
-      return this.render();
+      return Track.__super__.initialize.call(this);
     };
 
     Track.prototype.render = function() {
-      return this;
+      return Track.__super__.render.call(this);
     };
 
     return Track;
