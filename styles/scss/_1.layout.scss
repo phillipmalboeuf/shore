@@ -33,6 +33,12 @@ header {
 	left: 0;
 	width: 100%;
 	z-index: 10;
+
+	@include transformer;
+
+	&.header--hide {
+		@include translate(0, -100%);
+	}
 }
 
 
