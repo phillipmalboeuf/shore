@@ -130,7 +130,8 @@ input[type="file"] {
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder,
-input:-moz-placeholder, textarea:-moz-placeholder {
+input:-moz-placeholder, textarea:-moz-placeholder,
+input::placeholder, textarea::placeholder {
 	color: fadeout($gold, 75%) !important;
 }
 
