@@ -159,7 +159,32 @@
 }).call(this);
 
 (function() {
-  social_links.coffee;
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Daniela.Views = (function(superClass) {
+    extend(Views, superClass);
+
+    function Views() {
+      return Views.__super__.constructor.apply(this, arguments);
+    }
+
+    Views.prototype.links_template = templates["social_links"];
+
+    Views.prototype.initialize = function(options) {
+      if (options == null) {
+        options = {};
+      }
+      return Views.__super__.initialize.call(this);
+    };
+
+    Views.prototype.render = function() {
+      return Views.__super__.render.call(this);
+    };
+
+    return Views;
+
+  })(Daniela.View);
 
 }).call(this);
 
