@@ -219,9 +219,9 @@
 
     Track.prototype.render = function() {
       var video;
-      video = this.$el.find("[data-video-src]");
+      video = this.$el.find("[data-video-src]")[0];
       if ($(video).attr("data-video-src") != null) {
-        this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], $(video).attr("id"));
+        this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id);
       }
       return Track.__super__.render.call(this);
     };
