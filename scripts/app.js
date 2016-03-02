@@ -198,8 +198,6 @@
     hasProp = {}.hasOwnProperty;
 
   Daniela.Views.Track = (function(superClass) {
-    var setup_video;
-
     extend(Track, superClass);
 
     function Track() {
@@ -241,7 +239,7 @@
       })(this), 666);
     };
 
-    setup_video = function(frame, video_id, player_id) {
+    Track.prototype.setup_video = function(frame, video_id, player_id) {
       var player;
       $(frame).attr("src", "https://player.vimeo.com/video/" + video_id + "?api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1&player_id=" + player_id);
       player = $f(frame);
