@@ -20,6 +20,14 @@
           }));
         };
       })(this));
+      this.track_views = [];
+      $(".js-track").each((function(_this) {
+        return function(index, el) {
+          return _this.track_views.push(new Daniela.Views.Track({
+            el: $(el)
+          }));
+        };
+      })(this));
       this.social_links_views = [];
       return $(".js-social_links").each((function(_this) {
         return function(index, el) {

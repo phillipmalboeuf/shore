@@ -23,6 +23,11 @@ window.Daniela =
 			@header_views.push new Daniela.Views.Header({el: $(el)})
 
 
+		@track_views = []
+		$(".js-track").each (index, el)=>
+			@track_views.push new Daniela.Views.Track({el: $(el)})
+
+
 		@social_links_views = []
 		$(".js-social_links").each (index, el)=>
 			@social_links_views.push new Daniela.Views.SocialLinks({el: $(el)})
