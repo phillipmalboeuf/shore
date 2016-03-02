@@ -59,29 +59,7 @@
     return Daniela.init(window.saturdays_settings);
   });
 
-  $(function() {
-    var video_header;
-    if (window.header_video_id != null) {
-      video_header = $("#video_header");
-      if (video_header.length > 0) {
-        window.setup_video(video_header[0], window.header_video_id, "video_header");
-      }
-    }
-    return $("[data-video-src]").each(function() {
-      return window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1], this.id);
-    });
-  });
-
-  window.setup_video = function(frame, video_id, player_id) {
-    var player;
-    $(frame).attr("src", "https://player.vimeo.com/video/" + video_id + "?api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1&player_id=" + player_id);
-    player = $f(frame);
-    return player.addEvent("ready", function() {
-      return player.addEvent("play", function() {
-        return $(frame).removeClass("fade_out");
-      });
-    });
-  };
+  $(function() {});
 
 }).call(this);
 
