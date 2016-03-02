@@ -7,7 +7,7 @@ this["templates"]["social_links"] = Handlebars.template({"1":function(container,
     + alias4(((helper = (helper = helpers.profile_url || (depth0 != null ? depth0.profile_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"profile_url","hash":{},"data":data}) : helper)))
     + "\" target=\"_blank\"><svg class=\"icon-"
     + alias4(((helper = (helper = helpers.service_name || (depth0 != null ? depth0.service_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"service_name","hash":{},"data":data}) : helper)))
-    + " icon--big\"><use xlink:href=\"/assets/icons.svg#icon-"
+    + " icon--medium\"><use xlink:href=\"/assets/icons.svg#icon-"
     + alias4(((helper = (helper = helpers.service_name || (depth0 != null ? depth0.service_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"service_name","hash":{},"data":data}) : helper)))
     + "\"></use></svg></a>\n</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
