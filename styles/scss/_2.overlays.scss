@@ -28,6 +28,15 @@
 		@include transition(opacity $fast, visibility 0s);
 	}
 
+	.overlay__full {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		height: 100%;
+		width: 100%;
+	}
+
 	.overlay__button {
 		position: absolute;
 		top: 0;
@@ -37,3 +46,7 @@
 			padding: $gutter;	
 		}
 	}
+
+
+
+
