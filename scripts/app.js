@@ -59,8 +59,6 @@
     return Daniela.init(window.saturdays_settings);
   });
 
-  $(function() {});
-
 }).call(this);
 
 (function() {
