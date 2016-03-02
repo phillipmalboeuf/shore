@@ -210,7 +210,9 @@
       return Track.__super__.constructor.apply(this, arguments);
     }
 
-    Track.prototype.events = {};
+    Track.prototype.events = {
+      "click [data-show-fullscreen]": "show_fullscreen"
+    };
 
     Track.prototype.initialize = function(options) {
       if (options == null) {
@@ -221,6 +223,11 @@
 
     Track.prototype.render = function() {
       return Track.__super__.render.call(this);
+    };
+
+    Track.prototype.show_fullscreen = function(e) {
+      var src_url;
+      return src_url = e.currentTarget.getAttribute("data-show-fullscreen");
     };
 
     return Track;
