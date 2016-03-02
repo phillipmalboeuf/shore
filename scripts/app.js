@@ -198,6 +198,8 @@
     hasProp = {}.hasOwnProperty;
 
   Daniela.Views.Track = (function(superClass) {
+    var setup_video;
+
     extend(Track, superClass);
 
     function Track() {
@@ -217,6 +219,9 @@
     };
 
     Track.prototype.render = function() {
+      this.$el.find("[data-video-src]").each(function() {
+        return window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1], this.id);
+      });
       return Track.__super__.render.call(this);
     };
 
@@ -234,6 +239,17 @@
           return _this.$el.find(".js-fullscreen_iframe").attr("src", "");
         };
       })(this), 666);
+    };
+
+    setup_video = function(frame, video_id, player_id) {
+      var player;
+      $(frame).attr("src", "https://player.vimeo.com/video/" + video_id + "?api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1&player_id=" + player_id);
+      player = $f(frame);
+      return player.addEvent("ready", function() {
+        return player.addEvent("play", function() {
+          return $(frame).removeClass("fade_out");
+        });
+      });
     };
 
     return Track;

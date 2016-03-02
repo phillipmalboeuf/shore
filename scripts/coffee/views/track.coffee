@@ -16,6 +16,9 @@ class Daniela.Views.Track extends Daniela.View
 
 	render: ->
 
+		this.$el.find("[data-video-src]").each ->
+			window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1], this.id)
+
 		super()
 
 
@@ -34,6 +37,17 @@ class Daniela.Views.Track extends Daniela.View
 		setTimeout =>
 			this.$el.find(".js-fullscreen_iframe").attr "src", ""
 		, 666
+
+
+
+	# HELPERS
+	setup_video = (frame, video_id, player_id)->
+		$(frame).attr "src", "https://player.vimeo.com/video/"+video_id+"?api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1&player_id="+player_id
+
+		player = $f(frame)
+		player.addEvent "ready", ->
+			player.addEvent "play", ->
+				$(frame).removeClass "fade_out"
 
 
 
