@@ -221,7 +221,7 @@
       var video;
       video = this.$el.find("[data-video-src]");
       if ($(video).attr("data-video-src") != null) {
-        this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id);
+        this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], $(video).attr("id"));
       }
       return Track.__super__.render.call(this);
     };
