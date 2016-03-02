@@ -5,6 +5,7 @@ class Daniela.View extends Backbone.View
 
 	initialize: (options={})->
 		this.events["click [data-scroll-to]"] = "scroll_to"
+		this.events["click [data-hide-overlay]"] = "hide_overlay"
 
 		this.render()
 
@@ -29,3 +30,10 @@ class Daniela.View extends Backbone.View
 
 			else				
 				scroll_to.velocity("scroll", { duration: 2000, easing: "easeOutQuart" }) 
+
+
+
+	hide_overlay: (e)->
+		$("#"+e.currentTarget.getAttribute("data-hide-overlay")).removeClass "overlay--show"
+
+		

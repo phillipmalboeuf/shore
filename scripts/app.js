@@ -98,6 +98,7 @@
         options = {};
       }
       this.events["click [data-scroll-to]"] = "scroll_to";
+      this.events["click [data-hide-overlay]"] = "hide_overlay";
       return this.render();
     };
 
@@ -121,6 +122,10 @@
           });
         }
       }
+    };
+
+    View.prototype.hide_overlay = function(e) {
+      return $("#" + e.currentTarget.getAttribute("data-hide-overlay")).removeClass("overlay--show");
     };
 
     return View;
