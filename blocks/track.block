@@ -1,6 +1,6 @@
 
 
-	<article class="box box--middle" data-item-id="{id}">
+	<article class="box box--middle js-track" data-item-id="{id}">
 
 		<div class="box__back" style="background-image: url({assetUrl});">
 			{.section customContent.is_coming_soon}
@@ -30,4 +30,13 @@
 			<a href="{customContent.itunes_link}" target="_blank" class="button button--half">Buy on iTunes</a>
 			{.end}
 		</div>
+
+
+		<div class="overlay js-fullscreen">
+	        <iframe src="" frameborder="0" class="js-fullscreen_overlay"></iframe>
+
+	        <button class="button--icon overlay__button js-hide_fullscreen"><svg class="icon-cancel"><use xlink:href="/assets/icons.svg#icon-cancel"></use></svg></button>
+	    </div>
 	</article>
+
+
