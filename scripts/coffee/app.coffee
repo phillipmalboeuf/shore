@@ -54,7 +54,7 @@ jQuery = window.jQuery
 
 
 $ ->
-	$("#video_index").attr("data-video-src", "//vimeo.com/"+window.index_video_id)
+	$("#video_index").attr("data-video-src", "https://vimeo.com/"+window.index_video_id)
 
 	Daniela.init(window.saturdays_settings)
 
