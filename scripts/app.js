@@ -56,6 +56,7 @@
   jQuery = window.jQuery;
 
   $(function() {
+    $("#video_index").attr("data-video-src", index_video_id);
     return Daniela.init(window.saturdays_settings);
   });
 

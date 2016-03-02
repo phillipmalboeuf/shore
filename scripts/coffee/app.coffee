@@ -54,6 +54,8 @@ jQuery = window.jQuery
 
 
 $ ->
+	$("#video_index").attr("data-video-src", index_video_id)
+
 	Daniela.init(window.saturdays_settings)
 
 
