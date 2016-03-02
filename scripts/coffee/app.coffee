@@ -18,10 +18,14 @@ window.Daniela =
 		console.log "I like this digital age."
 
 
-
 		@header_views = []
 		$(".js-header").each (index, el)=>
 			@header_views.push new Daniela.Views.Header({el: $(el)})
+
+
+		@social_links_views = []
+		$(".js-social_links").each (index, el)=>
+			@social_links_views.push new Daniela.Views.SocialLinks({el: $(el)})
 
 		
 	

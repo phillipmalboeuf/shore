@@ -13,9 +13,17 @@
       }
       console.log("I like this digital age.");
       this.header_views = [];
-      return $(".js-header").each((function(_this) {
+      $(".js-header").each((function(_this) {
         return function(index, el) {
           return _this.header_views.push(new Daniela.Views.Header({
+            el: $(el)
+          }));
+        };
+      })(this));
+      this.social_links_views = [];
+      return $(".js-social_links").each((function(_this) {
+        return function(index, el) {
+          return _this.social_links_views.push(new Daniela.Views.SocialLinks({
             el: $(el)
           }));
         };
