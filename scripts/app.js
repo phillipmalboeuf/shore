@@ -29,9 +29,17 @@
         };
       })(this));
       this.social_links_views = [];
-      return $(".js-social_links").each((function(_this) {
+      $(".js-social_links").each((function(_this) {
         return function(index, el) {
           return _this.social_links_views.push(new Daniela.Views.SocialLinks({
+            el: $(el)
+          }));
+        };
+      })(this));
+      this.views = [];
+      return $(".js-view").each((function(_this) {
+        return function(index, el) {
+          return _this.views.push(new Daniela.View({
             el: $(el)
           }));
         };

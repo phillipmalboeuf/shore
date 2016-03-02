@@ -32,6 +32,12 @@ window.Daniela =
 		$(".js-social_links").each (index, el)=>
 			@social_links_views.push new Daniela.Views.SocialLinks({el: $(el)})
 
+
+
+		@views = []
+		$(".js-view").each (index, el)=>
+			@views.push new Daniela.View({el: $(el)})
+
 		
 	
 
