@@ -17,6 +17,18 @@
 	<script src="//cdn.jsdelivr.net/g/jquery@3.0.0-beta1(jquery.slim.min.js),underscorejs@1.8.3,backbonejs@1.2.3,handlebarsjs@4.0.5,velocity@1.2.3"></script>
 	<script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
 
+	<script>
+		window.social_links = [
+		{.repeated section website.socialAccounts}
+			{
+				profile_url: "{profileUrl}",
+				service_name: "{serviceName}"
+			},
+		{.end}
+		];
+	</script>
+
+
 	<squarespace:script src="templates.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
     <squarespace:script src="app.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 
