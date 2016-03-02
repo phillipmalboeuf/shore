@@ -22,6 +22,6 @@ class Daniela.Views.Track extends Daniela.View
 	show_fullscreen: (e)->
 		e.preventDefault()
 		e.stopImmediatePropagation()
-		
-		this.$el.find(".js-fullscreen_iframe").attr "src", e.currentTarget.getAttribute("data-show-fullscreen")
+
+		this.$el.find(".js-fullscreen_iframe").attr "src", e.currentTarget.getAttribute("data-show-fullscreen")+"?autoplay=1"
 		this.$el.find(".js-fullscreen").addClass "overlay--show"
