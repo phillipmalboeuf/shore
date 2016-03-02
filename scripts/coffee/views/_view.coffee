@@ -18,7 +18,6 @@ class Daniela.View extends Backbone.View
 
 
 	scroll_to: (e)->
-		console.log e.currentTarget.getAttribute("data-scroll-to")
 		scroll_to = $("#"+e.currentTarget.getAttribute("data-scroll-to"))
 
 		if scroll_to.length > 0

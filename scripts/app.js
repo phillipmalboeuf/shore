@@ -92,7 +92,6 @@
 
     View.prototype.scroll_to = function(e) {
       var scroll_to;
-      console.log(e.currentTarget.getAttribute("data-scroll-to"));
       scroll_to = $("#" + e.currentTarget.getAttribute("data-scroll-to"));
       if (scroll_to.length > 0) {
         e.preventDefault();
