@@ -1,0 +1,20 @@
+
+
+// #BIOGRAPHY
+
+.biography {
+	@extend .overlay;
+
+	h2 {
+		@extend .medium_bottom;
+	}
+
+	article > hr {
+		border: none;
+	}
+
+	p {
+		font-size: $base_size*1.2;
+		line-height: 1.222;
+	}
+}
