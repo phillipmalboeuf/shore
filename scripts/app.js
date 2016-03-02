@@ -220,6 +220,7 @@
     Track.prototype.render = function() {
       var video;
       video = this.$el.find("[data-video-src]");
+      console.log($(video).attr("data-video-src"));
       this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id);
       return Track.__super__.render.call(this);
     };
