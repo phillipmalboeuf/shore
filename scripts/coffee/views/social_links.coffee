@@ -1,4 +1,4 @@
-class Daniela.Views extends Daniela.View
+class Daniela.Views.SocialLinks extends Daniela.View
 
 
 	links_template: templates["social_links"]
