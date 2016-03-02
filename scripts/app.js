@@ -53,9 +53,6 @@
 
   $(function() {
     var video_header;
-    $("[data-hide-overlay]").click(function(e) {
-      return $("#" + e.currentTarget.getAttribute("data-hide-overlay")).removeClass("overlay--show");
-    });
     if (window.header_video_id != null) {
       video_header = $("#video_header");
       if (video_header.length > 0) {
