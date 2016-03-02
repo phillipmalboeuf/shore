@@ -219,7 +219,8 @@
     }
 
     Track.prototype.events = {
-      "click [data-show-fullscreen]": "show_fullscreen"
+      "click [data-show-fullscreen]": "show_fullscreen",
+      "click .js-hide_fullscreen": "hide_fullscreen"
     };
 
     Track.prototype.initialize = function(options) {
@@ -238,6 +239,11 @@
       e.stopImmediatePropagation();
       this.$el.find(".js-fullscreen_iframe").attr("src", e.currentTarget.getAttribute("data-show-fullscreen") + "?autoplay=1");
       return this.$el.find(".js-fullscreen").addClass("overlay--show");
+    };
+
+    Track.prototype.hide_fullscreen = function(e) {
+      this.$el.find(".js-fullscreen_iframe").attr("src", "");
+      return this.$el.find(".js-fullscreen").removeClass("overlay--show");
     };
 
     return Track;
