@@ -18,7 +18,7 @@
 				{.section customContent.is_coming_soon}
 				<a href="#" target="_blank" class="button button--half" disabled>Coming Soon</a>
 				{.or}
-				<a href="{customContent.youtube_link}" target="_blank" class="button button--half">Watch the Video</a>
+				<a href="{customContent.youtube_link}" target="_blank" class="button button--half js-fullscreen">Watch the Video</a>
 				{.end}
 			</div>
 
