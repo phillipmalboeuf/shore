@@ -1,7 +1,7 @@
 
 
 
-	<article class="box">
+	<article class="box js-view">
         <div class="box__back" style="background-image: url({collection.mainImage.assetUrl});">
             <iframe scrolling="no" allowfullscreen="" src="" frameborder="0" width="100%" height="100%" id="video_header" class="fades_out fade_out"></iframe>
         </div>
