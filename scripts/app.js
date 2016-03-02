@@ -226,8 +226,8 @@
     };
 
     Track.prototype.show_fullscreen = function(e) {
-      var src_url;
-      return src_url = e.currentTarget.getAttribute("data-show-fullscreen");
+      this.$el.find(".js-fullscreen_iframe").attr("src", e.currentTarget.getAttribute("data-show-fullscreen"));
+      return this.$el.find(".js-fullscreen").addClass("overlay--show");
     };
 
     return Track;
