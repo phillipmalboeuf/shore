@@ -11,4 +11,6 @@ class Daniela.Views.SocialLinks extends Daniela.View
 
 	render: ->
 
+		this.$el.html links_template({links: window.social_links})
+
 		super()

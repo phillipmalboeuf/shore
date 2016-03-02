@@ -179,6 +179,9 @@
     };
 
     SocialLinks.prototype.render = function() {
+      this.$el.html(links_template({
+        links: window.social_links
+      }));
       return SocialLinks.__super__.render.call(this);
     };
 
