@@ -219,9 +219,11 @@
     };
 
     Track.prototype.render = function() {
-      this.$el.find("[data-video-src]").each(function() {
-        return window.setup_video(this, $(this).attr("data-video-src").split("//vimeo.com/")[1], this.id);
-      });
+      this.$el.find("[data-video-src]").each((function(_this) {
+        return function() {
+          return _this.setup_video(_this, $(_this).attr("data-video-src").split("//vimeo.com/")[1], _this.id);
+        };
+      })(this));
       return Track.__super__.render.call(this);
     };
 
