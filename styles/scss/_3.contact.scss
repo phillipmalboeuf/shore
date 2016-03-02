@@ -1,20 +1,9 @@
 
 
-// #BIOGRAPHY
+// #CONTACT
 
-.biography {
-	@extend .overlay;
-
-	h2 {
-		@extend .medium_bottom;
-	}
-
-	article > hr {
-		border: none;
-	}
-
-	p {
-		font-size: $base_size*1.2;
-		line-height: 1.222;
-	}
+.contact {
+	font-family: $headings_font;
+	text-transform: uppercase;
+	letter-spacing: $letter_spacing;
 }
