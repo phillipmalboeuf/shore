@@ -188,7 +188,7 @@
 
     SocialLinks.prototype.render = function() {
       console.log(window.social_links);
-      this.$el.html(links_template({
+      this.$el.html(this.links_template({
         links: window.social_links
       }));
       return SocialLinks.__super__.render.call(this);
