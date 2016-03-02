@@ -237,13 +237,17 @@
     Track.prototype.show_fullscreen = function(e) {
       e.preventDefault();
       e.stopImmediatePropagation();
-      this.$el.find(".js-fullscreen_iframe").attr("src", e.currentTarget.getAttribute("data-show-fullscreen") + "?autoplay=1");
-      return this.$el.find(".js-fullscreen").addClass("overlay--show");
+      this.$el.find(".js-fullscreen").addClass("overlay--show");
+      return this.$el.find(".js-fullscreen_iframe").attr("src", e.currentTarget.getAttribute("data-show-fullscreen") + "?autoplay=1");
     };
 
     Track.prototype.hide_fullscreen = function(e) {
-      this.$el.find(".js-fullscreen_iframe").attr("src", "");
-      return this.$el.find(".js-fullscreen").removeClass("overlay--show");
+      this.$el.find(".js-fullscreen").removeClass("overlay--show");
+      return setTimeout((function(_this) {
+        return function() {
+          return _this.$el.find(".js-fullscreen_iframe").attr("src", "");
+        };
+      })(this), 666);
     };
 
     return Track;

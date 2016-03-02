@@ -24,13 +24,16 @@ class Daniela.Views.Track extends Daniela.View
 		e.preventDefault()
 		e.stopImmediatePropagation()
 
-		this.$el.find(".js-fullscreen_iframe").attr "src", e.currentTarget.getAttribute("data-show-fullscreen")+"?autoplay=1"
 		this.$el.find(".js-fullscreen").addClass "overlay--show"
+		this.$el.find(".js-fullscreen_iframe").attr "src", e.currentTarget.getAttribute("data-show-fullscreen")+"?autoplay=1"
 
 
 	hide_fullscreen: (e)->
-		this.$el.find(".js-fullscreen_iframe").attr "src", ""
 		this.$el.find(".js-fullscreen").removeClass "overlay--show"
+
+		setTimeout =>
+			this.$el.find(".js-fullscreen_iframe").attr "src", ""
+		, 666
 
 
 
