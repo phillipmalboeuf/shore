@@ -219,11 +219,9 @@
     };
 
     Track.prototype.render = function() {
-      this.$el.find("[data-video-src]").each((function(_this) {
-        return function() {
-          return _this.setup_video(_this, $(_this).attr("data-video-src").split("//vimeo.com/")[1], _this.id);
-        };
-      })(this));
+      var video;
+      video = this.$el.find("[data-video-src]");
+      this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id);
       return Track.__super__.render.call(this);
     };
 
