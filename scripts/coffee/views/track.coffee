@@ -17,9 +17,8 @@ class Daniela.Views.Track extends Daniela.View
 	render: ->
 
 		video = this.$el.find("[data-video-src]")
-
-		console.log $(video).attr("data-video-src")
-		this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id)
+		if $(video).attr("data-video-src")?
+			this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id)
 
 		super()
 
