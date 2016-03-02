@@ -56,14 +56,7 @@
   jQuery = window.jQuery;
 
   $(function() {
-    var video_header;
-    Daniela.init(window.saturdays_settings);
-    if (window.header_video_id != null) {
-      video_header = $("#video_header");
-      if (video_header.length > 0) {
-        return window.setup_video(video_header[0], window.header_video_id, "video_header");
-      }
-    }
+    return Daniela.init(window.saturdays_settings);
   });
 
 }).call(this);
