@@ -9,9 +9,10 @@
 
 	h3 {
 		font-size: $base_size;
+		letter-spacing: $letter_spacing/2;
 	}
 
 	p {
-		font-size: $small_size;
+		font-size: $small_size*1.2;
 	}
 }
