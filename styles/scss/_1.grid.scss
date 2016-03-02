@@ -57,6 +57,11 @@
 		margin-bottom: -$gutter/2;
 	}
 
+	&.grid--tight_guttered {
+		margin-left: -$gutter/4;
+		margin-bottom: -$gutter/4;
+	}
+
 	&.grid--reverse {
 		flex-direction: column-reverse;
 		-webkit-flex-direction: column-reverse;
@@ -68,6 +73,11 @@
 		.grid--guttered > & {
 			padding-left: $gutter/2;
 			padding-bottom: $gutter/2;
+		}
+
+		.grid--tight_guttered > & {
+			padding-left: $gutter/4;
+			padding-bottom: $gutter/4;
 		}
 
 
