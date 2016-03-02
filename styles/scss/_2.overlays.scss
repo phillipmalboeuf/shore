@@ -18,14 +18,14 @@
 	visibility: hidden;
 	background: fade-out($black, 0.15);
 
-	@include transition(opacity $fast, visibility 0s linear $fast);
+	@include transition(opacity $slow, visibility 0s linear $slow);
 }
 
 	.overlay--show {
 		opacity: 1;
 		visibility: visible;
 
-		@include transition(opacity $fast, visibility 0s);
+		@include transition(opacity $slow, visibility 0s);
 	}
 
 	.overlay__full {
