@@ -3,7 +3,9 @@ this["templates"] = this["templates"] || {};
 this["templates"]["social_links"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<a href=\"{profile_url}\" target=\"_blank\"><svg class=\"icon-"
+  return "<a href=\""
+    + alias4(((helper = (helper = helpers.profile_url || (depth0 != null ? depth0.profile_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"profile_url","hash":{},"data":data}) : helper)))
+    + "\" target=\"_blank\"><svg class=\"icon-"
     + alias4(((helper = (helper = helpers.service_name || (depth0 != null ? depth0.service_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"service_name","hash":{},"data":data}) : helper)))
     + "\"><use xlink:href=\"/assets/icons.svg#icon-"
     + alias4(((helper = (helper = helpers.service_name || (depth0 != null ? depth0.service_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"service_name","hash":{},"data":data}) : helper)))
