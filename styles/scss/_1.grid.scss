@@ -58,8 +58,8 @@
 	}
 
 	&.grid--tight_guttered {
-		margin-left: -$gutter/4;
-		margin-bottom: -$gutter/4;
+		margin-left: -$gutter/3;
+		margin-bottom: -$gutter/3;
 	}
 
 	&.grid--reverse {
@@ -76,8 +76,8 @@
 		}
 
 		.grid--tight_guttered > & {
-			padding-left: $gutter/4;
-			padding-bottom: $gutter/4;
+			padding-left: $gutter/3;
+			padding-bottom: $gutter/3;
 		}
 
 
