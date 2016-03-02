@@ -187,10 +187,6 @@
     };
 
     SocialLinks.prototype.render = function() {
-      console.log(window.social_links);
-      console.log(this.links_template({
-        links: window.social_links
-      }));
       this.$el.html(this.links_template({
         links: window.social_links
       }));
