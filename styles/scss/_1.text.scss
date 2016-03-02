@@ -201,9 +201,14 @@ sub {
     display: inline-block;
     fill: currentColor;
 
-    &.icon--big {
-    	height: $bigger_size;
-    	width: $bigger_size;
+	&.icon--big {
+		height: $bigger_size;
+		width: $bigger_size;
+	}
+
+	&.icon--medium {
+    	height: $big_size;
+    	width: $big_size;
     }
 }
 
