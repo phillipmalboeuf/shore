@@ -28,6 +28,8 @@ class Daniela.Views.Track extends Daniela.View
 		e.preventDefault()
 		e.stopImmediatePropagation()
 
+		document.documentElement.webkitRequestFullscreen()
+		
 		this.$el.find(".js-fullscreen").addClass "overlay--show"
 		this.$el.find(".js-fullscreen_iframe").attr "src", e.currentTarget.getAttribute("data-show-fullscreen")+"?autoplay=1&color=white"
 
