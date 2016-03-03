@@ -229,13 +229,29 @@
     Track.prototype.show_fullscreen = function(e) {
       e.preventDefault();
       e.stopImmediatePropagation();
-      document.documentElement.webkitRequestFullscreen();
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) {
+        document.documentElement.msRequestFullscreen();
+      } else if (document.documentElement.mozRequestFullScreen) {
+        document.documentElement.mozRequestFullScreen();
+      } else if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen();
+      }
       this.$el.find(".js-fullscreen").addClass("overlay--show");
       return this.$el.find(".js-fullscreen_iframe").attr("src", e.currentTarget.getAttribute("data-show-fullscreen") + "?autoplay=1&color=white");
     };
 
     Track.prototype.hide_fullscreen = function(e) {
-      document.webkitExitFullscreen();
+      if (document.documentElement.exitFullscreen) {
+        document.documentElement.exitFullscreen();
+      } else if (document.documentElement.msExitFullscreen) {
+        document.documentElement.msExitFullscreen();
+      } else if (document.documentElement.mozCancelFullScreen) {
+        document.documentElement.mozCancelFullScreen();
+      } else if (document.documentElement.webkitExitFullscreen) {
+        document.documentElement.webkitExitFullscreen();
+      }
       this.$el.find(".js-fullscreen").removeClass("overlay--show");
       return setTimeout((function(_this) {
         return function() {
