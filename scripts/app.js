@@ -235,6 +235,7 @@
     };
 
     Track.prototype.hide_fullscreen = function(e) {
+      document.webkitExitFullscreen();
       this.$el.find(".js-fullscreen").removeClass("overlay--show");
       return setTimeout((function(_this) {
         return function() {
