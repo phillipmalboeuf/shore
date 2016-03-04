@@ -66,7 +66,7 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 				padding: 0;
 
 				button {
-					font-size: $big_size;
+					font-size: $big_size !important;
 				}
 			}
 	
