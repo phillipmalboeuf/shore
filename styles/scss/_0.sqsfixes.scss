@@ -48,8 +48,9 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 		}
 
 			.newsletter-block .newsletter-form-wrapper--alignLeft .newsletter-form-field-wrapper {
-				padding: 0;
 				width: 100%;
+				padding: 0;
+				margin-bottom: $vertical_rythm;
 			}
 
 				.newsletter-block .newsletter-form-field-element {
@@ -57,10 +58,6 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 				}
 
 			.newsletter-block .newsletter-form-wrapper--alignLeft .newsletter-form-button-wrapper {
-				position: absolute;
-				right: 0;
-				bottom: $base_size*1.5;
-
 				margin: 0;
 				padding: 0;
 				border: none;
