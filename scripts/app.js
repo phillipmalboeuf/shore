@@ -276,3 +276,8 @@
   })(Daniela.View);
 
 }).call(this);
+
+(function() {
+  router.coffee;
+
+}).call(this);
