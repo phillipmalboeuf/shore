@@ -40,6 +40,11 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 		position: relative;
 		width: 100%;
 		max-width: $big_size*12;
+
+		button {
+			font-size: $big_size !important;
+			border: none !important;
+		}
 	}
 
 		.newsletter-block .newsletter-form-fields-wrapper {
@@ -63,10 +68,6 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 
 				margin: 0;
 				padding: 0;
-
-				button {
-					font-size: $big_size !important;
-				}
 			}
 	
 
