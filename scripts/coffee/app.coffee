@@ -38,6 +38,12 @@ window.Daniela =
 		$(".js-view").each (index, el)=>
 			@views.push new Daniela.View({el: $(el)})
 
+
+
+		@router = new Daniela.Routers.Router()
+		Backbone.history.start
+			pushState: true
+
 		
 	
 

@@ -37,13 +37,17 @@
         };
       })(this));
       this.views = [];
-      return $(".js-view").each((function(_this) {
+      $(".js-view").each((function(_this) {
         return function(index, el) {
           return _this.views.push(new Daniela.View({
             el: $(el)
           }));
         };
       })(this));
+      this.router = new Daniela.Routers.Router();
+      return Backbone.history.start({
+        pushState: true
+      });
     }
   };
 
