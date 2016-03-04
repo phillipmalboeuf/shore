@@ -37,17 +37,13 @@
         };
       })(this));
       this.views = [];
-      $(".js-view").each((function(_this) {
+      return $(".js-view").each((function(_this) {
         return function(index, el) {
           return _this.views.push(new Daniela.View({
             el: $(el)
           }));
         };
       })(this));
-      this.router = new Daniela.Routers.Router();
-      return Backbone.history.start({
-        pushState: true
-      });
     }
   };
 
@@ -234,29 +230,11 @@
     Track.prototype.show_fullscreen = function(e) {
       e.preventDefault();
       e.stopImmediatePropagation();
-      if (document.documentElement.requestFullscreen) {
-        document.documentElement.requestFullscreen();
-      } else if (document.documentElement.msRequestFullscreen) {
-        document.documentElement.msRequestFullscreen();
-      } else if (document.documentElement.mozRequestFullScreen) {
-        document.documentElement.mozRequestFullScreen();
-      } else if (document.documentElement.webkitRequestFullscreen) {
-        document.documentElement.webkitRequestFullscreen();
-      }
       this.$el.find(".js-fullscreen").addClass("overlay--show");
       return this.$el.find(".js-fullscreen_iframe").attr("src", e.currentTarget.getAttribute("data-show-fullscreen") + "?autoplay=1&color=white");
     };
 
     Track.prototype.hide_fullscreen = function(e) {
-      if (document.documentElement.exitFullscreen) {
-        document.documentElement.exitFullscreen();
-      } else if (document.documentElement.msExitFullscreen) {
-        document.documentElement.msExitFullscreen();
-      } else if (document.documentElement.mozCancelFullScreen) {
-        document.documentElement.mozCancelFullScreen();
-      } else if (document.documentElement.webkitExitFullscreen) {
-        document.documentElement.webkitExitFullscreen();
-      }
       this.$el.find(".js-fullscreen").removeClass("overlay--show");
       return setTimeout((function(_this) {
         return function() {
