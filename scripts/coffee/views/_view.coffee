@@ -19,11 +19,14 @@ class Daniela.View extends Backbone.View
 
 
 	scroll_to: (e)->
-		scroll_to = $("#"+e.currentTarget.getAttribute("data-scroll-to"))
+		scroll_to_id = "#"+e.currentTarget.getAttribute("data-scroll-to")
+		scroll_to = $(scroll_to_id)
 
 		if scroll_to.length > 0
 			e.preventDefault()
 			e.stopImmediatePropagation()
+
+			Daniela.router.navigate window.loation.href+scroll_to_id
 
 			if scroll_to.hasClass("overlay")
 				scroll_to.addClass "overlay--show"

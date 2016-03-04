@@ -94,11 +94,13 @@
     };
 
     View.prototype.scroll_to = function(e) {
-      var scroll_to;
-      scroll_to = $("#" + e.currentTarget.getAttribute("data-scroll-to"));
+      var scroll_to, scroll_to_id;
+      scroll_to_id = "#" + e.currentTarget.getAttribute("data-scroll-to");
+      scroll_to = $(scroll_to_id);
       if (scroll_to.length > 0) {
         e.preventDefault();
         e.stopImmediatePropagation();
+        Daniela.router.navigate(window.loation.href + scroll_to_id);
         if (scroll_to.hasClass("overlay")) {
           return scroll_to.addClass("overlay--show");
         } else {
