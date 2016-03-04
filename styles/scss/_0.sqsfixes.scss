@@ -39,6 +39,8 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 	}
 
 		.newsletter-block .newsletter-form-fields-wrapper {
+			width: 100%;
+			max-width: $big_size*12;
 			margin: 0;
 		}
 
