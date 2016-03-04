@@ -56,8 +56,8 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 
 			.newsletter-block .newsletter-form-wrapper--alignLeft .newsletter-form-button-wrapper {
 				position: absolute;
-				right: 0;
-				bottom: 0;
+				right: $base_size;
+				bottom: $base_size*1.5;
 
 				margin: 0;
 				padding: 0;
