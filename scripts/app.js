@@ -100,7 +100,6 @@
       if (scroll_to.length > 0) {
         e.preventDefault();
         e.stopImmediatePropagation();
-        Daniela.router.navigate(scroll_to_id);
         if (scroll_to.hasClass("overlay")) {
           return scroll_to.addClass("overlay--show");
         } else {

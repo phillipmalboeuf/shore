@@ -26,8 +26,6 @@ class Daniela.View extends Backbone.View
 			e.preventDefault()
 			e.stopImmediatePropagation()
 
-			Daniela.router.navigate scroll_to_id
-
 			if scroll_to.hasClass("overlay")
 				scroll_to.addClass "overlay--show"
 
