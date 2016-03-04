@@ -196,8 +196,8 @@ sub {
 // #MISC
 
 [class^="icon-"], [class*=" icon-"] {
-    height: 19px;
-    width: 19px;
+    height: $medium_size;
+    width: $medium_size;
     display: inline-block;
     fill: currentColor;
 
