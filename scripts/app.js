@@ -46,7 +46,7 @@
       })(this));
       this.router = new Daniela.Routers.Router();
       return Backbone.history.start({
-        pushState: false
+        pushState: true
       });
     }
   };

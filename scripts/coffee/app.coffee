@@ -42,7 +42,7 @@ window.Daniela =
 
 		@router = new Daniela.Routers.Router()
 		Backbone.history.start
-			pushState: false
+			pushState: true
 
 		
 	
