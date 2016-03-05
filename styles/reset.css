@@ -422,3 +422,10 @@ td,
 th {
   padding: 0;
 }
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+::placeholder {
+  color: #aeab91 !important;
+  opacity: 1 !important;
+}

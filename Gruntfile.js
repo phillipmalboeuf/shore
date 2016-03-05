@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     gitadd: {
       task: {
         files: {
-          src: ['template.conf', 'layout.region', 'pages/**/*.*', 'collections/**/*.*', 'styles/**/*.*', 'scripts/**/*.*', 'blocks/**/*.*', 'assets/**/*.*']
+          src: ['template.conf', '**/*.region', 'pages/**/*.*', 'collections/**/*.*', 'styles/**/*.*', 'scripts/**/*.*', 'blocks/**/*.*', 'assets/**/*.*']
         }
       }
     },
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             message: 'Development'
         },
         files: {
-          src: ['template.conf', 'layout.region', 'pages/**/*.*', 'collections/**/*.*', 'styles/**/*.*', 'scripts/**/*.*', 'blocks/**/*.*', 'assets/**/*.*']
+          src: ['template.conf', '**/*.region', 'pages/**/*.*', 'collections/**/*.*', 'styles/**/*.*', 'scripts/**/*.*', 'blocks/**/*.*', 'assets/**/*.*']
         }
       }
     },
@@ -46,8 +46,8 @@ module.exports = function(grunt) {
             var name = "";
             filePath = filePath.split(".");
             filePath = filePath[0].split("/");
-            name += filePath[3];
-            for (var i = 4; i < filePath.length; i++) {
+            name += filePath[2];
+            for (var i = 3; i < filePath.length; i++) {
                 name += "/" + filePath[i];
             };
             return name;
