@@ -130,4 +130,12 @@ input[type="file"] {
 	color: fadeout($gold, 75%) !important;
 }
 
+::-moz-placeholder {
+	color: fadeout($gold, 75%) !important;
+}
+
+::placeholder {
+	color: fadeout($gold, 75%) !important;
+}
+
 
