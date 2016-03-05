@@ -5,14 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-    ::-webkit-input-placeholder,
-    ::-moz-placeholder,
-    ::placeholder {
-      color: #aeab91 !important;
-    }
-    </style>
-
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
