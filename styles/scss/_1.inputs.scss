@@ -65,7 +65,7 @@ textarea,
 	font-weight: normal;
 
 	background: transparent;
-	padding: $vertical_rythm;
+	padding: $vertical_rythm*1.5;
 	border: 1px solid;
 	border-radius: 0;
 
@@ -129,15 +129,15 @@ input[type="file"] {
 }
 
 ::-webkit-input-placeholder {
-	color: fadeout($gold, 75%) !important;
+	color: fadeout($gold, 66%) !important;
 }
 
 ::-moz-placeholder {
-	color: fadeout($gold, 75%) !important;
+	color: fadeout($gold, 66%) !important;
 }
 
 ::placeholder {
-	color: fadeout($gold, 75%) !important;
+	color: fadeout($gold, 66%) !important;
 }
 
 
