@@ -126,4 +126,8 @@ input[type="file"] {
 	-moz-outline-style: none;
 }
 
+::-webkit-input-placeholder {
+	color: fadeout($gold, 75%) !important;
+}
+
 
