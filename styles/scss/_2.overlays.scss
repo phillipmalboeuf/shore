@@ -44,11 +44,11 @@
 
 	.overlay__button {
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: $gutter/2;
+		right: $gutter/2;
 
 		&.button--icon {
-			padding: $gutter/1.25;	
+			padding: $vertical_rythm;	
 		}
 	}
 
