@@ -47,6 +47,10 @@
 		top: $gutter/2;
 		right: $gutter/2;
 
+		&:active {
+			top: ($gutter/2) + 1px;
+		}
+
 		&.button--icon {
 			padding: $vertical_rythm;	
 		}
