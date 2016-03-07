@@ -19,6 +19,10 @@
 	background: fade-out($black, 0.15);
 
 	@include transition(opacity $slow, visibility 0s linear $slow);
+
+	&.overlay--absolute {
+		position: absolute;
+	}
 }
 
 	.overlay--show {
