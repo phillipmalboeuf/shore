@@ -128,7 +128,9 @@
       return Footer.__super__.constructor.apply(this, arguments);
     }
 
-    Footer.prototype.events = {};
+    Footer.prototype.events = {
+      "click .js-credits_button": "toggle_credits"
+    };
 
     Footer.prototype.initialize = function(options) {
       if (options == null) {
@@ -139,6 +141,15 @@
 
     Footer.prototype.render = function() {
       return Footer.__super__.render.call(this);
+    };
+
+    Footer.prototype.toggle_credits = function(e) {
+      var credits;
+      credits = this.$el.find("#credits");
+      credits.toggleClass("hide");
+      return setTimeout(function() {
+        return credits.toggleClass("overlay--show");
+      }, 10);
     };
 
     return Footer;
