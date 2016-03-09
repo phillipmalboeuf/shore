@@ -3,6 +3,9 @@
 // #CREDITS
 
 .credits {
+	@extend .overlay;
+	@extend .overlay--relative;
+
 	color: $gold--light;
 	line-height: 1.333;
 
