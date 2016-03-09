@@ -12,6 +12,7 @@
 	[class*=sqs-col] .sqs-block {
 		padding-left: $gutter/4;
 		padding-right: $gutter/4;
+		padding-top: 0;
 	}
 
 	.sqs-layout:not(.sqs-editing)>.sqs-row:first-child>[class*=sqs-col]:first-child>.sqs-block:last-child {
