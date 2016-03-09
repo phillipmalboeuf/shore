@@ -1,7 +1,17 @@
 
 // #LOGO
 
+
+@include define_keyframes(logoloop) {
+	0%   { left: 100px; }
+	100% { left: 200px; }
+}
+
+
 .logo {
 	
+	span {
+		@include animation(logoloop 5s infinite);
+	}
 }
 	
