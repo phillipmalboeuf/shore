@@ -7,11 +7,11 @@
 			</div>
 			
 			<div class="col col--3of12 text_right">
-				<a href="#credits" class="button button--small">Credits</a>
+				<a href="#credits" data-scroll-to="credits" class="button button--small js-credits_button">Credits</a>
 			</div>
 		</div>
 
-		<div class="credits hide">
+		<div class="credits hide" id="credits">
 			<squarespace:block-field id="footer-credits" label="Footer Credits" columns="12" />
 		</div>
 	</footer>
