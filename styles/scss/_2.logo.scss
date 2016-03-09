@@ -18,16 +18,16 @@
 
 .logo {
 	
-	span {
-		@include transform_origin(-10%, -10%);
-		@include animation(logoloop 5s linear infinite);
+	// span {
+	// 	@include transform_origin(-10%, -10%);
+	// 	@include animation(logoloop 5s linear infinite);
 
-		&:before {
-			content: "O";
+	// 	&:before {
+	// 		content: "O";
 
-			display: inline-block;
-			width: 0px;
-		}
-	}
+	// 		display: inline-block;
+	// 		width: 0px;
+	// 	}
+	// }
 }
 	
