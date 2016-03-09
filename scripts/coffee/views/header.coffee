@@ -6,10 +6,6 @@ class Daniela.Views.Header extends Daniela.View
 	}
 
 
-	request_frame: window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame
-
-
-
 
 	initialize: (options={})->
 
@@ -20,9 +16,9 @@ class Daniela.Views.Header extends Daniela.View
 
 	render: ->
 		header = this.$el
-		previous_offset = 0
 
-		toggle_header = ->
+		previous_offset = 0
+		$(window).scroll (e)->
 			if window.pageYOffset > previous_offset
 				if not header.hasClass "header--hide"
 					header.addClass "header--hide"
@@ -35,16 +31,4 @@ class Daniela.Views.Header extends Daniela.View
 			previous_offset = window.pageYOffset
 
 
-		$(window).scroll (e)=>
-			this.request_frame(toggle_header)
-
-
 		super()
-
-
-
-	
-
-
-
-

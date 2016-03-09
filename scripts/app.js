@@ -130,8 +130,6 @@
 
     Header.prototype.events = {};
 
-    Header.prototype.request_frame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;
-
     Header.prototype.initialize = function(options) {
       if (options == null) {
         options = {};
@@ -140,10 +138,10 @@
     };
 
     Header.prototype.render = function() {
-      var header, previous_offset, toggle_header;
+      var header, previous_offset;
       header = this.$el;
       previous_offset = 0;
-      toggle_header = function() {
+      $(window).scroll(function(e) {
         if (window.pageYOffset > previous_offset) {
           if (!header.hasClass("header--hide")) {
             header.addClass("header--hide");
@@ -154,12 +152,7 @@
           }
         }
         return previous_offset = window.pageYOffset;
-      };
-      $(window).scroll((function(_this) {
-        return function(e) {
-          return _this.request_frame(toggle_header);
-        };
-      })(this));
+      });
       return Header.__super__.render.call(this);
     };
 
