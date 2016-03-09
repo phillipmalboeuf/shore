@@ -12,11 +12,13 @@
 		color: $gold--dark;
 
 		display: block;
+		padding-bottom: $vertical_rythm/4;
 		border-bottom: 1px solid;
 	}
 
 	p {
 		font-size: $small_size*1.2;
+		letter-spacing: $letter_spacing/4;
 		text-transform: uppercase;
 	}
 }
