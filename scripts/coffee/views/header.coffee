@@ -19,28 +19,31 @@ class Daniela.Views.Header extends Daniela.View
 
 
 	render: ->
-		@header = this.$el
-		@previous_offset = 0
+		header = this.$el
+		previous_offset = 0
+
+		toggle_header = ->
+			if window.pageYOffset > previous_offset
+				if not header.hasClass "header--hide"
+					header.addClass "header--hide"
+
+			else 
+				if header.hasClass "header--hide"
+					header.removeClass "header--hide"			
+
+
+			previous_offset = window.pageYOffset
+
 
 		$(window).scroll (e)=>
-			this.request_frame(this.toggle_header)
+			this.request_frame(toggle_header)
 
 
 		super()
 
 
 
-	toggle_header: ->
-		if window.pageYOffset > @previous_offset
-			if not @header.hasClass "header--hide"
-				@header.addClass "header--hide"
-
-		else 
-			if @header.hasClass "header--hide"
-				@header.removeClass "header--hide"			
-
-
-		@previous_offset = window.pageYOffset
+	
 
 
 

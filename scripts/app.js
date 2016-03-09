@@ -140,27 +140,27 @@
     };
 
     Header.prototype.render = function() {
-      this.header = this.$el;
-      this.previous_offset = 0;
+      var header, previous_offset, toggle_header;
+      header = this.$el;
+      previous_offset = 0;
+      toggle_header = function() {
+        if (window.pageYOffset > previous_offset) {
+          if (!header.hasClass("header--hide")) {
+            header.addClass("header--hide");
+          }
+        } else {
+          if (header.hasClass("header--hide")) {
+            header.removeClass("header--hide");
+          }
+        }
+        return previous_offset = window.pageYOffset;
+      };
       $(window).scroll((function(_this) {
         return function(e) {
-          return _this.request_frame(_this.toggle_header);
+          return _this.request_frame(toggle_header);
         };
       })(this));
       return Header.__super__.render.call(this);
-    };
-
-    Header.prototype.toggle_header = function() {
-      if (window.pageYOffset > this.previous_offset) {
-        if (!this.header.hasClass("header--hide")) {
-          this.header.addClass("header--hide");
-        }
-      } else {
-        if (this.header.hasClass("header--hide")) {
-          this.header.removeClass("header--hide");
-        }
-      }
-      return this.previous_offset = window.pageYOffset;
     };
 
     return Header;
