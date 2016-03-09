@@ -4,4 +4,12 @@
 
 .credits {
 	color: $gold--light;
+
+	h3 {
+		font-size: $small_size;
+		color: $gold--dark;
+
+		display: block;
+		border-bottom: 1px solid;
+	}
 }
