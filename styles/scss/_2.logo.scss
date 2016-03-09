@@ -22,8 +22,11 @@
 		@include transform_origin(-10%, -10%);
 		@include animation(logoloop 5s infinite linear);
 
-		&:after {
+		&:before {
 			content: "O";
+
+			display: inline-block;
+			width: 0px;
 		}
 	}
 }
