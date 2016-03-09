@@ -132,7 +132,7 @@
 
     Header.prototype.previous_offset = 0;
 
-    Header.prototype.request_frame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;
+    Header.prototype.request_frame = window.requestAnimationFrame;
 
     Header.prototype.initialize = function(options) {
       if (options == null) {

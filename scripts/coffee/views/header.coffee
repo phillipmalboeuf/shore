@@ -7,7 +7,7 @@ class Daniela.Views.Header extends Daniela.View
 
 
 	previous_offset: 0
-	request_frame: window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame
+	request_frame: window.requestAnimationFrame
 
 
 	initialize: (options={})->
