@@ -24,6 +24,7 @@ class Daniela.Views.Footer extends Daniela.View
 	toggle_credits: (e)->
 
 		credits = this.$el.find("#credits")
+		e.stopImmediatePropagation() unless credits.hasClass("hide")
 		credits.toggleClass "hide"
 
 		setTimeout ->
@@ -32,4 +33,4 @@ class Daniela.Views.Footer extends Daniela.View
 
 
 
-		
+

@@ -154,6 +154,9 @@
     Footer.prototype.toggle_credits = function(e) {
       var credits;
       credits = this.$el.find("#credits");
+      if (!credits.hasClass("hide")) {
+        e.stopImmediatePropagation();
+      }
       credits.toggleClass("hide");
       return setTimeout(function() {
         return credits.toggleClass("overlay--show");
