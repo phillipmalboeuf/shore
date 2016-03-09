@@ -154,13 +154,18 @@
     Footer.prototype.toggle_credits = function(e) {
       var credits;
       credits = this.$el.find("#credits");
-      if (!credits.hasClass("hide")) {
+      if (credits.hasClass("hide")) {
+        credits.removeClass("hide");
+        return setTimeout(function() {
+          return credits.addClass("overlay--show");
+        }, 10);
+      } else {
         e.stopImmediatePropagation();
+        credits.removeClass("overlay--show");
+        return setTimeout(function() {
+          return credits.addClass("hide");
+        }, 666);
       }
-      credits.toggleClass("hide");
-      return setTimeout(function() {
-        return credits.toggleClass("overlay--show");
-      }, 10);
     };
 
     return Footer;
