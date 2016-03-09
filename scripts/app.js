@@ -150,6 +150,7 @@
     };
 
     Header.prototype.toggle_header = function() {
+      console.log("toggling");
       if (window.pageYOffset > this.previous_offset) {
         if (!this.header.hasClass("header--hide")) {
           this.header.addClass("header--hide");

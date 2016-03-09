@@ -25,6 +25,8 @@ class Daniela.Views.Header extends Daniela.View
 
 
 	toggle_header: ->
+		console.log "toggling"
+
 		if window.pageYOffset > @previous_offset
 			if not @header.hasClass "header--hide"
 				@header.addClass "header--hide"
