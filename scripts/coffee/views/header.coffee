@@ -39,3 +39,5 @@ class Daniela.Views.Header extends Daniela.View
 		@previous_offset = window.pageYOffset
 		this.request_frame(this.toggle_header)
 
+		return @header
+

@@ -161,7 +161,8 @@
         }
       }
       this.previous_offset = window.pageYOffset;
-      return this.request_frame(this.toggle_header);
+      this.request_frame(this.toggle_header);
+      return this.header;
     };
 
     return Header;
