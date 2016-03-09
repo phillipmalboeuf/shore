@@ -3,10 +3,13 @@
 	<article class="box box--middle js-track" data-item-id="{id}">
 
 		<div class="box__back" style="background-image: url({assetUrl});">
+			
+			<iframe scrolling="no" allowfullscreen="" src="" frameborder="0" width="100%" height="100%" data-video-src="{oembed.url}" id="video_{id}" class="fades_out fade_out"></iframe>
+
 			{.section customContent.is_coming_soon}
 
 			{.or}
-			<iframe scrolling="no" allowfullscreen="" src="" frameborder="0" width="100%" height="100%" data-video-src="{oembed.url}" id="video_{id}" class="fades_out fade_out"></iframe>
+			
 			{.end}
 		</div>
 		
