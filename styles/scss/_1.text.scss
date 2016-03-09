@@ -3,10 +3,6 @@
 html {
 	font: #{$base_size}/#{$line_height} $body_font;
 	-webkit-font-smoothing: antialiased;
-
-	@media #{$medium} {
-		font-size: 75%;
-	}
 }
 
 body {
