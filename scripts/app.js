@@ -141,6 +141,18 @@
       var header, previous_offset;
       header = this.$el;
       previous_offset = 0;
+      $(window).scroll(function(e) {
+        if (window.pageYOffset > previous_offset) {
+          if (!header.hasClass("header--hide")) {
+            header.addClass("header--hide");
+          }
+        } else {
+          if (header.hasClass("header--hide")) {
+            header.removeClass("header--hide");
+          }
+        }
+        return previous_offset = window.pageYOffset;
+      });
       return Header.__super__.render.call(this);
     };
 
