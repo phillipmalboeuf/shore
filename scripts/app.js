@@ -130,10 +130,6 @@
 
     Header.prototype.events = {};
 
-    Header.prototype.previous_offset = 0;
-
-    Header.prototype.request_frame = window.requestAnimationFrame;
-
     Header.prototype.initialize = function(options) {
       if (options == null) {
         options = {};
@@ -142,27 +138,22 @@
     };
 
     Header.prototype.render = function() {
-      this.header = this.$el;
-      if (this.request_frame) {
-        this.toggle_header();
-      }
+      var header, previous_offset;
+      header = this.$el;
+      previous_offset = 0;
+      $(window).scroll(function(e) {
+        if (window.pageYOffset > previous_offset) {
+          if (!header.hasClass("header--hide")) {
+            header.addClass("header--hide");
+          }
+        } else {
+          if (header.hasClass("header--hide")) {
+            header.removeClass("header--hide");
+          }
+        }
+        return previous_offset = window.pageYOffset;
+      });
       return Header.__super__.render.call(this);
-    };
-
-    Header.prototype.toggle_header = function() {
-      console.log("toggling");
-      if (window.pageYOffset > this.previous_offset) {
-        if (!this.header.hasClass("header--hide")) {
-          this.header.addClass("header--hide");
-        }
-      } else {
-        if (this.header.hasClass("header--hide")) {
-          this.header.removeClass("header--hide");
-        }
-      }
-      this.previous_offset = window.pageYOffset;
-      this.request_frame(this.toggle_header);
-      return this.header;
     };
 
     return Header;
