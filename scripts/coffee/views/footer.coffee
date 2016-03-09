@@ -24,24 +24,12 @@ class Daniela.Views.Footer extends Daniela.View
 	toggle_credits: (e)->
 
 		credits = this.$el.find("#credits")
-		if credits.hasClass("hide")
-			credits.removeClass "hide"
+		e.stopImmediatePropagation() unless credits.hasClass("hide")
+		credits.toggleClass "hide"
 
-			setTimeout ->
-				credits.addClass "overlay--show"
-			, 10
-
-		else
-			e.stopImmediatePropagation()
-
-			credits.removeClass "overlay--show"
-
-			setTimeout ->
-				credits.addClass "hide"
-			, 666
-			
-
-			
+		setTimeout ->
+			credits.toggleClass "overlay--show"
+		, 10
 
 
 
