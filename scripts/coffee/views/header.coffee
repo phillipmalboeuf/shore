@@ -18,7 +18,7 @@ class Daniela.Views.Header extends Daniela.View
 
 	render: ->
 		@header = this.$el
-		toggle_header() if this.request_frame
+		this.toggle_header() if this.request_frame
 
 		super()
 
@@ -35,5 +35,5 @@ class Daniela.Views.Header extends Daniela.View
 
 
 		@previous_offset = window.pageYOffset
-		this.request_frame(toggle_header)
+		this.request_frame(this.toggle_header)
 
