@@ -96,23 +96,24 @@ module.exports = function(grunt) {
 
     watch: {
       options: {
-        livereload: false
+        livereload: false,
+        interrupt: true
       },
       layout: {
         files: ['template.conf', '**/*.region', 'pages/**/*.*', 'collections/**/*.*', 'blocks/**/*.*', 'assets/**/*.*'],
-        tasks: ['gitadd', 'gitcommit', 'gitpush']
+        tasks: ['gitcommit', 'gitpush']
       },
       handlebars: {
         files: ['scripts/hbs/**/*.hbs'],
-        tasks: ['handlebars', 'gitadd', 'gitcommit', 'gitpush']
+        tasks: ['handlebars', 'gitcommit', 'gitpush']
       },
       sass: {
         files: ['styles/scss/**/*.scss'],
-        tasks: ['sass', 'gitadd', 'gitcommit', 'gitpush']
+        tasks: ['sass', 'gitcommit', 'gitpush']
       },
       coffee: {
         files: ['scripts/coffee/**/*.coffee'],
-        tasks: ['coffee', 'gitadd', 'gitcommit', 'gitpush']
+        tasks: ['coffee', 'gitcommit', 'gitpush']
       }
     }
 
