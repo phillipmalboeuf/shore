@@ -154,12 +154,9 @@
     Footer.prototype.toggle_credits = function(e) {
       var credits;
       credits = this.$el.find("#credits");
-      if (!credits.hasClass("hide")) {
-        e.stopImmediatePropagation();
-      }
-      credits.toggleClass("hide");
+      credits.removeClass("hide");
       return setTimeout(function() {
-        return credits.toggleClass("overlay--show");
+        return credits.addClass("overlay--show");
       }, 10);
     };
 
