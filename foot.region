@@ -1,7 +1,7 @@
 
 
 	<footer class="js-footer">
-		<div class="grid grid--middle big_bottom">
+		<div class="grid grid--middle">
 			<div class="col col--9of12">
 				<small class="uppercase"><squarespace:block-field id="footer-copyrights" label="Footer Copyrights" /></small>
 			</div>
