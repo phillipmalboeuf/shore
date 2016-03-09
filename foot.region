@@ -13,7 +13,7 @@
 	</footer>
 
 	<footer>
-		<squarespace:block-field id="footer-credits" label="Footer Credits" />
+		<squarespace:block-field id="footer-credits" label="Footer Credits" columns="12" />
 	</footer>
     
 
