@@ -24,6 +24,10 @@
 		position: absolute;
 		z-index: 5;
 	}
+
+	&.overlay--relative {
+		position: relative;
+	}
 }
 
 	.overlay--show {
