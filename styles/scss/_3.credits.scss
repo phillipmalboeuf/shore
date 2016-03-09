@@ -1,29 +1,7 @@
 
 
-// #TOUR DATES
+// #CREDITS
 
-.sqs-block-tourdates {
-
-	.tour-item {
-		font-size: $small_size;
-		font-weight: bold;
-
-
-		padding: $vertical_rythm/2 0;
-		border-color: $gold--dark;
-	}
-
-	.tour-timeframe {
-		line-height: 0.8;
-		width: 100%;
-	}
-
-		.tour-date,
-		.tour-weekday {
-			width: auto;
-		}
-
-	.tour-venue {
-		width: 50%;
-	}
+.credits {
+	color: $gold--light;
 }
