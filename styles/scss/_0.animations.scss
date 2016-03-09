@@ -40,6 +40,28 @@
 	background: linear-gradient($angle, $color1, $color2);
 }
 
+@mixin define_keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-o-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+@mixin animation($animation) {
+	-webkit-animation: $animations;
+    -moz-animation: $animations;
+    -o-animation: $animations;
+    animation: $animations;
+}
+
 .fades_out {
 	visibility: visible;
 	opacity: 1;
