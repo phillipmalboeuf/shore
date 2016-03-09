@@ -4,6 +4,7 @@
 
 .credits {
 	color: $gold--light;
+	line-height: 1.333;
 
 	h3 {
 		font-size: $small_size;
@@ -11,5 +12,9 @@
 
 		display: block;
 		border-bottom: 1px solid;
+	}
+
+	p {
+		font-size: $small_size*1.2;
 	}
 }
