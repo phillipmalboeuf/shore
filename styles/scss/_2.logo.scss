@@ -20,7 +20,7 @@
 	
 	span {
 		@include transform_origin(-10%, -10%);
-		@include animation(logoloop 5s infinite linear);
+		@include animation(logoloop 5s linear infinite);
 
 		&:before {
 			content: "O";
