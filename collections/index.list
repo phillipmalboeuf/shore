@@ -9,7 +9,7 @@
 
 		<div class="box__inside">
 			<h1 class="h1--logotype" data-content-field="site-title">{website.siteTitle}</h1>
-			<h2 class="h2--logo">{collection.title|html}</h2>
+			<h2 class="h2--logo">{collection.title|safe}</h2>
 		</div>
 
         <div class="box__bottom">
