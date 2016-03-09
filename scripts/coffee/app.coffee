@@ -22,6 +22,10 @@ window.Daniela =
 		$(".js-header").each (index, el)=>
 			@header_views.push new Daniela.Views.Header({el: $(el)})
 
+		@footer_views = []
+		$(".js-footer").each (index, el)=>
+			@footer_views.push new Daniela.Views.Footer({el: $(el)})
+
 
 		@track_views = []
 		$(".js-track").each (index, el)=>
