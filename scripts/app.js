@@ -143,7 +143,7 @@
 
     Header.prototype.render = function() {
       this.header = this.$el;
-      if (request_frame) {
+      if (this.request_frame) {
         toggle_header();
       }
       return Header.__super__.render.call(this);
@@ -160,7 +160,7 @@
         }
       }
       this.previous_offset = window.pageYOffset;
-      return request_frame(toggle_header);
+      return this.request_frame(toggle_header);
     };
 
     return Header;
