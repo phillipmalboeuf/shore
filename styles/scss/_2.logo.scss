@@ -31,7 +31,7 @@
 
 	.logo__circle {
 		@include transform_origin(50%, 50%);
-		@include animation(logoloop 5s ease-in-out infinite);
+		@include animation(logoloop 5s ease-in-out infinite alternate);
 	}
 	
 
