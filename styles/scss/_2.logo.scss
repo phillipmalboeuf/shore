@@ -28,11 +28,11 @@
 }
 
 	.logo__circle {
-		@include transform_origin(-1px, -1px);
+		@include transform_origin(-1%, -1%);
 		@include animation(circle 5s linear infinite);
 
 		& + & {
-			@include transform_origin(1px, 1px);
+			@include transform_origin(1%, 1%);
 		}
 	}
 
