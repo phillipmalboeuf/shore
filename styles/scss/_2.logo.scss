@@ -17,6 +17,14 @@
 
 
 .logo {
+
+	max-width: 200px;
+
+
+	polygon,
+	path {
+		fill: $primary;
+	}
 	
 	// span {
 	// 	@include transform_origin(-10%, -10%);
