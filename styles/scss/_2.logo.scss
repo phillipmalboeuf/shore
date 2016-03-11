@@ -16,7 +16,7 @@
 }
 
 
-$displacement: 10%;
+$displacement: 100%;
 
 @include define_keyframes(logoloop) {
 	from {
@@ -32,7 +32,6 @@ $displacement: 10%;
 }
 
 	.logo__circle {
-		@include transform_origin(50%, 50%);
 		@include animation(logoloop 5s linear infinite);
 	}
 	
