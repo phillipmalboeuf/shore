@@ -29,5 +29,10 @@
 	// 		width: 0px;
 	// 	}
 	// }
+
+
+	& + .h2--logo {
+		display: none;
+	}
 }
 	
