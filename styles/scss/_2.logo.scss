@@ -1,6 +1,20 @@
 
 // #LOGO
 
+.logo {
+	display: inline-block;
+	max-width: 280px;
+
+	polygon,
+	path {
+		fill: $primary;
+	}
+
+	& + .h2--logo {
+		display: none;
+	}
+}
+
 
 @include define_keyframes(logoloop) {
 	0%   { 
@@ -15,31 +29,8 @@
 	}
 }
 
-
-.logo {
-	display: inline-block;
-	max-width: 280px;
-
-	polygon,
-	path {
-		fill: $primary;
+	.logo__circle {
+		@include transform_origin(45%, 45%);
+		@include animation(logoloop 5s linear infinite);
 	}
-	
-	// span {
-	// 	@include transform_origin(-10%, -10%);
-	// 	@include animation(logoloop 5s linear infinite);
-
-	// 	&:before {
-	// 		content: "O";
-
-	// 		display: inline-block;
-	// 		width: 0px;
-	// 	}
-	// }
-
-
-	& + .h2--logo {
-		display: none;
-	}
-}
 	
