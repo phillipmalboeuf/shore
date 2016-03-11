@@ -41,6 +41,10 @@
 				width: 100%;
 			}
 		}
+
+		&.box__inside--with_top {
+			padding-top: $gutter;
+		}
 	}
 	
 
