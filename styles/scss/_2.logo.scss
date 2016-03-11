@@ -20,12 +20,12 @@ $displacement: 10%;
 
 @include define_keyframes(logoloop) {
 	from {
-		transform: rotate(0deg) translate(-150px) rotate(0deg);
+		transform: rotate(0deg) translate(-$displacement) rotate(0deg);
 		-webkit-transform: rotate(0deg) translate(-$displacement) rotate(0deg);
 		-ms-transform: rotate(0deg) translate(-$displacement) rotate(0deg);
 	}
 	to {
-		transform: rotate(360deg) translate(-150px) rotate(-360deg);
+		transform: rotate(360deg) translate(-$displacement) rotate(-360deg);
 		-webkit-transform: rotate(0deg) translate(-$displacement) rotate(0deg);
 		-ms-transform: rotate(0deg) translate(-$displacement) rotate(0deg);
 	}
