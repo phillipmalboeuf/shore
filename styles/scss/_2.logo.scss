@@ -19,36 +19,21 @@
 $displacement: 10%;
 
 @include define_keyframes(logoloop) {
-	0%   { 
-		transform: translate($displacement, $displacement);
-		-webkit-transform: translate($displacement, $displacement);
-		-ms-transform: translate($displacement, $displacement);
+	from {
+		transform: rotate(0deg) translate(-150px) rotate(0deg);
+		-webkit-transform: rotate(0deg) translate(-$displacement) rotate(0deg);
+		-ms-transform: rotate(0deg) translate(-$displacement) rotate(0deg);
 	}
-	25%   { 
-		transform: translate(-$displacement, $displacement);
-		-webkit-transform: translate(-$displacement, $displacement);
-		-ms-transform: translate(-$displacement, $displacement);
-	}
-	50%   { 
-		transform: translate(-$displacement, -$displacement);
-		-webkit-transform: translate(-$displacement, -$displacement);
-		-ms-transform: translate(-$displacement, -$displacement);
-	}
-	75% { 
-		transform: translate($displacement, -$displacement);
-		-webkit-transform: translate($displacement, -$displacement);
-		-ms-transform: translate($displacement, -$displacement);
-	}
-	100%   { 
-		transform: translate($displacement, $displacement);
-		-webkit-transform: translate($displacement, $displacement);
-		-ms-transform: translate($displacement, $displacement);
+	to {
+		transform: rotate(360deg) translate(-150px) rotate(-360deg);
+		-webkit-transform: rotate(0deg) translate(-$displacement) rotate(0deg);
+		-ms-transform: rotate(0deg) translate(-$displacement) rotate(0deg);
 	}
 }
 
 	.logo__circle {
 		@include transform_origin(50%, 50%);
-		@include animation(logoloop 5s ease-in-out infinite);
+		@include animation(logoloop 5s linear infinite);
 	}
 	
 
