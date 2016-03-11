@@ -28,8 +28,12 @@
 }
 
 	.logo__circle {
-		@include transform_origin(50%, 25%);
+		@include transform_origin(-2px, 0px);
 		@include animation(circle 5s linear infinite);
+
+		& + & {
+			@include animation(circle 5s linear infinite reverse);
+		}
 	}
 
 		.logo__circle__path {
