@@ -45,6 +45,14 @@
 		&.box__inside--with_top {
 			padding-top: $gutter;
 		}
+
+		@media #{$small} {
+			text-align: center;
+
+			.hr--half {
+				display: none;
+			}
+		}
 	}
 	
 
