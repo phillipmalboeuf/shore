@@ -81,11 +81,11 @@ footer {
 	padding: $gutter/1.5 $gutter;
 
 	@media #{$medium} {
-		padding: $gutter/2;
+		padding: $gutter/1.5 $gutter/2;
 	}
 
 	@media #{$small} {
-		padding: $gutter/4;
+		padding: $gutter/1.5 $gutter/4;
 	}
 
 	&.padded--thick {
