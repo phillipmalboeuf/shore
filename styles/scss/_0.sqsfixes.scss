@@ -16,6 +16,13 @@
 		}
 	}
 
+	.sqs-col-4 {
+
+		@media #{$small} {
+			width: 100%;
+		}
+	}
+
 	[class*=sqs-col] .sqs-block {
 		padding-left: $gutter/4;
 		padding-right: $gutter/4;
