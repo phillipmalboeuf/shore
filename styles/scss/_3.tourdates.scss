@@ -5,9 +5,10 @@
 .sqs-block-tourdates {
 
 	.tour-item {
+		position: relative;
+
 		font-size: $small_size;
 		font-weight: bold;
-
 
 		padding: $vertical_rythm/2 0;
 		border-color: $gold--dark;
@@ -25,5 +26,18 @@
 
 	.tour-venue {
 		width: 50%;
+
+		@media #{$small} {
+			width: 100%;
+		}
+	}
+
+	.tour-actions {
+
+		@media #{$small} {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 	}
 }
