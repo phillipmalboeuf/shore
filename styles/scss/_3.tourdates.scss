@@ -17,6 +17,10 @@
 	.tour-timeframe {
 		line-height: 0.8;
 		width: 100%;
+
+		@media #{$small} {
+			line-height: 2;
+		}
 	}
 
 		.tour-date,
@@ -28,6 +32,14 @@
 		width: 50%;
 
 		@media #{$small} {
+			line-height: 1;
+			width: 100%;
+		}
+	}
+
+	.tour-location {
+
+		@media #{$small} {
 			width: 100%;
 		}
 	}
@@ -36,7 +48,7 @@
 
 		@media #{$small} {
 			position: absolute;
-			top: 0;
+			top: $vertical_rythm/2;
 			right: 0;
 		}
 	}
