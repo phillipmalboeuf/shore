@@ -46,6 +46,14 @@ h1, h2, h3, h4, h5, h6 {
 			letter-spacing: $letter_spacing*1.6;
 			word-spacing: $big_size;
 		}
+
+		@media #{$medium} {
+			margin-bottom: $bigger_size;
+		}
+
+		@media #{$small} {
+			margin-bottom: $medium_size;
+		}
 	}
 
 	h2 {
@@ -59,6 +67,10 @@ h1, h2, h3, h4, h5, h6 {
 		&.h2--bigger {
 			color: $gold--dark;
 			font-size: $bigger_size;
+		}
+
+		@media #{$small} {
+			margin-bottom: $medium_size;
 		}
 	}
 
