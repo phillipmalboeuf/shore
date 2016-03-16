@@ -5,7 +5,10 @@
 .overlay {
 	@extend .grid;
 	@extend .grid--middle;
+
 	@extend .padded;
+	padding-left: 0;
+	padding-right: 0;
 	
 	position: fixed;
 	z-index: 20;
