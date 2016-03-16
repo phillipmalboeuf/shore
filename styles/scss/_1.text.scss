@@ -48,11 +48,11 @@ h1, h2, h3, h4, h5, h6 {
 		}
 
 		@media #{$medium} {
-			margin-bottom: $bigger_size;
+			font-size: $bigger_size;
 		}
 
 		@media #{$small} {
-			margin-bottom: $medium_size;
+			font-size: $medium_size;
 		}
 	}
 
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 
 		@media #{$small} {
-			margin-bottom: $medium_size;
+			font-size: $medium_size;
 		}
 	}
 
