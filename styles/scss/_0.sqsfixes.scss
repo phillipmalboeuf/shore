@@ -9,13 +9,8 @@
 	}
 }
 
-	.sqs-col-6 {
-
-		@media #{$small} {
-			width: 100%;
-		}
-	}
-
+	.sqs-col-6,
+	.sqs-col-7,
 	.sqs-col-4 {
 
 		@media #{$small} {
