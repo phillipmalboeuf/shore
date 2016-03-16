@@ -5,6 +5,10 @@
 	display: inline-block;
 	max-width: 280px;
 
+	@media #{$small} {
+		max-width: 200px;
+	}
+
 	polygon,
 	path {
 		fill: $primary;
