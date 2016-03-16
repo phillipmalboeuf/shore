@@ -5,7 +5,7 @@
 	display: inline-block;
 	max-width: 280px;
 
-	@media #{$small} {
+	@media #{$medium} {
 		max-width: 200px;
 	}
 
