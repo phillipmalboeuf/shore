@@ -21,7 +21,7 @@
 	.sqs-col-2 {
 
 		@media #{$small} {
-			width: 50%;
+			width: 50% !important;
 		}
 	}
 
