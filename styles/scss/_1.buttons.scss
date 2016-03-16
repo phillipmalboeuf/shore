@@ -71,17 +71,14 @@ button,
 
 	&.button--half {
 		min-width: 50%;
+
+		@media #{$small} {
+			min-width: 100%;
+		}
 	}
 
 	&.button--full {
 		min-width: 100%;
-	}
-
-	&.button--full_on_small {
-		
-		@media #{$small} {
-			min-width: 100%;
-		}
 	}
 
 	&[disabled] {
