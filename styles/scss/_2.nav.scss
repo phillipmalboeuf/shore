@@ -17,6 +17,7 @@ nav {
 			@extend .invisible;
 		}
 
+		.homepage &[href="/biography"],
 		.homepage &[href="/tour-dates"] {
 			
 			@media #{$small} {
