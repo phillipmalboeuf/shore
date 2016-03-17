@@ -96,7 +96,7 @@ footer {
 		}
 
 		@media #{$small} {
-			padding: $gutter $gutter/4;
+			padding: $gutter/1.5 $gutter/4;
 		}
 	}
 }
