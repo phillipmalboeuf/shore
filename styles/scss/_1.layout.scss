@@ -41,7 +41,7 @@ header {
 	}
 
 	@media #{$small} {
-		padding: $gutter/4;
+		padding: $gutter/4 !important;
 	}
 }
 
