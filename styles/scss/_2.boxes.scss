@@ -22,7 +22,8 @@
 		}
 
 		@media #{$small} {
-			@extend .grid--vertically_spaced;
+			align-content: center;
+			-webkit-align-content: center;
 		}
 	}
 
