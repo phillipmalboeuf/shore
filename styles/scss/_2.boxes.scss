@@ -25,9 +25,17 @@
 		min-height: 100vh;
 	}
 }
+
 	.box__top,
 	.box__bottom {
 		width: 100%;
+	}
+
+	.box__top {
+
+		@media #{$small} {
+			display: none;
+		}
 	}
 
 	.box__inside {
