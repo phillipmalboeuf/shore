@@ -22,8 +22,8 @@
 		}
 
 		@media #{$small} {
-			align-content: center;
-			-webkit-align-content: center;
+			align-content: space-between;
+			-webkit-align-content: space-between;
 		}
 	}
 
