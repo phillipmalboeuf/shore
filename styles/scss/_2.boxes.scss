@@ -77,9 +77,9 @@
 			max-width: 22rem;
 
 			@media #{$small} {
-				-ms-flex-order: 99;
-				-webkit-order: 99;
-				order: 99;
+				@extend .col--last;
+
+				margin-top: $vertical_rythm;
 			}
 		}
 
