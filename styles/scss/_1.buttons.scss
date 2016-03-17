@@ -75,6 +75,10 @@ button,
 		@media #{$small} {
 			min-width: 100%;
 			margin-top: $vertical_rythm;
+
+			&:first-child {
+				margin-top: 0;
+			}
 		}
 	}
 
