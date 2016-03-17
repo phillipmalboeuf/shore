@@ -44,6 +44,10 @@
 
 		&.box__inside--with_top {
 			padding-top: $gutter;
+
+			@media #{$small} {
+				padding-top: 0;
+			}
 		}
 
 		@media #{$small} {
