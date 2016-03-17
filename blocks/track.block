@@ -13,11 +13,12 @@
 			{.end}
 		</div>
 		
+		<div class="box__top"></div>
 
 		<div class="box__inside">
 			<h4>{body}</h4>
 			<h2 data-content-field="title">{title}</h2>
-			
+
 			<div class="small_bottom">
 				{.section customContent.is_coming_soon}
 				<a href="#" target="_blank" class="button button--half" disabled>Coming Soon</a>
@@ -35,6 +36,7 @@
 			{.end}
 		</div>
 
+		<div class="box__bottom"></div>
 
 		<div class="overlay overlay--absolute
 		 js-fullscreen">
