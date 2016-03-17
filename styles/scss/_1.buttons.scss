@@ -66,6 +66,10 @@ button,
 		strong {
 			font-size: $big_size;
 			text-transform: none;
+
+			@media #{$small} {
+				font-size: $medium_size;
+			}
 		}
 	}
 
