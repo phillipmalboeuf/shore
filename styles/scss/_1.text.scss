@@ -31,11 +31,6 @@ h1, h2, h3, h4, h5, h6 {
 	@media #{$small} {
 		margin-bottom: $vertical_rythm/2;
 	}
-
-
-	&:last-child {
-		margin-bottom: 0;
-	}
 }
 
 	h1 {
