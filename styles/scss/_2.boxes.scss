@@ -75,6 +75,12 @@
 		.box__bottom__text {
 			text-align: center;
 			max-width: 22rem;
+
+			@media #{$small} {
+				-ms-flex-order: 99;
+				-webkit-order: 99;
+				order: 99;
+			}
 		}
 
 
