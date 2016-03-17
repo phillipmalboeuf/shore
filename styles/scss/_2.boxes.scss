@@ -15,7 +15,6 @@
 
 	&.box--middle {
 		@extend .padded--thick;
-		@extend .grid--middle;
 
 		&:nth-child(2n) {
 			@extend .grid--right;
