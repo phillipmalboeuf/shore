@@ -51,6 +51,9 @@
 		}
 
 		@media #{$small} {
+			@extend .grid;
+			@extend .grid--vertically_spaced;
+			
 			text-align: center;
 
 			.hr--half {
