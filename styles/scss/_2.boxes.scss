@@ -95,7 +95,9 @@
 				-webkit-order: 99;
 				order: 99;
 
-				margin: $vertical_rythm auto 0;
+				width: 100%;
+				max-width: 100%;
+				margin-top: $vertical_rythm;
 			}
 		}
 
