@@ -7,7 +7,6 @@
 
 
 // #BODY
-
 html {
 	
 }
@@ -24,7 +23,6 @@ body {
 
 
 // #HEADER
-
 header {
 	@extend .padded;
 
@@ -47,7 +45,6 @@ header {
 
 
 // #MAIN
-
 .main {
 	// max-width: 1600px;
 	margin: 0 auto;
@@ -55,7 +52,6 @@ header {
 
 
 // #FOOTER
-
 footer {
 	@extend .padded;
 	@extend .padded--thick;
@@ -63,7 +59,6 @@ footer {
 
 
 // #BACKGROUNDS
-
 .black_back {
 	color: $white;
 	background-color: $black;
@@ -75,7 +70,6 @@ footer {
 
 
 // #MIXINS
-
 .max_width {
 	width: 100%;
 	max-width: 1200px;
@@ -118,8 +112,5 @@ footer {
 .right { float: right; }
 .text_center { text-align: center; }
 .text_right { text-align: right; }
-
-
-
 
 
