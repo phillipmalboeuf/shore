@@ -20,6 +20,10 @@
 			@extend .grid--right;
 		}
 	}
+
+	@media #{$small} {
+		min-height: 100vh;
+	}
 }
 	.box__top,
 	.box__bottom {
