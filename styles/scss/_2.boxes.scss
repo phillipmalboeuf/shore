@@ -51,7 +51,7 @@
 
 		@media #{$small} {
 			text-align: center;
-			
+
 			.hr--half {
 				display: none;
 			}
@@ -68,8 +68,6 @@
 			max-width: 22rem;
 
 			@media #{$small} {
-				@extend .col--last;
-
 				margin-top: $vertical_rythm;
 			}
 		}
