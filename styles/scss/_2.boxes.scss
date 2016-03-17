@@ -4,7 +4,7 @@
 .box {
 	@extend .padded;
 	@extend .grid;
-	@extend .grid--vertically_spaced;
+	// @extend .grid--vertically_spaced;
 
 	position: relative;
 	width: 100%;
