@@ -178,7 +178,7 @@ hr {
 	}
 
 	@media #{$small} {
-		margin: $vertical_rythm auto;
+		margin: $vertical_rythm auto $vertical_rythm*2;
 	}
 }
 
