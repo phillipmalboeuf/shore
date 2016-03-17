@@ -223,11 +223,16 @@ sub {
 	&.icon--big {
 		height: $bigger_size;
 		width: $bigger_size;
+
+		@media #{$small} {
+			height: $big_size;
+			width: $big_size;
+		}
 	}
 
 	&.icon--medium {
-    	height: $big_size;
-    	width: $big_size;
+		height: $big_size;
+		width: $big_size;
     }
 }
 
