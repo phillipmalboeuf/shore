@@ -35,6 +35,7 @@
 
 
 	.box__top {
+		width: 100%;
 
 		@media #{$small} {
 			display: none;
