@@ -39,10 +39,6 @@ header {
 	&.header--hide {
 		@include translate(0, -100%);
 	}
-
-	@media #{$small} {
-		padding-top: 0;
-	}
 }
 
 
