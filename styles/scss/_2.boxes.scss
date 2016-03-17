@@ -14,10 +14,15 @@
 
 
 	&.box--middle {
+		@extend .grid--vertically_centered;
 		@extend .padded--thick;
 
 		&:nth-child(2n) {
 			@extend .grid--right;
+		}
+
+		@media #{$small} {
+			@extend .grid--vertically_spaced;
 		}
 	}
 
