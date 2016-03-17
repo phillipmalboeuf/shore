@@ -33,10 +33,6 @@
 	}
 }
 
-	.box__top,
-	.box__bottom {
-		width: 100%;
-	}
 
 	.box__top {
 
@@ -45,7 +41,8 @@
 		}
 	}
 
-	.box__inside {
+	.box__inside,
+	.box__bottom {
 		width: 100%;
 
 		.box--middle & {
@@ -60,16 +57,20 @@
 			}
 		}
 
+		@media #{$small} {
+			text-align: center;
+		}
+	}
+
+	
+	.box__inside {
+
 		&.box__inside--with_top {
 			padding-top: $gutter;
 
 			@media #{$small} {
 				padding-top: 0;
 			}
-		}
-
-		@media #{$small} {
-			text-align: center;
 		}
 	}
 	
