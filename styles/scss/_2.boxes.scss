@@ -79,10 +79,6 @@
 	.box__bottom {
 
 		@media #{$small} {
-			.grid--spaced {
-				justify-content: center;
-				-webkit-justify-content: center;
-			}
 
 			.hr--half {
 				display: none;
@@ -98,6 +94,8 @@
 				-ms-flex-order: 99;
 				-webkit-order: 99;
 				order: 99;
+
+				width: 100%;
 				margin-top: $vertical_rythm;
 			}
 		}
