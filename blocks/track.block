@@ -14,25 +14,29 @@
 		</div>
 		
 
-		<div class="box__inside small_bottom">
-			<h4>{body}</h4>
-			<h2 data-content-field="title">{title}</h2>
-		</div>
-
 		<div class="box__inside">
-			{.section customContent.is_coming_soon}
-			<a href="#" target="_blank" class="button button--half" disabled>Coming Soon</a>
-			{.or}
-			<a href="{customContent.youtube_link}" target="_blank" class="button button--half" data-show-fullscreen="{customContent.youtube_link}">Watch the Video</a>
-			{.end}
+			<div>
+				<h4>{body}</h4>
+				<h2 data-content-field="title">{title}</h2>
+			</div>
 
-			<hr class="hr--half">
-			
-			{.section customContent.is_coming_soon}
-			<a href="#" target="_blank" class="button button--half" disabled>{publishOn|date %y . %m . %d}</a>
-			{.or}
-			<a href="{customContent.itunes_link}" target="_blank" class="button button--half">Buy on iTunes</a>
-			{.end}
+			<div>
+				<div class="small_bottom">
+					{.section customContent.is_coming_soon}
+					<a href="#" target="_blank" class="button button--half" disabled>Coming Soon</a>
+					{.or}
+					<a href="{customContent.youtube_link}" target="_blank" class="button button--half" data-show-fullscreen="{customContent.youtube_link}">Watch the Video</a>
+					{.end}
+				</div>
+
+				<hr class="hr--half">
+				
+				{.section customContent.is_coming_soon}
+				<a href="#" target="_blank" class="button button--half" disabled>{publishOn|date %y . %m . %d}</a>
+				{.or}
+				<a href="{customContent.itunes_link}" target="_blank" class="button button--half">Buy on iTunes</a>
+				{.end}
+			</div>
 		</div>
 
 
