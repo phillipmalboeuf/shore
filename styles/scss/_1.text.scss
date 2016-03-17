@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 			font-size: $bigger_size;
 
 			@media #{$small} {
-				font-size: $big_size;
+				font-size: $medium_size*1.25;
 			}
 		}
 
