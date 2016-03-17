@@ -176,6 +176,10 @@ hr {
 		background-color: $primary;
 		margin: 0 auto $vertical_rythm;
 	}
+
+	@media #{$small} {
+		margin: $vertical_rythm auto;
+	}
 }
 
 
