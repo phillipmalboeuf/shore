@@ -58,6 +58,10 @@ button,
 			margin-right: $vertical_rythm/4;
 		}
 
+		@media #{$small} {
+			padding: $base_size/2.5 $base_size/2 $base_size/2;
+		}
+
 		small,
 		strong {
 
