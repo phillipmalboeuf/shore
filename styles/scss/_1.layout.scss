@@ -39,6 +39,10 @@ header {
 	&.header--hide {
 		@include translate(0, -100%);
 	}
+
+	@media #{$small} {
+		padding: $gutter/4;
+	}
 }
 
 
@@ -85,7 +89,7 @@ footer {
 	}
 
 	@media #{$small} {
-		padding: $gutter/3 $gutter/4;
+		padding: $gutter/1.5 $gutter/4;
 	}
 
 	&.padded--thick {
