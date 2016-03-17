@@ -50,16 +50,8 @@
 		}
 
 		@media #{$small} {
-			@extend .grid;
-			@extend .grid--vertically_spaced;
-
-			min-height: 80vh;
 			text-align: center;
-
-			& > div {
-				width: 100%;
-			}
-
+			
 			.hr--half {
 				display: none;
 			}
