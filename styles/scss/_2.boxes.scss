@@ -68,10 +68,6 @@
 
 		@media #{$small} {
 			text-align: center;
-
-			.hr--half {
-				display: none;
-			}
 		}
 	}
 	
@@ -79,7 +75,7 @@
 	.box__bottom {
 
 		@media #{$small} {
-			
+
 			.hr--half {
 				display: none;
 			}
