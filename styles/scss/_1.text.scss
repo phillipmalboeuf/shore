@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 
 		@media #{$small} {
-			font-size: $medium_size;
+			font-size: $medium_size*1.25;
 		}
 	}
 
@@ -81,6 +81,10 @@ h1, h2, h3, h4, h5, h6 {
 	h4 {
 		font-size: $base_size;
 		letter-spacing: $letter_spacing*0.5;
+
+		@media #{$small} {
+			font-size: $medium_size;
+		}
 	}
 	
 	h5, h6 {
