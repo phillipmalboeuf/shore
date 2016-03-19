@@ -34,6 +34,10 @@ header {
 
 	@include transformer;
 
+	@media #{$small} {
+		@include translate(0, -100%);
+	}
+
 	&.header--hide {
 		@include translate(0, -100%);
 
