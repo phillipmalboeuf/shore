@@ -33,14 +33,14 @@ header {
 	@include transformer;
 
 	@media #{$small} {
-		@include translate(0, -100%);
+		// @include translate(0, -100%);
 	}
 
 	&.header--hide {
 		@include translate(0, -100%);
 
 		@media #{$small} {
-			@include translate(0, 0);
+			// @include translate(0, 0);
 		}
 	}
 }
