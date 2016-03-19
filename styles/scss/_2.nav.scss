@@ -36,7 +36,10 @@ nav {
 		.homepage &[href="/tour-dates"] {
 
 			@media #{$small} {
-				max-width: $base_size * 6;
+				padding: $vertical_rythm/2;
+				border: 1px solid;
+
+				max-width: $base_size*6;
 				margin-left: auto;
 			}
 		}
