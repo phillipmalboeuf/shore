@@ -10,6 +10,7 @@
 	width: 100%;
 	min-height: #{$video_ratio * 100}vw;
 
+	margin: 0 -#{$video_ratio}vh;
 	margin-bottom: $gutter;
 
 
