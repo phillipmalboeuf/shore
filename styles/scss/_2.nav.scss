@@ -52,6 +52,10 @@ nav {
 			width: 0;
 
 			@include transition(width $fast);
+
+			@media #{$small} {
+				display: none;
+			}
 		}
 
 		&:hover,
