@@ -36,10 +36,10 @@ header {
 
 	&.header--hide {
 		@include translate(0, -100%);
-	}
 
-	@media #{$small} {
-		display: none;
+		@media #{$small} {
+			@include translate(0, 0);
+		}
 	}
 }
 
