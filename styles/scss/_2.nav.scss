@@ -4,6 +4,13 @@
 nav {
 	@extend .grid;
 	@extend .grid--spaced;
+
+	@extend .padded;
+
+	@media #{$small} {
+		padding-top: $gutter/4;
+		padding-bottom: $gutter/4;
+	}
 }
 	
 	.nav__link {
