@@ -35,7 +35,7 @@ nav {
 		.homepage &[href="/tour-dates"] {
 
 			@media #{$small} {
-				
+				max-width: $base_size * 6;
 			}
 		}
 
