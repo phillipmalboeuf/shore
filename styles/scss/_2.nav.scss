@@ -25,7 +25,8 @@ nav {
 		}
 
 		.homepage &[href="/biography"],
-		.homepage &[href="/contact"] {
+		.homepage &[href="/contact"],
+		.homepage &[href="/tracks"] {
 			
 			@media #{$small} {
 				display: none;
@@ -36,6 +37,7 @@ nav {
 
 			@media #{$small} {
 				max-width: $base_size * 6;
+				margin-left: auto;
 			}
 		}
 
