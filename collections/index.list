@@ -17,7 +17,7 @@
 		</div>
 
         <div class="box__bottom">
-            <div class="grid grid--spaced">
+            <div class="grid grid--tight_guttered grid--spaced">
                 <div class="col">
                     <a href="#" target="_blank" class="button button--with_icon"><svg class="icon-itunes icon--big"><use xlink:href="/assets/icons.svg#icon-itunes"></use></svg> <span><small>Buy now on</small><br><strong>iTunes</strong></span></a>
                 </div>

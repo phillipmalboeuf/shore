@@ -80,6 +80,11 @@
 
 		@media #{$small} {
 
+			.grid--spaced {
+				justify-content: center;
+				-webkit-justify-content: center;
+			}
+
 			.hr--half {
 				display: none;
 			}
