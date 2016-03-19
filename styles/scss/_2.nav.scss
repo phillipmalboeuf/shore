@@ -4,6 +4,7 @@
 nav {
 	@extend .grid;
 	@extend .grid--spaced;
+	@extend .grid--right;
 
 	@extend .padded;
 
