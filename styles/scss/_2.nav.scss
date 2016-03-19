@@ -25,6 +25,13 @@ nav {
 			}
 		}
 
+		.homepage &[href="/tour-dates"] {
+
+			@media #{$small} {
+				display: none;
+			}
+		}
+
 		&:after {
 			content: "";
 			display: inline-block;
