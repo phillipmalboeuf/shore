@@ -37,10 +37,9 @@ nav {
 
 			@media #{$small} {
 				font-size: $small_size;
-				padding: $vertical_rythm/4;
 				border: 1px solid;
-
-				max-width: $base_size*6;
+				
+				padding: $vertical_rythm/4;
 				margin-left: auto;
 			}
 		}
@@ -54,7 +53,7 @@ nav {
 			@include transition(width $fast);
 
 			@media #{$small} {
-				display: none;
+				display: none;	
 			}
 		}
 
