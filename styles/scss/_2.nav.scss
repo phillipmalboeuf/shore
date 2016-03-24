@@ -23,7 +23,7 @@ nav {
 			@extend .invisible;
 		}
 
-		.homepage &[href="/biography"],
+		
 		.homepage &[href="/contact"],
 		.homepage &[href="/tracks"] {
 			
@@ -32,14 +32,19 @@ nav {
 			}
 		}
 
+		.homepage &[href="/biography"] {
+
+			@media #{$small} {
+				font-size: $small_size;
+			}
+		}
+
 		.homepage &[href="/tour-dates"] {
 
 			@media #{$small} {
 				font-size: $small_size;
 				border: 1px solid;
-
 				padding: $vertical_rythm/4;
-				margin-left: auto;
 			}
 		}
 
