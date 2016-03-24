@@ -32,13 +32,7 @@ nav {
 			}
 		}
 
-		.homepage &[href="/biography"] {
-
-			@media #{$small} {
-				font-size: $small_size;
-			}
-		}
-
+		.homepage &[href="/biography"],
 		.homepage &[href="/tour-dates"] {
 
 			@media #{$small} {
@@ -46,6 +40,10 @@ nav {
 				border: 1px solid;
 				padding: $vertical_rythm/4;
 			}
+		}
+
+		.homepage &[href="/biography"] {
+			border-color: transparent;
 		}
 
 		&:after {
