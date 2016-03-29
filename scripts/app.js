@@ -301,7 +301,6 @@
       player = $f(frame);
       return player.addEvent("ready", function() {
         return player.addEvent("playProgress", function() {
-          console.log(frame);
           player.removeEvent("playProgress");
           return $(frame).removeClass("fade_out");
         });
