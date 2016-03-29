@@ -16,7 +16,7 @@
       $(".js-header").each((function(_this) {
         return function(index, el) {
           return _this.header_views.push(new Daniela.Views.Header({
-            el: $(el)
+            el: el
           }));
         };
       })(this));
@@ -24,7 +24,7 @@
       $(".js-footer").each((function(_this) {
         return function(index, el) {
           return _this.footer_views.push(new Daniela.Views.Footer({
-            el: $(el)
+            el: el
           }));
         };
       })(this));
@@ -32,7 +32,7 @@
       $(".js-track").each((function(_this) {
         return function(index, el) {
           return _this.track_views.push(new Daniela.Views.Track({
-            el: $(el)
+            el: el
           }));
         };
       })(this));
@@ -40,7 +40,7 @@
       $(".js-social_links").each((function(_this) {
         return function(index, el) {
           return _this.social_links_views.push(new Daniela.Views.SocialLinks({
-            el: $(el)
+            el: el
           }));
         };
       })(this));
@@ -48,7 +48,7 @@
       return $(".js-view").each((function(_this) {
         return function(index, el) {
           return _this.views.push(new Daniela.View({
-            el: $(el)
+            el: el
           }));
         };
       })(this));

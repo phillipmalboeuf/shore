@@ -20,27 +20,27 @@ window.Daniela =
 
 		@header_views = []
 		$(".js-header").each (index, el)=>
-			@header_views.push new Daniela.Views.Header({el: $(el)})
+			@header_views.push new Daniela.Views.Header({el: el})
 
 		@footer_views = []
 		$(".js-footer").each (index, el)=>
-			@footer_views.push new Daniela.Views.Footer({el: $(el)})
+			@footer_views.push new Daniela.Views.Footer({el: el})
 
 
 		@track_views = []
 		$(".js-track").each (index, el)=>
-			@track_views.push new Daniela.Views.Track({el: $(el)})
+			@track_views.push new Daniela.Views.Track({el: el})
 
 
 		@social_links_views = []
 		$(".js-social_links").each (index, el)=>
-			@social_links_views.push new Daniela.Views.SocialLinks({el: $(el)})
+			@social_links_views.push new Daniela.Views.SocialLinks({el: el})
 
 
 
 		@views = []
 		$(".js-view").each (index, el)=>
-			@views.push new Daniela.View({el: $(el)})
+			@views.push new Daniela.View({el: el})
 
 
 
