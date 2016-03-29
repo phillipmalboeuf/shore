@@ -4,7 +4,7 @@
 
 		<div class="box__back" style="background-image: url({assetUrl});" data-focal-x="{mediaFocalPoint.x}" data-focal-y="{mediaFocalPoint.y}">
 			
-			
+			<iframe scrolling="no" allowfullscreen="" src="" frameborder="0" width="100%" height="100%" data-video-src="{oembed.url}" id="video_{id}" class="fades_out fade_out"></iframe>
 
 			{.section customContent.is_coming_soon}
 
