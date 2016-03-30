@@ -92,7 +92,7 @@ footer {
 		padding: $gutter $gutter*2;
 
 		@media #{$medium} {
-			padding: $gutter $gutter/2;
+			padding: $gutter/1.5 $gutter/2;
 		}
 
 		@media #{$small} {
