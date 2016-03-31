@@ -65,6 +65,11 @@
 		&.button--icon {
 			padding: $vertical_rythm;	
 		}
+
+		@media #{$small} {
+			right: auto;
+			left: $gutter/2;
+		}
 	}
 
 
