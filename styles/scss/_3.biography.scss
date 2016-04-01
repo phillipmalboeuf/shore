@@ -17,4 +17,9 @@
 		font-size: $base_size*1.2;
 		line-height: 1.222;
 	}
+
+	@media #{$small} {
+		align-items: stretch;
+		-webkit-align-items: stretch;
+	}
 }
