@@ -19,6 +19,8 @@
 	}
 
 	@media #{$small} {
+		height: 100%;
+		
 		align-items: stretch;
 		-webkit-align-items: stretch;
 	}
