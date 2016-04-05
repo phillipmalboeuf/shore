@@ -7,13 +7,15 @@
 			background-image: url(https://res.cloudinary.com/deming/image/fetch/{assetUrl});
 		}
 
-		{.section customContent.mobile_image}
+		
 		@media (max-device-width: 800px), (max-width: 800px) {
 			[data-item-id="{id}"] .box__back {
+				{.section customContent.mobile_image}
 				background-image: url(https://res.cloudinary.com/deming/image/fetch/{assetUrl});
+				{.end}
 			}
 		}
-		{.end}
+		
 		</style>
 
 		<div class="box__back">
