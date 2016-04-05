@@ -69,7 +69,7 @@
 			padding-top: $gutter;
 
 			@media #{$small} {
-				padding-top: 0;
+				padding-top: $gutter/4;
 			}
 		}
 	}
