@@ -268,14 +268,12 @@
     };
 
     Track.prototype.render = function() {
-      var focal_image, video;
+      var video;
       Track.__super__.render.call(this);
       video = this.$el.find("[data-video-src]")[0];
       if ($(video).attr("data-video-src") != null) {
         this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id);
       }
-      focal_image = this.$el.find("[data-focal-x]");
-      focal_image.css("background-position", (focal_image.attr("data-focal-x") * 100) + "% " + (focal_image.attr("data-focal-y") * 100) + "%");
       return this;
     };
 
