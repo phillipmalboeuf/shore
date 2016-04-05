@@ -5,7 +5,7 @@
 		<style>
 		@media (max-device-width: 800px), (max-width: 800px) {
 			.box__back {
-				background-image: url(https://res.cloudinary.com/deming/image/fetch/{customContent.mobile_image.assetUrl});
+				background-image: url(https://res.cloudinary.com/deming/image/fetch/{customContent.mobile_image.assetUrl}) !important;
 			}
 		}
 		</style>
