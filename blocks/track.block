@@ -7,22 +7,17 @@
 			background-image: url(https://res.cloudinary.com/deming/image/fetch/{assetUrl});
 		}
 
+		{.section customContent.mobile_image}
 		@media (max-device-width: 800px), (max-width: 800px) {
 			[data-item-id="{id}"] .box__back {
-				background-image: url(https://res.cloudinary.com/deming/image/fetch/{customContent.mobile_image.assetUrl});
+				background-image: url(https://res.cloudinary.com/deming/image/fetch/{assetUrl});
 			}
 		}
+		{.end}
 		</style>
 
 		<div class="box__back">
-			
 			<iframe scrolling="no" allowfullscreen="" src="" frameborder="0" width="100%" height="100%" data-video-src="{oembed.url}" id="video_{id}" class="fades_out fade_out"></iframe>
-
-			{.section customContent.is_coming_soon}
-
-			{.or}
-			
-			{.end}
 		</div>
 		
 		<div class="box__top"></div>
