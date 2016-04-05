@@ -87,6 +87,10 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 
 				margin: 0;
 				padding: 0;
+
+				@media #{$small} {
+					width: auto;
+				}
 			}
 
 	.newsletter-block .form-submission-text {
