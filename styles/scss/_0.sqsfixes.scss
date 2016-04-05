@@ -90,6 +90,7 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 
 				@media #{$small} {
 					width: auto;
+					bottom: $base_size;
 				}
 			}
 
