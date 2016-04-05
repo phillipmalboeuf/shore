@@ -17,6 +17,10 @@ body {
 	background: $primary;
 }
 
+::-moz-selection {
+	@extend ::selection;
+}
+
 
 
 // #HEADINGS
