@@ -270,7 +270,7 @@
     Track.prototype.render = function() {
       var focal_image, video;
       Track.__super__.render.call(this);
-      video = this.$el.find("[data-video-src]:visible")[0];
+      video = this.$el.find("[data-video-src]")[0];
       if ($(video).attr("data-video-src") != null) {
         this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id);
       }
