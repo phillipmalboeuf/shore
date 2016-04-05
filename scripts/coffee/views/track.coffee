@@ -19,11 +19,8 @@ class Daniela.Views.Track extends Daniela.View
 		super()
 
 		video = this.$el.find("[data-video-src]")[0]
-		if $(video).attr("data-video-src")?
+		if $(video).attr("data-video-src")? and $(video).css("display") not "none"
 			this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id)
-
-		# focal_image = this.$el.find("[data-focal-x]")
-		# focal_image.css "background-position", (focal_image.attr("data-focal-x")*100)+"% "+(focal_image.attr("data-focal-y")*100)+"%"
 
 
 		this
