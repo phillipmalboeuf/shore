@@ -9,6 +9,9 @@ nav {
 
 	@media #{$small} {
 		padding: $gutter/6;
+
+		justify-content: flex-end;
+		-webkit-justify-content: flex-end;
 	}
 }
 	
@@ -46,12 +49,12 @@ nav {
 			}
 		}
 
-		// .homepage &[href="/biography"] {
+		.homepage &[href="/biography"] {
 
-		// 	@media #{$small} {
-		// 		border-color: transparent;
-		// 	}
-		// }
+			@media #{$small} {
+				margin-right: $small_size;
+			}
+		}
 
 		&:after {
 			content: "";
