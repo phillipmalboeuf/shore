@@ -4,7 +4,7 @@
 
 		<style>
 		[data-item-id="{id}"] .box__back {
-			background-image: url(https://res.cloudinary.com/deming/image/fetch/{assetUrl});
+			background-image: url(https://res.cloudinary.com/deming/image/fetch/fl_png8/{assetUrl});
 		}
 
 		
