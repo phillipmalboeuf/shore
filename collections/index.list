@@ -6,6 +6,7 @@
             <iframe scrolling="no" allowfullscreen src="" frameborder="0" width="100%" height="100%" id="video_index" data-video-src="" class="fades_out fade_out"></iframe>
         </div>
         
+        
         <div class="box__top"></div>
 
 		<div class="box__inside box__inside--with_top text_center">
