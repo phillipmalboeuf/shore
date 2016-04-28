@@ -6,10 +6,10 @@
 	@extend .overlay;
 	@extend .overlay--relative;
 	
+	overflow-x: hidden;
+
 	color: $gold--light;
 	line-height: 1.333;
-
-	overflow-x: hidden;
 	
 
 	h3 {
