@@ -14,7 +14,7 @@ html {
 body {
 	position: relative;
 	width: 100%;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	min-height: 100vh;
 
 	@include transition(background-color $fast);
