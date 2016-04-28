@@ -55,7 +55,7 @@
       return $(document).on("keyup", function(e) {
         console.log(e.keyCode);
         if (e.keyCode === 27) {
-          $("overlay--show").removeClass("overlay--show");
+          $(".overlay--show").removeClass("overlay--show");
           return setTimeout(function() {
             return $(".js-fullscreen_iframe").attr("src", "");
           }, 666);
