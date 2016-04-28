@@ -52,7 +52,7 @@
           }));
         };
       })(this));
-      return $(document).on("click", function(e) {
+      return $(document).on("touch", function(e) {
         return console.log(e.currentTarget);
       });
     }

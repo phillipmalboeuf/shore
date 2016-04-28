@@ -43,7 +43,7 @@ window.Daniela =
 			@views.push new Daniela.View({el: el})
 
 
-		$(document).on "click", (e)->
+		$(document).on "touch", (e)->
 			console.log e.currentTarget
 
 		# $(window).on "keyup", (e)->
