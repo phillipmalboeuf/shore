@@ -21,6 +21,7 @@
 
 	opacity: 0;
 	visibility: hidden;
+	pointer-events: none;
 	background: fade-out($black, 0.15);
 
 	@include transition(opacity $slow, visibility 0s linear $slow);
@@ -40,6 +41,7 @@
 	.overlay--show {
 		opacity: 1;
 		visibility: visible;
+		pointer-events: auto;
 
 		@include transition(opacity $slow, visibility 0s);
 	}
