@@ -44,7 +44,6 @@ window.Daniela =
 
 
 		$(document).on "keyup", (e)->
-			console.log e.keyCode
 			if e.keyCode == 27
 				$(".overlay--show").removeClass "overlay--show"
 				setTimeout ->
