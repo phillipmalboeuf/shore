@@ -43,6 +43,14 @@ window.Daniela =
 			@views.push new Daniela.View({el: el})
 
 
+		$(document).on "keyup", ->
+			if e.keyCode == 27
+				$("overlay--show").removeClass "overlay--show"
+				setTimeout ->
+					$(".js-fullscreen_iframe").attr "src", ""
+				, 666
+
+
 
 		# @router = new Daniela.Routers.Router()
 		# Backbone.history.start
