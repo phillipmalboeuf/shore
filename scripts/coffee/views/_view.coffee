@@ -19,6 +19,8 @@ class Daniela.View extends Backbone.View
 
 
 	scroll_to: (e)->
+		console.log e.currentTarget
+		
 		scroll_to_id = "#"+e.currentTarget.getAttribute("data-scroll-to")
 		scroll_to = $(scroll_to_id)
 

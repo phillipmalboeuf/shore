@@ -99,6 +99,7 @@
 
     View.prototype.scroll_to = function(e) {
       var scroll_to, scroll_to_id;
+      console.log(e.currentTarget);
       scroll_to_id = "#" + e.currentTarget.getAttribute("data-scroll-to");
       scroll_to = $(scroll_to_id);
       if (scroll_to.length > 0) {
