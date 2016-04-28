@@ -52,7 +52,7 @@
           }));
         };
       })(this));
-      return $(document).on("keyup", function(e) {
+      return $(window).on("keyup", function(e) {
         if (e.keyCode === 27) {
           $(".overlay--show").removeClass("overlay--show");
           return setTimeout(function() {
