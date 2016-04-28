@@ -9,6 +9,7 @@ class Daniela.Views.Track extends Daniela.View
 
 
 	initialize: (options={})->
+		$(document).on("keyup", this.check_escape)
 
 		super()
 
@@ -38,10 +39,19 @@ class Daniela.Views.Track extends Daniela.View
 
 	hide_fullscreen: (e)->
 
-		this.$el.find(".js-fullscreen").removeClass "overlay--show"
-		setTimeout =>
-			this.$el.find(".js-fullscreen_iframe").attr "src", ""
-		, 666
+		fullscreen = this.$el.find(".js-fullscreen")
+
+		if fullscreen.hasClass "overlay--show"
+			fullscreen.removeClass "overlay--show"
+			setTimeout =>
+				this.$el.find(".js-fullscreen_iframe").attr "src", ""
+			, 666
+
+
+
+	check_escape: (e)=>
+		if e.keyCode == 27
+			this.hide_fullscreen()
 
 
 
