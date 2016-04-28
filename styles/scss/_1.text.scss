@@ -5,6 +5,7 @@ html {
 	
 	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: fade-out($primary, 0.8);
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
