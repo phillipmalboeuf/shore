@@ -133,7 +133,8 @@ a {
 
 	&:focus,
 	&:hover {
-		color: $highlight;
+		// color: $highlight;
+		opacity: 0.5;
 	}
 
 	&:active {
