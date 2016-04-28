@@ -48,7 +48,7 @@
 		</div>
 		
 
-		<div class="overlay js-fullscreen">
+		<div class="overlay overlay--absolute js-fullscreen">
 	        <iframe src="" frameborder="0" class="overlay__full js-fullscreen_iframe" allowfullscreen scrolling="no"></iframe>
 
 	        <button class="button--icon overlay__button js-hide_fullscreen"><svg class="icon-cancel"><use xlink:href="/assets/icons.svg#icon-cancel"></use></svg></button>
