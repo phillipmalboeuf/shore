@@ -134,7 +134,7 @@ a {
 
 	&:focus,
 	&:hover {
-		color: fade-out($highlight, 0.666);
+		color: fade-out($highlight, 0.333);
 	}
 
 	&:active {
