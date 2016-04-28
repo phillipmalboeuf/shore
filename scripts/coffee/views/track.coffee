@@ -29,6 +29,8 @@ class Daniela.Views.Track extends Daniela.View
 
 
 	show_fullscreen: (e)->
+		console.log e.currentTarget
+
 		e.preventDefault()
 		e.stopImmediatePropagation()
 
