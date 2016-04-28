@@ -240,15 +240,13 @@
 }).call(this);
 
 (function() {
-  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
 
   Daniela.Views.Track = (function(superClass) {
     extend(Track, superClass);
 
     function Track() {
-      this.check_escape = bind(this.check_escape, this);
       return Track.__super__.constructor.apply(this, arguments);
     }
 
@@ -261,7 +259,6 @@
       if (options == null) {
         options = {};
       }
-      $(document).on("keyup", this.check_escape);
       return Track.__super__.initialize.call(this);
     };
 
@@ -289,12 +286,6 @@
           return _this.$el.find(".js-fullscreen_iframe").attr("src", "");
         };
       })(this), 666);
-    };
-
-    Track.prototype.check_escape = function(e) {
-      if (e.keyCode === 27) {
-        return this.hide_fullscreen();
-      }
     };
 
     Track.prototype.setup_video = function(frame, video_id, player_id) {
