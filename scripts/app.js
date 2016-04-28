@@ -45,13 +45,21 @@
         };
       })(this));
       this.views = [];
-      return $(".js-view").each((function(_this) {
+      $(".js-view").each((function(_this) {
         return function(index, el) {
           return _this.views.push(new Daniela.View({
             el: el
           }));
         };
       })(this));
+      return $(window).on("keyup", function(e) {
+        if (e.keyCode === 27) {
+          $(".overlay--show").removeClass("overlay--show");
+          return setTimeout(function() {
+            return $(".js-fullscreen_iframe").attr("src", "");
+          }, 666);
+        }
+      });
     }
   };
 
