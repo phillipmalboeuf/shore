@@ -1,6 +1,16 @@
 
 // #LOGO
 
+
+.logotype {
+	padding: $gutter;
+
+	polygon,
+	path {
+		fill: $primary;
+	}
+}
+
 .logo {
 	display: inline-block;
 	max-width: 280px;
