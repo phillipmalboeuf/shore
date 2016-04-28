@@ -38,10 +38,14 @@
 		& + & {
 			@include transform_origin(0.5px, 0.5px);
 		}
+
+		-moz-animation: none !important;
 	}
 
 		.logo__circle__path {
 			@include animation(inner_circle 5s linear infinite);
+
+			-moz-animation: none !important;
 		}
 	
 
