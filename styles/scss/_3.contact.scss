@@ -15,4 +15,12 @@
 	p {
 		font-size: $small_size*1.2;
 	}
+
+
+	@media #{$small} {
+
+		& > article {
+			padding-top: 0;
+		}
+	}
 }
