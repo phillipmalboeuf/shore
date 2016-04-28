@@ -12,7 +12,7 @@
 	padding-right: 0;
 	
 	position: fixed;
-	z-index: 20;
+	z-index: -1;
 	top: 0;
 	left: 0;
 	min-height: 100vh;
@@ -21,15 +21,14 @@
 
 	opacity: 0;
 	visibility: hidden;
-	pointer-events: none;
 	background: fade-out($black, 0.15);
 
 	@include transition(opacity $slow, visibility 0s linear $slow);
 
-	&.overlay--absolute {
-		position: absolute;
-		z-index: 5;
-	}
+	// &.overlay--absolute {
+	// 	position: absolute;
+	// 	z-index: 5;
+	// }
 
 	&.overlay--relative {
 		position: relative;
@@ -41,7 +40,7 @@
 	.overlay--show {
 		opacity: 1;
 		visibility: visible;
-		pointer-events: auto;
+		z-index: 20;
 
 		@include transition(opacity $slow, visibility 0s);
 	}
