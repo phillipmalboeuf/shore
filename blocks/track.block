@@ -32,7 +32,7 @@
 		<div class="box__bottom">
 			<div class="small_bottom">
 				{.section customContent.is_coming_soon}
-				<a href="/#" target="_blank" class="button button--half" disabled>Coming Soon</a>
+				<a href="#" target="_blank" class="button button--half" disabled>Coming Soon</a>
 				{.or}
 				<a href="{customContent.youtube_link}" target="_blank" class="button button--half" data-show-fullscreen="{customContent.youtube_link}">Watch the Video</a>
 				{.end}
@@ -41,7 +41,7 @@
 			<hr class="hr--half">
 			
 			{.section customContent.is_coming_soon}
-			<a href="/#" target="_blank" class="button button--half" disabled>{publishOn|date %y . %m . %d}</a>
+			<a href="#" target="_blank" class="button button--half" disabled>{publishOn|date %y . %m . %d}</a>
 			{.or}
 			<a href="{customContent.itunes_link}" target="_blank" class="button button--half">Buy on iTunes</a>
 			{.end}
