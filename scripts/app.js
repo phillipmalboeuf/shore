@@ -276,7 +276,7 @@
       e.preventDefault();
       e.stopImmediatePropagation();
       this.$el.find(".js-fullscreen").addClass("overlay--show");
-      return this.$el.find(".js-fullscreen_iframe").attr("src", e.currentTarget.getAttribute("data-show-fullscreen") + "?autoplay=1&showinfo=0&color=white");
+      return this.$el.find(".js-fullscreen_iframe").attr("src", e.currentTarget.getAttribute("data-show-fullscreen") + "?autoplay=1&modestbranding=1&showinfo=0&color=white");
     };
 
     Track.prototype.hide_fullscreen = function(e) {
