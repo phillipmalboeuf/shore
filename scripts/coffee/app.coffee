@@ -43,7 +43,7 @@ window.Daniela =
 			@views.push new Daniela.View({el: el})
 
 
-		$(document).on "keyup", ->
+		$(document).on "keyup", (e)->
 			console.log e.keyCode
 			if e.keyCode == 27
 				$("overlay--show").removeClass "overlay--show"
