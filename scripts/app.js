@@ -53,6 +53,7 @@
         };
       })(this));
       return $(document).on("keyup", function() {
+        console.log(e.keyCode);
         if (e.keyCode === 27) {
           $("overlay--show").removeClass("overlay--show");
           return setTimeout(function() {
