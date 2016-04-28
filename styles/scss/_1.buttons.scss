@@ -25,8 +25,7 @@ button,
 
 	&:hover,
 	&:focus {
-		color: $highlight;
-		// opacity: 0.5;
+		color: fade-out($highlight, 0.5);
 	}
 
 	&:active {
