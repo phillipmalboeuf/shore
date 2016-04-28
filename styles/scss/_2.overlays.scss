@@ -25,10 +25,10 @@
 
 	@include transition(opacity $slow, visibility 0s linear $slow);
 
-	&.overlay--absolute {
-		position: absolute;
-		z-index: 5;
-	}
+	// &.overlay--absolute {
+	// 	position: absolute;
+	// 	z-index: 5;
+	// }
 
 	&.overlay--relative {
 		position: relative;
