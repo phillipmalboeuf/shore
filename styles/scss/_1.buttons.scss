@@ -25,7 +25,8 @@ button,
 
 	&:hover,
 	&:focus {
-		color: $highlight;
+		// color: $highlight;
+		opacity: 0.5;
 	}
 
 	&:active {
