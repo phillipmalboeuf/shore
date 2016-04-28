@@ -45,16 +45,13 @@
         };
       })(this));
       this.views = [];
-      $(".js-view").each((function(_this) {
+      return $(".js-view").each((function(_this) {
         return function(index, el) {
           return _this.views.push(new Daniela.View({
             el: el
           }));
         };
       })(this));
-      return $("body").on("click", function(e) {
-        return console.log(e.currentTarget);
-      });
     }
   };
 
