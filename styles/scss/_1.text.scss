@@ -4,7 +4,7 @@ html {
 	font: #{$base_size}/#{$line_height} $body_font;
 	
 	-webkit-font-smoothing: antialiased;
-	// -webkit-tap-highlight-color: fade-out($primary, 0.8);
+	-webkit-tap-highlight-color: fade-out($primary, 0.8);
 	-moz-osx-font-smoothing: grayscale;
 }
 
