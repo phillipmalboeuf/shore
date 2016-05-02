@@ -49,10 +49,6 @@
 		.box--middle & {
 			width: 51%;
 
-			@media #{$medium} {
-				width: 60%;
-			}
-
 			@media #{$small} {
 				width: 100%;
 			}
