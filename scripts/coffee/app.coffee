@@ -43,12 +43,12 @@ window.Daniela =
 			@views.push new Daniela.View({el: el})
 
 
-		# $(window).on "keyup", (e)->
-		# 	if e.keyCode == 27
-		# 		$(".overlay--show").removeClass "overlay--show"
-		# 		setTimeout ->
-		# 			$(".js-fullscreen_iframe").attr "src", ""
-		# 		, 666
+		$(window).on "keyup", (e)->
+			if e.keyCode == 27
+				$(".overlay--show").removeClass "overlay--show"
+				setTimeout ->
+					$(".js-fullscreen_iframe").attr "src", ""
+				, 666
 
 
 
