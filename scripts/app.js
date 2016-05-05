@@ -316,7 +316,7 @@
     };
 
     Track.prototype.check_offset = function() {
-      console.log(window.pageYOffset);
+      console.log(window.pageYOffset + window.innerHeight);
       return console.log(this.$el.offset().top);
     };
 
