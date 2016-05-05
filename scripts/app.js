@@ -315,16 +315,32 @@
       })(this), 666);
     };
 
+    Track.prototype.check_offset = function() {
+      if (window.pageYOffset > 0) {
+        if (window.pageYOffset > this.previous_offset) {
+          if (!this.$el.hasClass("header--hide")) {
+            this.$el.addClass("header--hide");
+          }
+        } else {
+          if (this.$el.hasClass("header--hide")) {
+            this.$el.removeClass("header--hide");
+          }
+        }
+      }
+      return this.previous_offset = window.pageYOffset;
+    };
+
     Track.prototype.setup_video = function(frame, video_id, player_id) {
-      var player;
-      $(frame).attr("src", "https://player.vimeo.com/video/" + video_id + "?api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1&player_id=" + player_id);
-      player = $f(frame);
-      return player.addEvent("ready", function() {
-        return player.addEvent("playProgress", function() {
-          player.removeEvent("playProgress");
-          return $(frame).removeClass("fade_out");
-        });
-      });
+      $(frame).attr("src", "https://player.vimeo.com/video/" + video_id + "?api=1&autoplay=0&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1&player_id=" + player_id);
+      this.player = $f(frame);
+      return this.player.addEvent("ready", (function(_this) {
+        return function() {
+          return _this.player.addEvent("playProgress", function() {
+            _this.player.removeEvent("playProgress");
+            return $(frame).removeClass("fade_out");
+          });
+        };
+      })(this));
     };
 
     return Track;

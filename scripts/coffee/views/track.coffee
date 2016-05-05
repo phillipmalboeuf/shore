@@ -47,16 +47,31 @@ class Daniela.Views.Track extends Daniela.View
 
 
 
+	check_offset: ->
+		if window.pageYOffset > 0
+			if window.pageYOffset > this.previous_offset
+				if not this.$el.hasClass "header--hide"
+					this.$el.addClass "header--hide"
+
+			else 
+				if this.$el.hasClass "header--hide"
+					this.$el.removeClass "header--hide"			
+
+
+		this.previous_offset = window.pageYOffset
+
+
+
 
 
 	# HELPERS
 	setup_video: (frame, video_id, player_id)->
-		$(frame).attr "src", "https://player.vimeo.com/video/"+video_id+"?api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1&player_id="+player_id
+		$(frame).attr "src", "https://player.vimeo.com/video/"+video_id+"?api=1&autoplay=0&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1&player_id="+player_id
 
-		player = $f(frame)
-		player.addEvent "ready", ->
-			player.addEvent "playProgress", ->
-				player.removeEvent "playProgress"
+		this.player = $f(frame)
+		this.player.addEvent "ready", =>
+			this.player.addEvent "playProgress", =>
+				this.player.removeEvent "playProgress"
 				$(frame).removeClass "fade_out"
 
 
