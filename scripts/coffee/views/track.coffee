@@ -65,7 +65,7 @@ class Daniela.Views.Track extends Daniela.View
 
 		this.player = $f(frame)
 		this.player.addEvent "ready", =>
-			this.player.addEvent "playProgress", =>
+			this.player.addEvent "play", =>
 				this.player.removeEvent "playProgress"
 				$(frame).removeClass "fade_out"
 
