@@ -48,17 +48,7 @@ class Daniela.Views.Track extends Daniela.View
 
 
 	check_offset: ->
-		if window.pageYOffset > 0
-			if window.pageYOffset > this.previous_offset
-				if not this.$el.hasClass "header--hide"
-					this.$el.addClass "header--hide"
-
-			else 
-				if this.$el.hasClass "header--hide"
-					this.$el.removeClass "header--hide"			
-
-
-		this.previous_offset = window.pageYOffset
+		console.log window.pageYOffset
 
 
 

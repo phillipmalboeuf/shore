@@ -316,18 +316,7 @@
     };
 
     Track.prototype.check_offset = function() {
-      if (window.pageYOffset > 0) {
-        if (window.pageYOffset > this.previous_offset) {
-          if (!this.$el.hasClass("header--hide")) {
-            this.$el.addClass("header--hide");
-          }
-        } else {
-          if (this.$el.hasClass("header--hide")) {
-            this.$el.removeClass("header--hide");
-          }
-        }
-      }
-      return this.previous_offset = window.pageYOffset;
+      return console.log(window.pageYOffset);
     };
 
     Track.prototype.setup_video = function(frame, video_id, player_id) {
