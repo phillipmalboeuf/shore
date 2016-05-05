@@ -18,22 +18,20 @@ class Daniela.Views.Header extends Daniela.View
 
 
 	render: ->
-		header = this.$el
-
-
 
 		super()
+
 
 
 	check_offset: ->
 		if window.pageYOffset > 0
 			if window.pageYOffset > this.previous_offset
-				if not header.hasClass "header--hide"
-					header.addClass "header--hide"
+				if not this.$el.hasClass "header--hide"
+					this.$el.addClass "header--hide"
 
 			else 
-				if header.hasClass "header--hide"
-					header.removeClass "header--hide"			
+				if this.$el.hasClass "header--hide"
+					this.$el.removeClass "header--hide"			
 
 
 		this.previous_offset = window.pageYOffset
@@ -42,4 +40,4 @@ class Daniela.Views.Header extends Daniela.View
 
 
 
-		
+

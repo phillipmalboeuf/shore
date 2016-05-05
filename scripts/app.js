@@ -198,20 +198,18 @@
     };
 
     Header.prototype.render = function() {
-      var header;
-      header = this.$el;
       return Header.__super__.render.call(this);
     };
 
     Header.prototype.check_offset = function() {
       if (window.pageYOffset > 0) {
         if (window.pageYOffset > this.previous_offset) {
-          if (!header.hasClass("header--hide")) {
-            header.addClass("header--hide");
+          if (!this.$el.hasClass("header--hide")) {
+            this.$el.addClass("header--hide");
           }
         } else {
-          if (header.hasClass("header--hide")) {
-            header.removeClass("header--hide");
+          if (this.$el.hasClass("header--hide")) {
+            this.$el.removeClass("header--hide");
           }
         }
       }
