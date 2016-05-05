@@ -317,7 +317,7 @@
 
     Track.prototype.check_offset = function() {
       console.log(window.pageYOffset);
-      return console.log(this.$el.pageYOffset);
+      return console.log(this.$el.offset().top);
     };
 
     Track.prototype.setup_video = function(frame, video_id, player_id) {
