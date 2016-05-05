@@ -61,10 +61,12 @@ class Daniela.Views.Track extends Daniela.View
 
 	# HELPERS
 	setup_video: (frame, video_id, player_id)->
-		$(frame).attr "src", "https://player.vimeo.com/video/"+video_id+"?api=1&autoplay=0&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1&player_id="+player_id
+		$(frame).attr "src", "https://player.vimeo.com/video/"+video_id+"?api=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1&player_id="+player_id
 
 		this.player = $f(frame)
 		this.player.addEvent "ready", =>
+			this.player.api("pause")
+
 			this.player.addEvent "play", =>
 				this.player.removeEvent "playProgress"
 				$(frame).removeClass "fade_out"
