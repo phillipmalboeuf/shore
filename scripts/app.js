@@ -188,6 +188,8 @@
 
     Header.prototype.events = {};
 
+    Header.prototype.previous_offset = 0;
+
     Header.prototype.initialize = function(options) {
       if (options == null) {
         options = {};
@@ -196,24 +198,24 @@
     };
 
     Header.prototype.render = function() {
-      var header, previous_offset;
+      var header;
       header = this.$el;
-      previous_offset = 0;
-      $(window).scroll(function(e) {
-        if (window.pageYOffset > 0) {
-          if (window.pageYOffset > previous_offset) {
-            if (!header.hasClass("header--hide")) {
-              header.addClass("header--hide");
-            }
-          } else {
-            if (header.hasClass("header--hide")) {
-              header.removeClass("header--hide");
-            }
+      return Header.__super__.render.call(this);
+    };
+
+    Header.prototype.check_offset = function() {
+      if (window.pageYOffset > 0) {
+        if (window.pageYOffset > this.previous_offset) {
+          if (!header.hasClass("header--hide")) {
+            header.addClass("header--hide");
+          }
+        } else {
+          if (header.hasClass("header--hide")) {
+            header.removeClass("header--hide");
           }
         }
-        return previous_offset = window.pageYOffset;
-      });
-      return Header.__super__.render.call(this);
+      }
+      return this.previous_offset = window.pageYOffset;
     };
 
     return Header;
