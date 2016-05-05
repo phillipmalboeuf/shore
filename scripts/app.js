@@ -52,13 +52,18 @@
           }));
         };
       })(this));
-      return $(window).on("keyup", function(e) {
+      $(window).on("keyup", function(e) {
         if (e.keyCode === 27) {
           $(".overlay--show").removeClass("overlay--show");
           return setTimeout(function() {
             return $(".js-fullscreen_iframe").attr("src", "");
           }, 666);
         }
+      });
+      return $(window).on("scroll", function(e) {
+        return _.each(this.header_views, function(view) {
+          return view.check_offset();
+        });
       });
     }
   };

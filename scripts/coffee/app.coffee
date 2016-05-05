@@ -52,6 +52,12 @@ window.Daniela =
 
 
 
+		$(window).on "scroll", (e)->
+
+			_.each @header_views, (view)->
+				view.check_offset()
+
+
 
 
 		# @router = new Daniela.Routers.Router()
