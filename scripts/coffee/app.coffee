@@ -58,6 +58,10 @@ window.Daniela =
 				view.check_offset()
 
 
+			_.each @track_views, (view)->
+				view.check_offset()
+
+
 
 
 		# @router = new Daniela.Routers.Router()

@@ -62,7 +62,10 @@
       });
       return $(window).on("scroll", (function(_this) {
         return function(e) {
-          return _.each(_this.header_views, function(view) {
+          _.each(_this.header_views, function(view) {
+            return view.check_offset();
+          });
+          return _.each(_this.track_views, function(view) {
             return view.check_offset();
           });
         };
