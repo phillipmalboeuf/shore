@@ -316,9 +316,6 @@
     };
 
     Track.prototype.check_offset = function() {
-      console.log(window.pageYOffset);
-      console.log(this.element_top + this.element_height < window.pageYOffset);
-      console.log(this.element_top < window.pageYOffset + window.innerHeight);
       if (this.element_top + this.element_height < window.pageYOffset) {
         return this.player.api("pause");
       } else if (this.element_top < window.pageYOffset + window.innerHeight) {
