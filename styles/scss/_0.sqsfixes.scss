@@ -46,10 +46,10 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 	.newsletter-form-button-label {
 
 		&:before {
-			content: "Submit";
+			content: ">";
 		}
 	}
-	
+
 
 .newsletter-style-dark .newsletter-block .newsletter-form-wrapper {
 	color: $primary;
