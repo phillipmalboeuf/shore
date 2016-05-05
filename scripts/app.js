@@ -318,9 +318,9 @@
     };
 
     Track.prototype.check_offset = function() {
-      if (this.element_top < window.pageYOffset + window.innerHeight) {
+      if (this.element_top + 200 < window.pageYOffset + window.innerHeight) {
         return this.player.api("play");
-      } else if (this.element_top + this.element_height > window.pageYOffset) {
+      } else if (this.element_top + this.element_height - 200 > window.pageYOffset) {
         return this.player.api("pause");
       }
     };
