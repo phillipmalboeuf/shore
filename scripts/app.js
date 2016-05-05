@@ -331,6 +331,7 @@
       return this.player.addEvent("ready", (function(_this) {
         return function() {
           _this.player.api("pause");
+          _this.check_offset();
           return _this.player.addEvent("playProgress", function() {
             _this.player.removeEvent("playProgress");
             return $(frame).removeClass("fade_out");
