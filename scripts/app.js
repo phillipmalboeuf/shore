@@ -296,6 +296,7 @@
         this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id);
       }
       this.element_top = this.$el.offset().top;
+      this.element_height = this.$el.height();
       return this;
     };
 
@@ -319,6 +320,8 @@
     Track.prototype.check_offset = function() {
       if (this.element_top < window.pageYOffset + window.innerHeight) {
         return this.player.api("play");
+      } else if (this.element_top + this.element_height > window.pageYOffset) {
+        return this.player.api("pause");
       }
     };
 

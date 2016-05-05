@@ -24,6 +24,7 @@ class Daniela.Views.Track extends Daniela.View
 
 
 		this.element_top = this.$el.offset().top
+		this.element_height = this.$el.height()
 
 
 		this
@@ -53,6 +54,9 @@ class Daniela.Views.Track extends Daniela.View
 	check_offset: ->
 		if this.element_top < window.pageYOffset + window.innerHeight
 			this.player.api("play")
+
+		else if this.element_top + this.element_height > window.pageYOffset
+			this.player.api("pause")
 		
 
 
