@@ -67,7 +67,7 @@ class Daniela.Views.Track extends Daniela.View
 		this.player.addEvent "ready", =>
 			this.player.api("pause")
 
-			this.player.addEvent "play", =>
+			this.player.addEvent "playProgress", =>
 				this.player.removeEvent "playProgress"
 				$(frame).removeClass "fade_out"
 
