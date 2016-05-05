@@ -295,6 +295,7 @@
       if (($(video).attr("data-video-src") != null) && $(video).css("display") !== "none") {
         this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id);
       }
+      this.element_top = this.$el.offset().top;
       return this;
     };
 
@@ -316,8 +317,7 @@
     };
 
     Track.prototype.check_offset = function() {
-      console.log(window.pageYOffset + window.innerHeight);
-      return console.log(this.$el.offset().top);
+      return window_(window.pageYOffset + window.innerHeight);
     };
 
     Track.prototype.setup_video = function(frame, video_id, player_id) {

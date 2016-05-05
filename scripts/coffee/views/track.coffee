@@ -23,6 +23,9 @@ class Daniela.Views.Track extends Daniela.View
 			this.setup_video(video, $(video).attr("data-video-src").split("//vimeo.com/")[1], video.id)
 
 
+		this.element_top = this.$el.offset().top
+
+
 		this
 		
 
@@ -48,8 +51,8 @@ class Daniela.Views.Track extends Daniela.View
 
 
 	check_offset: ->
-		console.log window.pageYOffset + window.innerHeight
-		console.log this.$el.offset().top
+		window_ window.pageYOffset + window.innerHeight
+		
 
 
 
