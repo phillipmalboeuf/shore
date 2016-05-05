@@ -51,7 +51,8 @@ class Daniela.Views.Track extends Daniela.View
 
 
 	check_offset: ->
-		window_ window.pageYOffset + window.innerHeight
+		if this.element_top < window.pageYOffset + window.innerHeight
+			this.player.play()
 		
 
 

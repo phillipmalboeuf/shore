@@ -317,7 +317,9 @@
     };
 
     Track.prototype.check_offset = function() {
-      return window_(window.pageYOffset + window.innerHeight);
+      if (this.element_top < window.pageYOffset + window.innerHeight) {
+        return this.player.play();
+      }
     };
 
     Track.prototype.setup_video = function(frame, video_id, player_id) {
