@@ -87,8 +87,8 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 
 			.newsletter-block .newsletter-form-wrapper--alignLeft .newsletter-form-button-wrapper {
 				position: absolute;
-				bottom: 10px;
-				right: -30px;
+				bottom: $base_size/1.2;
+				right: -$base_size/2;
 
 				margin: 0;
 				padding: 0;
