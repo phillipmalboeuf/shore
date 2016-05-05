@@ -316,7 +316,8 @@
     };
 
     Track.prototype.check_offset = function() {
-      return console.log(window.pageYOffset);
+      console.log(window.pageYOffset);
+      return console.log(this.$el.pageYOffset);
     };
 
     Track.prototype.setup_video = function(frame, video_id, player_id) {
