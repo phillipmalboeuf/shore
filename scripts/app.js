@@ -318,7 +318,7 @@
 
     Track.prototype.check_offset = function() {
       if (this.element_top < window.pageYOffset + window.innerHeight) {
-        return this.player.play();
+        return this.player.api("play");
       }
     };
 
