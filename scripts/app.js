@@ -60,12 +60,13 @@
           }, 666);
         }
       });
-      return $(window).on("scroll", function(e) {
-        return _.each(this.header_views, function(view) {
-          console.log(view);
-          return view.check_offset();
-        });
-      });
+      return $(window).on("scroll", (function(_this) {
+        return function(e) {
+          return _.each(_this.header_views, function(view) {
+            return view.check_offset();
+          });
+        };
+      })(this));
     }
   };
 

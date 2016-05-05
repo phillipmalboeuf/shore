@@ -52,10 +52,9 @@ window.Daniela =
 
 
 
-		$(window).on "scroll", (e)->
+		$(window).on "scroll", (e)=>
 
 			_.each @header_views, (view)->
-				console.log view
 				view.check_offset()
 
 
