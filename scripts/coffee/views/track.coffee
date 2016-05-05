@@ -62,6 +62,9 @@ class Daniela.Views.Track extends Daniela.View
 		else if this.element_top < window.pageYOffset + window.innerHeight
 			this.player.api("play")
 
+		else
+			this.player.api("pause")
+
 		
 
 

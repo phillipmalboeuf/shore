@@ -323,6 +323,8 @@
         return this.player.api("pause");
       } else if (this.element_top < window.pageYOffset + window.innerHeight) {
         return this.player.api("play");
+      } else {
+        return this.player.api("pause");
       }
     };
 
