@@ -43,6 +43,13 @@ body:not(.button-style-default).button-corner-style-square .sqs-editable-button-
 	@extend .button;
 }
 
+	.newsletter-form-button-label {
+
+		&:before {
+			content: "Submit";
+		}
+	}
+
 .newsletter-style-dark .newsletter-block .newsletter-form-wrapper {
 	color: $primary;
 	font-size: inherit;
