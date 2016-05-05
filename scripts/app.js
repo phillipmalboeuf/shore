@@ -62,6 +62,7 @@
       });
       return $(window).on("scroll", function(e) {
         return _.each(this.header_views, function(view) {
+          console.log(view);
           return view.check_offset();
         });
       });
