@@ -37,3 +37,9 @@ class Daniela.Views.Header extends Daniela.View
 
 
 		this.previous_offset = window.pageYOffset
+
+
+
+
+
+		
