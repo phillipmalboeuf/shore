@@ -59,14 +59,14 @@
 		}
 
 		-moz-animation: none !important;
-		-moz-transform: rotate(180deg);
+		-moz-transform: rotate(90deg);
 	}
 
 		.logo__circle__path {
 			@include animation(inner_circle 5s linear infinite);
 
 			-moz-animation: none !important;
-			-moz-transform: rotate(-180deg);
+			-moz-transform: rotate(-90deg);
 		}
 	
 
