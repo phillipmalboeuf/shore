@@ -65,7 +65,9 @@
           _.each(_this.header_views, function(view) {
             return view.check_offset();
           });
-          return _this.track_views[4].check_offset();
+          return _.each(_this.track_views, function(view) {
+            return view.check_offset();
+          });
         };
       })(this));
     }

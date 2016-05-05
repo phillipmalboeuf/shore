@@ -57,10 +57,8 @@ window.Daniela =
 			_.each @header_views, (view)->
 				view.check_offset()
 
-			@track_views[4].check_offset()
-
-			# _.each @track_views, (view)->
-			# 	view.check_offset()
+			_.each @track_views, (view)->
+				view.check_offset()
 
 
 
