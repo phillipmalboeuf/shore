@@ -1,16 +1,20 @@
 
 
 // tweak: { "type" : "image", "title" : "Header Image", "category" : "Header" }
-@header_image: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
+.header-image {
+  background-image: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
+}
 
 // tweak: { "type" : "image", "title" : "Header Image – Mobile", "category" : "Header" }
-@header_image_mobile: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
+.header-image-mobile {
+  background-image: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
+}
 
 
 .box__back--index {
-	background-image: @header_image;
+	.header-image;
 
 	@media all and (max-device-width:800px), all and (max-width:800px) {
-		background-image: @header_image_mobile;
+		.header-image-mobile;
 	}
 }
