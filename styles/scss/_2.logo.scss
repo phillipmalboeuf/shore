@@ -20,7 +20,7 @@
 	}
 
 	@media #{$small} {
-		max-width: 600px;
+		max-width: 480px;
 		padding: 0 $gutter/4 $gutter/6;
 	}
 }
@@ -34,7 +34,7 @@
 	}
 
 	@media #{$small} {
-		max-width: 200px;
+		max-width: 220px;
 	}
 
 	polygon,
