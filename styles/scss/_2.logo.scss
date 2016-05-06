@@ -29,6 +29,10 @@
 	display: inline-block;
 	max-width: 280px;
 
+	@media #{$medium} {
+		max-width: 240px;
+	}
+
 	@media #{$small} {
 		max-width: 200px;
 	}
