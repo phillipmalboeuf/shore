@@ -1,0 +1,15 @@
+
+
+// tweak: { "type" : "image", "title" : "Header Image", "category" : "Header" }
+@header_image: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
+
+// tweak: { "type" : "image", "title" : "Header Image – Mobile", "category" : "Header" }
+@header_image_mobile: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
+
+.box__back--index {
+	background-image: @header_image;
+
+	@media #{$small} {
+		background-image: @header_image_mobile;
+	}
+}

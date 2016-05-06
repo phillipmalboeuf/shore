@@ -124,16 +124,6 @@
 				display: none;
 			}
 		}
-
-		&.box__back--index {
-			// tweak: { "type" : "image", "title" : "Header Image", "category" : "Header" }
-			background-image: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
-
-			@media #{$small} {
-				// tweak: { "type" : "image", "title" : "Header Image – Mobile", "category" : "Header" }
-				background-image: url("https://placehold.it/1230x900/462B49/d2ceab/&text=∅");
-			}
-		}
 	}
 
 
