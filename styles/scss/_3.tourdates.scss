@@ -7,15 +7,19 @@
 	.tour-item {
 		position: relative;
 
-		font-size: $small_size;
-		font-weight: bold;
+		font-size: $base_size;
+		text-transform: uppercase;
+		
 
 		padding: $vertical_rythm/2 0;
 		border-color: $gold--dark;
 	}
 
 	.tour-timeframe {
+		font-weight: bold;
 		line-height: 0.8;
+		letter-spacing: $letter-spacing/2;
+
 		width: 100%;
 
 		@media #{$small} {
