@@ -7,7 +7,7 @@
 	.tour-item {
 		position: relative;
 
-		font-size: $base_size;
+		font-size: 14px;
 		text-transform: uppercase;
 		
 
@@ -18,7 +18,7 @@
 	.tour-timeframe {
 		font-weight: bold;
 		line-height: 0.8;
-		letter-spacing: $letter-spacing/4;
+		letter-spacing: 0.5px;
 
 		width: 100%;
 
@@ -32,24 +32,21 @@
 			width: auto;
 		}
 
-	.tour-venue {
-		font-size: $base_size/1.25;
+	.tour-venue,
+	.tour-location {
+		font-size: 12px;
 		letter-spacing: $letter-spacing/2;
 
-		width: 50%;
-
 		@media #{$small} {
-			line-height: 1;
 			width: 100%;
 		}
 	}
 
-	.tour-location {
-		font-size: $base_size/1.25;
-		letter-spacing: $letter-spacing/2;
+	.tour-venue {
+		width: 50%;
 
 		@media #{$small} {
-			width: 100%;
+			line-height: 1;
 		}
 	}
 
