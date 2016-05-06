@@ -3,7 +3,6 @@
 
 
 .logotype {
-	// display: inline-block;
 	width: 100%;
 	max-width: 1200px;
 	padding: $gutter/4 $gutter;
@@ -15,7 +14,7 @@
 		fill: $primary;
 	}
 
-	@media #{$small} {
+	@media #{$medium} {
 		padding: $gutter/6 $gutter/1.5;
 	}
 
