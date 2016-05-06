@@ -45,6 +45,8 @@
 	}
 
 	.tour-location {
+		font-size: $base_size/1.25;
+		letter-spacing: $letter-spacing/2;
 
 		@media #{$small} {
 			width: 100%;
