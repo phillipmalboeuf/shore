@@ -40,6 +40,7 @@ class Daniela.Views.Track extends Daniela.View
 		this.$el.find(".js-fullscreen_iframe").attr "src", e.currentTarget.getAttribute("data-show-fullscreen")+"?autoplay=1&modestbranding=1&showinfo=0&color=white"
 
 		setTimeout =>
+			console.log this.$el.find(".js-fullscreen_iframe")
 			this.$el.find(".js-fullscreen_iframe").click()
 		, 666
 
