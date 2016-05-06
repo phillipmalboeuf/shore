@@ -304,13 +304,7 @@
       e.preventDefault();
       e.stopImmediatePropagation();
       this.$el.find(".js-fullscreen").addClass("overlay--show");
-      this.$el.find(".js-fullscreen_iframe").attr("src", e.currentTarget.getAttribute("data-show-fullscreen") + "?autoplay=1&modestbranding=1&showinfo=0&color=white");
-      return setTimeout((function(_this) {
-        return function() {
-          console.log(_this.$el.find(".js-fullscreen_iframe"));
-          return _this.$el.find(".js-fullscreen_iframe").click();
-        };
-      })(this), 666);
+      return this.$el.find(".js-fullscreen_iframe").attr("src", e.currentTarget.getAttribute("data-show-fullscreen") + "?autoplay=1&modestbranding=1&showinfo=0&color=white");
     };
 
     Track.prototype.hide_fullscreen = function(e) {
