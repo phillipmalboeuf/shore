@@ -18,7 +18,7 @@
 	.tour-timeframe {
 		font-weight: bold;
 		line-height: 0.8;
-		letter-spacing: $letter-spacing/2;
+		letter-spacing: $letter-spacing/4;
 
 		width: 100%;
 
@@ -33,6 +33,9 @@
 		}
 
 	.tour-venue {
+		font-size: $base_size/1.25;
+		letter-spacing: $letter-spacing/2;
+
 		width: 50%;
 
 		@media #{$small} {
