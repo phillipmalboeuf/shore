@@ -16,7 +16,7 @@
 	}
 
 	@media #{$small} {
-		padding: $gutter/6 0;
+		padding: $gutter/6 $gutter/4;
 	}
 }
 
