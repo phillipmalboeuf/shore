@@ -89,7 +89,7 @@ module.exports = function(grunt) {
 
     open: {
       start: {
-        path: 'https://phillip-malboeuf-1942.squarespace.com',
+        path: 'https://daniela-andrade-0218.squarespace.com',
         app: 'Google Chrome'
       }
     },
