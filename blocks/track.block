@@ -41,7 +41,7 @@
 			<hr class="hr--half">
 			
 			{.section customContent.is_coming_soon}
-			<a href="#" target="_blank" class="button button--half" disabled>{publishOn|date %B %d, %Y}</a>
+			<a href="#" target="_blank" class="button button--half" disabled>{publishOn|date %b %d, %Y}</a>
 			{.or}
 			<a href="{customContent.itunes_link}" target="_blank" class="button button--half">Buy on iTunes</a>
 			{.end}
