@@ -1,6 +1,13 @@
 <div class="grid grid--tight_guttered grid--spaced">
     <div class="col">
-        <a href="/#" target="_blank" class="button button--with_icon"><svg class="icon-itunes icon--big"><use xlink:href="/assets/icons.svg#icon-itunes"></use></svg> <span><small>Buy now on</small><br><strong>iTunes</strong></span></a>
+    	{.repeated section items}
+			{.section external_link}
+			{.equal? title "Buy now on iTunes"}
+			<a href="{fullUrl}" target="_blank" class="button button--with_icon"><svg class="icon-itunes icon--big"><use xlink:href="/assets/icons.svg#icon-itunes"></use></svg> <span><small>Buy now on</small><br><strong>iTunes</strong></span></a>
+			{.end}
+			{.end}
+		{.end}
+        
     </div>
 
     <div class="col box__bottom__text">
@@ -10,6 +17,12 @@
     </div>
 
     <div class="col">
-        <a href="/#" target="_blank" class="button button--with_icon"><svg class="icon-spotify icon--big"><use xlink:href="/assets/icons.svg#icon-spotify"></use></svg> <span><small>Listen on</small><br><strong>Spotify</strong></span></a>
+    	{.repeated section items}
+			{.section external_link}
+			{.equal? title "Listen on Spotify"}
+			<a href="/#" target="_blank" class="button button--with_icon"><svg class="icon-spotify icon--big"><use xlink:href="/assets/icons.svg#icon-spotify"></use></svg> <span><small>Listen on</small><br><strong>Spotify</strong></span></a>
+			{.end}
+			{.end}
+		{.end}
     </div>
 </div>
