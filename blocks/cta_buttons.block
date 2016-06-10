@@ -3,7 +3,7 @@
     	{.repeated section items}
     		{.section externalLink}
 				{.equal? title "Buy now on iTunes"}
-				<a href="{fullUrl}" target="_blank" class="button button--with_icon"><svg class="icon-itunes icon--big"><use xlink:href="/assets/icons.svg#icon-itunes"></use></svg> <span><small>Buy now on</small><br><strong>iTunes</strong></span></a>
+				<a href="{url}" target="_blank" class="button button--with_icon"><svg class="icon-itunes icon--big"><use xlink:href="/assets/icons.svg#icon-itunes"></use></svg> <span><small>Buy now on</small><br><strong>iTunes</strong></span></a>
 				{.end}
 			{.end}
 		{.end}
@@ -20,7 +20,7 @@
     	{.repeated section items}
 			{.section externalLink}
 				{.equal? title "Listen on Spotify"}
-				<a href="/#" target="_blank" class="button button--with_icon"><svg class="icon-spotify icon--big"><use xlink:href="/assets/icons.svg#icon-spotify"></use></svg> <span><small>Listen on</small><br><strong>Spotify</strong></span></a>
+				<a href="{url}" target="_blank" class="button button--with_icon"><svg class="icon-spotify icon--big"><use xlink:href="/assets/icons.svg#icon-spotify"></use></svg> <span><small>Listen on</small><br><strong>Spotify</strong></span></a>
 				{.end}
 			{.end}
 		{.end}
