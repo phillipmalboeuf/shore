@@ -1,6 +1,8 @@
 <div class="grid grid--tight_guttered grid--spaced">
     <div class="col">
     	{.repeated section items}
+    		{title}
+    		
 			{.section external_link}
 			{title}
 			{.equal? title "Buy now on iTunes"}
