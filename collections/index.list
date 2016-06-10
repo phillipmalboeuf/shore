@@ -24,9 +24,7 @@
 		</div>
 
         <div class="box__bottom">
-            <header class="js-header">
-                <squarespace:navigation navigationId="cta_buttons" template="cta_buttons" />
-            </header>
+            <squarespace:navigation navigationId="cta_buttons" template="cta_buttons" />
         </div>
 	</article>
 
