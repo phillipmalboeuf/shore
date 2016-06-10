@@ -1,0 +1,15 @@
+<div class="grid grid--tight_guttered grid--spaced">
+    <div class="col">
+        <a href="/#" target="_blank" class="button button--with_icon"><svg class="icon-itunes icon--big"><use xlink:href="/assets/icons.svg#icon-itunes"></use></svg> <span><small>Buy now on</small><br><strong>iTunes</strong></span></a>
+    </div>
+
+    <div class="col box__bottom__text">
+        <h4>{website.siteTagLine}</h4>
+
+        <a href="/tracks" data-scroll-to="tracks"><svg class="icon-down"><use xlink:href="/assets/icons.svg#icon-down"></use></svg></a>
+    </div>
+
+    <div class="col">
+        <a href="/#" target="_blank" class="button button--with_icon"><svg class="icon-spotify icon--big"><use xlink:href="/assets/icons.svg#icon-spotify"></use></svg> <span><small>Listen on</small><br><strong>Spotify</strong></span></a>
+    </div>
+</div>
