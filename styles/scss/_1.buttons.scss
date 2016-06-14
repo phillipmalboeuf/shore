@@ -46,11 +46,13 @@ button,
 	&.button--with_icon {
 		@extend .grid;
 		@extend .grid--middle;
+
 		font-weight: bold;
 		text-align: left;
 		line-height: 0.9;
 		letter-spacing: 0;
 
+		width: auto;
 		padding: $base_size/2.5 $base_size $base_size/2;
 		border-radius: $vertical_rythm/4;
 
