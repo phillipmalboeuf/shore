@@ -1,5 +1,5 @@
 <div class="grid grid--tight_guttered grid--spaced">
-    <div class="col col--3of12">
+    <div class="col col--3of12 col--3of12 col--small--6of12">
     	{.repeated section items}
     		{.section externalLink}
     			{.equal?:title:"Pre-order on iTunes"}
@@ -19,7 +19,7 @@
         <a href="/tracks" data-scroll-to="tracks"><svg class="icon-down"><use xlink:href="/assets/icons.svg#icon-down"></use></svg></a>
     </div>
 
-    <div class="col col--3of12">
+    <div class="col col--3of12 col--small--6of12">
     	{.repeated section items}
 			{.section externalLink}
 				{.equal?:title:"Listen on Spotify"}
