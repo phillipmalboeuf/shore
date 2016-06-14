@@ -20,6 +20,8 @@
 
 	@media #{$small} {
 		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
 		padding: 0 $gutter/4 $gutter/6;
 	}
 }
