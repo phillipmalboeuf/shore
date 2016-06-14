@@ -32,6 +32,10 @@
 		@media #{$small} {
 			width: 100%;
 			margin-left: 0;
+
+			.spacer-block {
+				display: none;
+			}
 		}
 	}
 
