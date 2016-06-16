@@ -99,6 +99,10 @@ footer {
 			padding: $gutter/1.5 $gutter/4;
 		}
 	}
+
+	&.padded--flat_top {
+		padding-top: 0;
+	}
 }
 
 .huge_bottom { margin-bottom: $vertical_rythm*8; }
