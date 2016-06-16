@@ -1,6 +1,6 @@
 
 
-	<article class="padded padded--thick js-view">
+	<article class="padded padded--thick {.equal? fullUrl "/biography/"}padded--flat_top{.end} js-view">
 		{.equal? fullUrl "/biography/"}
 		<button class="button--icon overlay__button" data-hide-overlay="{fullUrl|slugify}"><svg class="icon-cancel"><use xlink:href="/assets/icons.svg#icon-cancel"></use></svg></button>
 		{.end}
