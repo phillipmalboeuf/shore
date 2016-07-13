@@ -69,11 +69,11 @@
 
 		@media #{$small} {
 			right: auto;
-			top: $gutter/4;
+			top: 0;
 			left: 0;
 
 			&:active {
-				top: ($gutter/4) + 1px;
+				top: 1px;
 			}
 		}
 	}
